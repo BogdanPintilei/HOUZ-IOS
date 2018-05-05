@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5A0E86BC20998B60008B31A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0E86BB20998B60008B31A5 /* AppDelegate.swift */; };
-		5A0E86BE20998B60008B31A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0E86BD20998B60008B31A5 /* ViewController.swift */; };
 		5A0E86C120998B60008B31A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0E86BF20998B60008B31A5 /* Main.storyboard */; };
 		5A0E86C320998B61008B31A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A0E86C220998B61008B31A5 /* Assets.xcassets */; };
 		5A0E86C620998B61008B31A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0E86C420998B61008B31A5 /* LaunchScreen.storyboard */; };
@@ -19,7 +18,6 @@
 		2B319A96F546126681C59C05 /* Pods-Houz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Houz.release.xcconfig"; path = "Pods/Target Support Files/Pods-Houz/Pods-Houz.release.xcconfig"; sourceTree = "<group>"; };
 		5A0E86B820998B60008B31A5 /* Houz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Houz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A0E86BB20998B60008B31A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5A0E86BD20998B60008B31A5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5A0E86C020998B60008B31A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A0E86C220998B61008B31A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A0E86C520998B61008B31A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +47,82 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		43E9CFF3209DE23200AC2E52 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		43E9CFF4209DE23200AC2E52 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		43E9CFF5209DE23200AC2E52 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		43E9CFF6209DE23200AC2E52 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		43E9CFF7209DE23200AC2E52 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				5A0E86BB20998B60008B31A5 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		43E9CFF8209DE23200AC2E52 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				43E9CFF9209DE23200AC2E52 /* API */,
+				43E9CFFA209DE23200AC2E52 /* SessionManager */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		43E9CFF9209DE23200AC2E52 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		43E9CFFA209DE23200AC2E52 /* SessionManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SessionManager;
+			sourceTree = "<group>";
+		};
+		43E9CFFB209DE23200AC2E52 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5A0E86C420998B61008B31A5 /* LaunchScreen.storyboard */,
+				5A0E86BF20998B60008B31A5 /* Main.storyboard */,
+				43E9CFFC209DE23200AC2E52 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		43E9CFFC209DE23200AC2E52 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		5A0E86AF20998B60008B31A5 = {
 			isa = PBXGroup;
 			children = (
@@ -70,11 +144,14 @@
 		5A0E86BA20998B60008B31A5 /* Houz */ = {
 			isa = PBXGroup;
 			children = (
-				5A0E86BB20998B60008B31A5 /* AppDelegate.swift */,
-				5A0E86BD20998B60008B31A5 /* ViewController.swift */,
-				5A0E86BF20998B60008B31A5 /* Main.storyboard */,
+				43E9CFF8209DE23200AC2E52 /* Lib */,
+				43E9CFF7209DE23200AC2E52 /* AppDelegate */,
+				43E9CFF3209DE23200AC2E52 /* Models */,
+				43E9CFFB209DE23200AC2E52 /* Views */,
+				43E9CFF6209DE23200AC2E52 /* ViewControllers */,
+				43E9CFF4209DE23200AC2E52 /* Extensions */,
+				43E9CFF5209DE23200AC2E52 /* Helpers */,
 				5A0E86C220998B61008B31A5 /* Assets.xcassets */,
-				5A0E86C420998B61008B31A5 /* LaunchScreen.storyboard */,
 				5A0E86C720998B61008B31A5 /* Info.plist */,
 			);
 			path = Houz;
@@ -181,7 +258,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A0E86BE20998B60008B31A5 /* ViewController.swift in Sources */,
 				5A0E86BC20998B60008B31A5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,7 +406,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H3763SJ8DW;
 				INFOPLIST_FILE = Houz/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Bogdan.Houz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -346,7 +425,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H3763SJ8DW;
 				INFOPLIST_FILE = Houz/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = Bogdan.Houz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
