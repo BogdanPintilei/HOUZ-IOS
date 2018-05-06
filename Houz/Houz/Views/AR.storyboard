@@ -10,17 +10,69 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Browse  -->
         <scene sceneID="J6k-Ow-dpq">
             <objects>
-                <viewController id="XCO-HS-XBx" sceneMemberID="viewController">
+                <viewController id="XCO-HS-XBx" customClass="BrowseARViewController" customModule="Houz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xvK-i1-mTM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Suf-Ui-kEg">
+                                <rect key="frame" x="8" y="140" width="359" height="589"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="m0b-gk-Ko1">
+                                    <size key="itemSize" width="149" height="176"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ARCategoryCollectionViewCellId" id="8f5-jE-n8m" customClass="ARCategoryCollectionViewCell" customModule="Houz" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="149" height="176"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="149" height="176"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vvk-yk-wCn" customClass="ARCategoryView" customModule="Houz" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="149" height="176"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="vvk-yk-wCn" secondAttribute="trailing" id="3Hc-Om-Oki"/>
+                                            <constraint firstItem="vvk-yk-wCn" firstAttribute="top" secondItem="8f5-jE-n8m" secondAttribute="top" id="g32-5M-P1a"/>
+                                            <constraint firstItem="vvk-yk-wCn" firstAttribute="leading" secondItem="8f5-jE-n8m" secondAttribute="leading" id="vec-mL-5FZ"/>
+                                            <constraint firstAttribute="bottom" secondItem="vvk-yk-wCn" secondAttribute="bottom" id="zMP-cI-oI9"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="arCategoryView" destination="vvk-yk-wCn" id="utt-7A-kUd"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="XCO-HS-XBx" id="8OR-Sg-WZW"/>
+                                    <outlet property="delegate" destination="XCO-HS-XBx" id="Cec-mN-3DN"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="i69-7N-jiN" firstAttribute="trailing" secondItem="Suf-Ui-kEg" secondAttribute="trailing" constant="8" id="ayx-xB-uQd"/>
+                            <constraint firstItem="Suf-Ui-kEg" firstAttribute="leading" secondItem="i69-7N-jiN" secondAttribute="leading" constant="8" id="n2f-1b-Wn7"/>
+                            <constraint firstItem="Suf-Ui-kEg" firstAttribute="top" secondItem="i69-7N-jiN" secondAttribute="top" id="x7W-mM-DbM"/>
+                            <constraint firstItem="i69-7N-jiN" firstAttribute="bottom" secondItem="Suf-Ui-kEg" secondAttribute="bottom" id="xHr-rz-zdn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="i69-7N-jiN"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Zop-ji-sw0"/>
+                    <navigationItem key="navigationItem" title="Browse  " id="RPt-qC-h52">
+                        <barButtonItem key="backBarButtonItem" title=" " id="xbb-pA-cjY"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="Suf-Ui-kEg" id="EVu-h9-K02"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cPa-gt-KOr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -33,8 +85,8 @@
                     <tabBarItem key="tabBarItem" title="AR" id="TBi-2Y-7XN"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UMm-p5-dda">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="UMm-p5-dda">
+                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

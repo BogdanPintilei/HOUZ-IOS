@@ -7,33 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		28AF0BB402441CD5ADB00D642963EE17 /* Pods-Houz-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A65F493FFDED9A033389CCB420CA94E /* Pods-Houz-dummy.m */; };
-		9FF00404AA87253489A858ABB6937E98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		A0E259B5706A3FBE36E42E354C791842 /* Pods-Houz-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DEC076E3005416EAD53CB49B9F7CE64 /* Pods-Houz-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D96D498C71CD9B88C0D42BD6D93E294 /* CHTCollectionViewWaterfallLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE506064671A068EED9E7E691E176A3A /* CHTCollectionViewWaterfallLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D4258A7B8DE5B14B7B4B91D6B955029 /* CHTCollectionViewWaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14896A6D5F9DFB449906C925D3FC5AB /* CHTCollectionViewWaterfallLayout.swift */; };
+		9FE083A9726A65BA6530886252B0FE87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		AABDBDD3A0BE5293C0F71603289EDD02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		C08568B55F610694E46715EC6022B3AC /* Pods-Houz-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A65F493FFDED9A033389CCB420CA94E /* Pods-Houz-dummy.m */; };
+		CD5E4D782A8BED6744F29F6D5A6C2651 /* CHTCollectionViewWaterfallLayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8848381CA99A68377C3C3B29764234C3 /* CHTCollectionViewWaterfallLayout-dummy.m */; };
+		FE2BC55DAC7A92534202771B66C4B36A /* Pods-Houz-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DEC076E3005416EAD53CB49B9F7CE64 /* Pods-Houz-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		4BBB306994087CFE475D8EB31701C8EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83DBBCE523C3F780DFE1B689B272DDE8;
+			remoteInfo = CHTCollectionViewWaterfallLayout;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		10C408E3DB9CC4ACF8C44E68723E4298 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DDBC9D7E08DB740D5DAD5402CFB4266 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A65F493FFDED9A033389CCB420CA94E /* Pods-Houz-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Houz-dummy.m"; sourceTree = "<group>"; };
 		2B632EB094B8116277FDA206F2CDF534 /* Pods-Houz.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Houz.modulemap"; sourceTree = "<group>"; };
+		37A61490A6786BD0D0D1329FA613DD3E /* CHTCollectionViewWaterfallLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CHTCollectionViewWaterfallLayout.framework; path = CHTCollectionViewWaterfallLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		465889332EE944FDD1B459B004EDEA3D /* CHTCollectionViewWaterfallLayout.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CHTCollectionViewWaterfallLayout.xcconfig; sourceTree = "<group>"; };
+		573C1695E0F63F59DC71087C932FB002 /* Pods_Houz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Houz.framework; path = "Pods-Houz.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DEC076E3005416EAD53CB49B9F7CE64 /* Pods-Houz-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Houz-umbrella.h"; sourceTree = "<group>"; };
+		60A33350AA84EA6D6D948913A307CD68 /* CHTCollectionViewWaterfallLayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CHTCollectionViewWaterfallLayout-prefix.pch"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		773F8E7FA878B2BDBAB4673E23AFEDEA /* Pods_Houz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Houz.framework; path = "Pods-Houz.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		811E522EC203BFF124DE00DAAC49F9B0 /* Pods-Houz-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Houz-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8848381CA99A68377C3C3B29764234C3 /* CHTCollectionViewWaterfallLayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CHTCollectionViewWaterfallLayout-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94F7928922EAA32F81A0DD874C303395 /* Pods-Houz-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Houz-resources.sh"; sourceTree = "<group>"; };
+		96205A37A62DB89D42F186735A07CF62 /* CHTCollectionViewWaterfallLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CHTCollectionViewWaterfallLayout.modulemap; sourceTree = "<group>"; };
 		9CA7F0AA6B8BBC4CBD16E312E65070FF /* Pods-Houz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Houz.debug.xcconfig"; sourceTree = "<group>"; };
 		A966D283A8045BA602973C8638CA3FCD /* Pods-Houz-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Houz-frameworks.sh"; sourceTree = "<group>"; };
+		C14896A6D5F9DFB449906C925D3FC5AB /* CHTCollectionViewWaterfallLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CHTCollectionViewWaterfallLayout.swift; sourceTree = "<group>"; };
 		C58FD04609FBE3692A7774F28AF4B034 /* Pods-Houz-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Houz-acknowledgements.plist"; sourceTree = "<group>"; };
 		D0626BB107D1096862D83201A918C4CB /* Pods-Houz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Houz.release.xcconfig"; sourceTree = "<group>"; };
+		FE506064671A068EED9E7E691E176A3A /* CHTCollectionViewWaterfallLayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CHTCollectionViewWaterfallLayout-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3231D62ED4E2AF5624B7FEAED76AD424 /* Frameworks */ = {
+		23BEC4358B9878A70EF1C67B6E0A340B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FF00404AA87253489A858ABB6937E98 /* Foundation.framework in Frameworks */,
+				9FE083A9726A65BA6530886252B0FE87 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55A62AFAAA3306C730862F417CF48F93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AABDBDD3A0BE5293C0F71603289EDD02 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,22 +78,50 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		3A897A2957C46EA2C8EF65D09D02F92A /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				C14896A6D5F9DFB449906C925D3FC5AB /* CHTCollectionViewWaterfallLayout.swift */,
+			);
+			name = Swift;
+			sourceTree = "<group>";
+		};
+		3B9C110BF282F6836E90F88C2E32BACA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D00ADE4878233845FFB86659304207A /* CHTCollectionViewWaterfallLayout */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5A5BF5A7FE4A45ECA9F3AAC41933B567 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37A61490A6786BD0D0D1329FA613DD3E /* CHTCollectionViewWaterfallLayout.framework */,
+				573C1695E0F63F59DC71087C932FB002 /* Pods_Houz.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				A2C6F56920D23302EEEE1ACAD0BAC12D /* Products */,
+				3B9C110BF282F6836E90F88C2E32BACA /* Pods */,
+				5A5BF5A7FE4A45ECA9F3AAC41933B567 /* Products */,
 				1DE7FDAE99A370C4C6F4CF99087E22F7 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		A2C6F56920D23302EEEE1ACAD0BAC12D /* Products */ = {
+		9D00ADE4878233845FFB86659304207A /* CHTCollectionViewWaterfallLayout */ = {
 			isa = PBXGroup;
 			children = (
-				773F8E7FA878B2BDBAB4673E23AFEDEA /* Pods_Houz.framework */,
+				C50AE899F3C64D7750E20E59F1646F51 /* Support Files */,
+				3A897A2957C46EA2C8EF65D09D02F92A /* Swift */,
 			);
-			name = Products;
+			name = CHTCollectionViewWaterfallLayout;
+			path = CHTCollectionViewWaterfallLayout;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -72,6 +130,20 @@
 				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C50AE899F3C64D7750E20E59F1646F51 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				96205A37A62DB89D42F186735A07CF62 /* CHTCollectionViewWaterfallLayout.modulemap */,
+				465889332EE944FDD1B459B004EDEA3D /* CHTCollectionViewWaterfallLayout.xcconfig */,
+				8848381CA99A68377C3C3B29764234C3 /* CHTCollectionViewWaterfallLayout-dummy.m */,
+				60A33350AA84EA6D6D948913A307CD68 /* CHTCollectionViewWaterfallLayout-prefix.pch */,
+				FE506064671A068EED9E7E691E176A3A /* CHTCollectionViewWaterfallLayout-umbrella.h */,
+				10C408E3DB9CC4ACF8C44E68723E4298 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CHTCollectionViewWaterfallLayout";
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
@@ -103,32 +175,58 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		28973D1B89677681941EEB08F514B37E /* Headers */ = {
+		8D491E5A3CFF71BD9C173CBBECE1076D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0E259B5706A3FBE36E42E354C791842 /* Pods-Houz-umbrella.h in Headers */,
+				5D96D498C71CD9B88C0D42BD6D93E294 /* CHTCollectionViewWaterfallLayout-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9272705D8080DA1E368D52D07185971E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE2BC55DAC7A92534202771B66C4B36A /* Pods-Houz-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5679C737B4FBCDC27F877F7CAD532AA1 /* Pods-Houz */ = {
+		6D2548ECB741652B8E36BB941C730038 /* Pods-Houz */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 245124B4C31D0FC6C5BB7475B7F1402E /* Build configuration list for PBXNativeTarget "Pods-Houz" */;
+			buildConfigurationList = BED000A51569E464BF41890FB4B4BDE1 /* Build configuration list for PBXNativeTarget "Pods-Houz" */;
 			buildPhases = (
-				DD83C3FE6180470208BDF92D8071E4B5 /* Sources */,
-				3231D62ED4E2AF5624B7FEAED76AD424 /* Frameworks */,
-				28973D1B89677681941EEB08F514B37E /* Headers */,
+				96FBF64908EB0E1C7D3B057783E46459 /* Sources */,
+				23BEC4358B9878A70EF1C67B6E0A340B /* Frameworks */,
+				9272705D8080DA1E368D52D07185971E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29766A8DE8AE13041341C55D0D1C4F36 /* PBXTargetDependency */,
+			);
+			name = "Pods-Houz";
+			productName = "Pods-Houz";
+			productReference = 573C1695E0F63F59DC71087C932FB002 /* Pods_Houz.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		83DBBCE523C3F780DFE1B689B272DDE8 /* CHTCollectionViewWaterfallLayout */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7151B549D788AB03287452A1205A14CD /* Build configuration list for PBXNativeTarget "CHTCollectionViewWaterfallLayout" */;
+			buildPhases = (
+				586A662234293D7F6DA248DF5EB34FE2 /* Sources */,
+				55A62AFAAA3306C730862F417CF48F93 /* Frameworks */,
+				8D491E5A3CFF71BD9C173CBBECE1076D /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-Houz";
-			productName = "Pods-Houz";
-			productReference = 773F8E7FA878B2BDBAB4673E23AFEDEA /* Pods_Houz.framework */;
+			name = CHTCollectionViewWaterfallLayout;
+			productName = CHTCollectionViewWaterfallLayout;
+			productReference = 37A61490A6786BD0D0D1329FA613DD3E /* CHTCollectionViewWaterfallLayout.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -148,27 +246,82 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = A2C6F56920D23302EEEE1ACAD0BAC12D /* Products */;
+			productRefGroup = 5A5BF5A7FE4A45ECA9F3AAC41933B567 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5679C737B4FBCDC27F877F7CAD532AA1 /* Pods-Houz */,
+				83DBBCE523C3F780DFE1B689B272DDE8 /* CHTCollectionViewWaterfallLayout */,
+				6D2548ECB741652B8E36BB941C730038 /* Pods-Houz */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DD83C3FE6180470208BDF92D8071E4B5 /* Sources */ = {
+		586A662234293D7F6DA248DF5EB34FE2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28AF0BB402441CD5ADB00D642963EE17 /* Pods-Houz-dummy.m in Sources */,
+				CD5E4D782A8BED6744F29F6D5A6C2651 /* CHTCollectionViewWaterfallLayout-dummy.m in Sources */,
+				7D4258A7B8DE5B14B7B4B91D6B955029 /* CHTCollectionViewWaterfallLayout.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96FBF64908EB0E1C7D3B057783E46459 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C08568B55F610694E46715EC6022B3AC /* Pods-Houz-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		29766A8DE8AE13041341C55D0D1C4F36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CHTCollectionViewWaterfallLayout;
+			target = 83DBBCE523C3F780DFE1B689B272DDE8 /* CHTCollectionViewWaterfallLayout */;
+			targetProxy = 4BBB306994087CFE475D8EB31701C8EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		514602B0E62EC8E5BC6CEA2152FB0D8B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0626BB107D1096862D83201A918C4CB /* Pods-Houz.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Houz/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Houz/Pods-Houz.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		691EE0234A3BA1A3B057D3A4C23C9CCC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -290,7 +443,7 @@
 			};
 			name = Release;
 		};
-		D301D0F0EED6BAAB62A98159DE11B530 /* Debug */ = {
+		A8EE5DC03FE991523EDFE58D6DCBA778 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9CA7F0AA6B8BBC4CBD16E312E65070FF /* Pods-Houz.debug.xcconfig */;
 			buildSettings = {
@@ -318,18 +471,18 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		D390D22CF9A948E9C3DA00D83B4696DA /* Release */ = {
+		CB67BF68E0B136693D51213F0B55B126 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0626BB107D1096862D83201A918C4CB /* Pods-Houz.release.xcconfig */;
+			baseConfigurationReference = 465889332EE944FDD1B459B004EDEA3D /* CHTCollectionViewWaterfallLayout.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -339,19 +492,19 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Houz/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CHTCollectionViewWaterfallLayout/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Houz/Pods-Houz.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout.modulemap";
+				PRODUCT_MODULE_NAME = CHTCollectionViewWaterfallLayout;
+				PRODUCT_NAME = CHTCollectionViewWaterfallLayout;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -359,23 +512,64 @@
 			};
 			name = Release;
 		};
+		CFC90EE11A6E8B1723918175403B5D3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 465889332EE944FDD1B459B004EDEA3D /* CHTCollectionViewWaterfallLayout.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CHTCollectionViewWaterfallLayout/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout.modulemap";
+				PRODUCT_MODULE_NAME = CHTCollectionViewWaterfallLayout;
+				PRODUCT_NAME = CHTCollectionViewWaterfallLayout;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		245124B4C31D0FC6C5BB7475B7F1402E /* Build configuration list for PBXNativeTarget "Pods-Houz" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D301D0F0EED6BAAB62A98159DE11B530 /* Debug */,
-				D390D22CF9A948E9C3DA00D83B4696DA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				691EE0234A3BA1A3B057D3A4C23C9CCC /* Debug */,
 				703082A85162812D3B777E668767AD25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7151B549D788AB03287452A1205A14CD /* Build configuration list for PBXNativeTarget "CHTCollectionViewWaterfallLayout" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFC90EE11A6E8B1723918175403B5D3F /* Debug */,
+				CB67BF68E0B136693D51213F0B55B126 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BED000A51569E464BF41890FB4B4BDE1 /* Build configuration list for PBXNativeTarget "Pods-Houz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8EE5DC03FE991523EDFE58D6DCBA778 /* Debug */,
+				514602B0E62EC8E5BC6CEA2152FB0D8B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

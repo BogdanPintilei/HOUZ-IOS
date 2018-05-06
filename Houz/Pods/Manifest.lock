@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: bd7bffb5dfcb1e07ae7df5ed85b78c9875e87d40
+PODS:
+  - CHTCollectionViewWaterfallLayout/Swift (0.9.7)
+
+DEPENDENCIES:
+  - CHTCollectionViewWaterfallLayout/Swift
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - CHTCollectionViewWaterfallLayout
+
+SPEC CHECKSUMS:
+  CHTCollectionViewWaterfallLayout: 9d11068fafecac106695bb5a5d6d0f738483b598
+
+PODFILE CHECKSUM: efd6531282d0c6a5dd895ac53d8db376be3ade2e
 
 COCOAPODS: 1.5.0

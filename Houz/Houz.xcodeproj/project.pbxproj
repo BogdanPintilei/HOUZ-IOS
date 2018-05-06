@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		435A599A209F522800599BB2 /* ARCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A5999209F522800599BB2 /* ARCategory.swift */; };
+		435A599C209F523A00599BB2 /* ARSubcategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A599B209F523A00599BB2 /* ARSubcategory.swift */; };
+		435A59A4209F58D600599BB2 /* ARCategoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 435A59A3209F58D600599BB2 /* ARCategoryView.xib */; };
+		435A59A6209F58EA00599BB2 /* ARCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A59A5209F58EA00599BB2 /* ARCategoryView.swift */; };
+		435A59A8209F5DB600599BB2 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A59A7209F5DB600599BB2 /* UIColor.swift */; };
+		435A59AA209F62D100599BB2 /* ARCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A59A9209F62D100599BB2 /* ARCategoryCollectionViewCell.swift */; };
+		435A59AC209F643D00599BB2 /* LocalTestDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A59AB209F643D00599BB2 /* LocalTestDataRepository.swift */; };
+		4399D41B209F3AF500423AF3 /* BrowseARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4399D41A209F3AF500423AF3 /* BrowseARViewController.swift */; };
+		4399D41E209F3B3000423AF3 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4399D41D209F3B3000423AF3 /* UIViewController.swift */; };
 		43E9CFFE209DE32300AC2E52 /* HOUZFeed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E9CFFD209DE32300AC2E52 /* HOUZFeed.storyboard */; };
 		43E9D000209DE35D00AC2E52 /* Random.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E9CFFF209DE35D00AC2E52 /* Random.storyboard */; };
 		43E9D002209DE37900AC2E52 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E9D001209DE37900AC2E52 /* Profile.storyboard */; };
@@ -21,6 +30,15 @@
 
 /* Begin PBXFileReference section */
 		2B319A96F546126681C59C05 /* Pods-Houz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Houz.release.xcconfig"; path = "Pods/Target Support Files/Pods-Houz/Pods-Houz.release.xcconfig"; sourceTree = "<group>"; };
+		435A5999209F522800599BB2 /* ARCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCategory.swift; sourceTree = "<group>"; };
+		435A599B209F523A00599BB2 /* ARSubcategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSubcategory.swift; sourceTree = "<group>"; };
+		435A59A3209F58D600599BB2 /* ARCategoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ARCategoryView.xib; sourceTree = "<group>"; };
+		435A59A5209F58EA00599BB2 /* ARCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCategoryView.swift; sourceTree = "<group>"; };
+		435A59A7209F5DB600599BB2 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		435A59A9209F62D100599BB2 /* ARCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		435A59AB209F643D00599BB2 /* LocalTestDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalTestDataRepository.swift; sourceTree = "<group>"; };
+		4399D41A209F3AF500423AF3 /* BrowseARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseARViewController.swift; sourceTree = "<group>"; };
+		4399D41D209F3B3000423AF3 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		43E9CFFD209DE32300AC2E52 /* HOUZFeed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HOUZFeed.storyboard; sourceTree = "<group>"; };
 		43E9CFFF209DE35D00AC2E52 /* Random.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Random.storyboard; sourceTree = "<group>"; };
 		43E9D001209DE37900AC2E52 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
@@ -57,9 +75,37 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		435A599D209F585500599BB2 /* ARCategoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				435A59A9209F62D100599BB2 /* ARCategoryCollectionViewCell.swift */,
+				435A599E209F586A00599BB2 /* ARCategoryView */,
+			);
+			path = ARCategoryCell;
+			sourceTree = "<group>";
+		};
+		435A599E209F586A00599BB2 /* ARCategoryView */ = {
+			isa = PBXGroup;
+			children = (
+				435A59A3209F58D600599BB2 /* ARCategoryView.xib */,
+				435A59A5209F58EA00599BB2 /* ARCategoryView.swift */,
+			);
+			path = ARCategoryView;
+			sourceTree = "<group>";
+		};
+		4399D41C209F3AFA00423AF3 /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				4399D41A209F3AF500423AF3 /* BrowseARViewController.swift */,
+			);
+			path = AR;
+			sourceTree = "<group>";
+		};
 		43E9CFF3209DE23200AC2E52 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				435A5999209F522800599BB2 /* ARCategory.swift */,
+				435A599B209F523A00599BB2 /* ARSubcategory.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -67,6 +113,8 @@
 		43E9CFF4209DE23200AC2E52 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4399D41D209F3B3000423AF3 /* UIViewController.swift */,
+				435A59A7209F5DB600599BB2 /* UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -74,6 +122,7 @@
 		43E9CFF5209DE23200AC2E52 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				435A59AB209F643D00599BB2 /* LocalTestDataRepository.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -81,6 +130,7 @@
 		43E9CFF6209DE23200AC2E52 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4399D41C209F3AFA00423AF3 /* AR */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -134,6 +184,7 @@
 		43E9CFFC209DE23200AC2E52 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				435A599D209F585500599BB2 /* ARCategoryCell */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -191,6 +242,7 @@
 				5A0E86B420998B60008B31A5 /* Sources */,
 				5A0E86B520998B60008B31A5 /* Frameworks */,
 				5A0E86B620998B60008B31A5 /* Resources */,
+				84F5B6300B9BC79B322C6A9B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -245,6 +297,7 @@
 				43E9D000209DE35D00AC2E52 /* Random.storyboard in Resources */,
 				5A0E86C320998B61008B31A5 /* Assets.xcassets in Resources */,
 				5A0E86C120998B60008B31A5 /* Main.storyboard in Resources */,
+				435A59A4209F58D600599BB2 /* ARCategoryView.xib in Resources */,
 				43E9D004209DE3AA00AC2E52 /* Create.storyboard in Resources */,
 				43E9D006209DE3D200AC2E52 /* AR.storyboard in Resources */,
 			);
@@ -271,6 +324,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		84F5B6300B9BC79B322C6A9B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Houz/Pods-Houz-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CHTCollectionViewWaterfallLayout.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Houz/Pods-Houz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -278,7 +349,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				435A599C209F523A00599BB2 /* ARSubcategory.swift in Sources */,
+				435A59AA209F62D100599BB2 /* ARCategoryCollectionViewCell.swift in Sources */,
+				435A59A8209F5DB600599BB2 /* UIColor.swift in Sources */,
+				435A599A209F522800599BB2 /* ARCategory.swift in Sources */,
 				5A0E86BC20998B60008B31A5 /* AppDelegate.swift in Sources */,
+				435A59A6209F58EA00599BB2 /* ARCategoryView.swift in Sources */,
+				4399D41B209F3AF500423AF3 /* BrowseARViewController.swift in Sources */,
+				4399D41E209F3B3000423AF3 /* UIViewController.swift in Sources */,
+				435A59AC209F643D00599BB2 /* LocalTestDataRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,13 +503,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H3763SJ8DW;
+				DEVELOPMENT_TEAM = BEVZKKG84K;
 				INFOPLIST_FILE = Houz/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = Bogdan.Houz;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Bogdan.Houz-develop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -443,13 +519,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H3763SJ8DW;
+				DEVELOPMENT_TEAM = BEVZKKG84K;
 				INFOPLIST_FILE = Houz/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = Bogdan.Houz;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Bogdan.Houz-develop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
