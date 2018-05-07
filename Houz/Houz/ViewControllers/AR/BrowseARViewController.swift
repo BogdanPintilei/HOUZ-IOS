@@ -11,8 +11,8 @@ import CHTCollectionViewWaterfallLayout
 
 class BrowseARViewController: UIViewController {
 
-    var first = true
-    var arCategories: [ARCategory]?
+    var arCategories: [ARCategory]!
+    var cellNumber: Int!
 
     @IBOutlet weak var collectionView: UICollectionView!
 
@@ -47,13 +47,27 @@ extension BrowseARViewController: UICollectionViewDelegate, UICollectionViewData
     // MARK: CollectionView DataSource & Delegate
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return (arCategories?.count)!
+        return arCategories.count + 1
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ARCategoryCollectionViewCellId", for: indexPath) as! ARCategoryCollectionViewCell
-        cell.category = arCategories![indexPath.row]
+        if indexPath.row < arCategories.count {
+            cell.category = arCategories[indexPath.row]
+        } else {
+            cell.isLast = true
+        }
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case arCategories.count :
+            collectionView.scrollToItem(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
+            print("select last cell")
+        default:
+            print("select cell")
+        }
     }
 
 }
@@ -63,8 +77,14 @@ extension BrowseARViewController: CHTCollectionViewDelegateWaterfallLayout {
     //MARK: - CollectionView Waterfall Layout Delegate Methods
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: IndexPath) -> CGSize {
-        let cellSize = first ? CGSize(width: 100, height: 150) : CGSize(width: 100, height: 200)
-        first = false
-        return cellSize
+        switch indexPath.row {
+        case 0:
+            return CGSize(width: 100, height: 144)
+        case arCategories.count:
+            return arCategories.count % 2 == 0 ? CGSize(width: 100, height: 56) : CGSize(width: 100, height: 144)
+        default:
+            return CGSize(width: 100, height: 200)
+        }
     }
+
 }

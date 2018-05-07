@@ -42,19 +42,24 @@ class CategoryRepository {
                 subcategory: SubcategoryRepository.subcategory(),
                 imageURL: "imageURL",
                 image: #imageLiteral(resourceName: "category_mockup_background")
-            ),ARCategory(
+            ), ARCategory(
                 name: "Garden Mockup",
                 subcategory: SubcategoryRepository.subcategory(),
                 imageURL: "imageURL",
                 image: #imageLiteral(resourceName: "category_mockup_background")
-            ),ARCategory(
+            ), ARCategory(
+                name: "Garden Mockup",
+                subcategory: SubcategoryRepository.subcategory(),
+                imageURL: "imageURL",
+                image: #imageLiteral(resourceName: "category_mockup_background")
+            ), ARCategory(
                 name: "Garden Mockup",
                 subcategory: SubcategoryRepository.subcategory(),
                 imageURL: "imageURL",
                 image: #imageLiteral(resourceName: "category_mockup_background")
             )
         ]
-        
+
         return arCategories
     }
 
@@ -64,7 +69,7 @@ class SubcategoryRepository {
 
     class func subcategory() -> ARSubcategory {
         let subcategory = ARSubcategory(name: "subcategory mockup", imageURL: "imageURL", image: #imageLiteral(resourceName: "category_mockup_background"))
-        
+
         return subcategory
     }
 

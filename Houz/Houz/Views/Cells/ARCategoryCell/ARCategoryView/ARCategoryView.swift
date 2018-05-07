@@ -14,10 +14,12 @@ class ARCategoryView: UIView {
     @IBOutlet weak var categoryImageView: UIImageView!
     @IBOutlet weak var tintForCategoryImageView: UIImageView!
     @IBOutlet weak var categoryNameLabel: UILabel!
+    @IBOutlet weak var scrollToTopImageView: UIImageView!
+    @IBOutlet weak var categoryView: UIView!
 
-    var category: ARCategory! {
-        didSet { customizeViewWithCategory() }
-    }
+    var category: ARCategory! { didSet { customizeViewWithCategory() } }
+
+    var isLast: Bool! { didSet { configureLastCell() } }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -28,12 +30,23 @@ class ARCategoryView: UIView {
     }
 
     private func customizeViewWithCategory() {
-        categoryNameLabel.text = category.name
-        categoryImageView.image = category.image
+        categoryNameLabel.text = category?.name
+        categoryImageView.image = category?.image
+        showAndHideItems(state: true)
     }
-    
+
     private func customizeUI() {
         tintForCategoryImageView.backgroundColor = UIColor.AppColors.imageBackgroundImageTint
+        scrollToTopImageView.tintColor = UIColor.black
+    }
+
+    private func configureLastCell() {
+        showAndHideItems(state: false)
+    }
+
+    private func showAndHideItems(state: Bool) {
+        categoryView.isHidden = !state
+        scrollToTopImageView.isHidden = state
     }
 
 }

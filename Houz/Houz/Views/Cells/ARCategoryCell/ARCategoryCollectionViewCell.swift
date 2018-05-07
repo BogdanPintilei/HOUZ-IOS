@@ -12,6 +12,10 @@ class ARCategoryCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var arCategoryView: ARCategoryView!
 
+    override func layoutIfNeeded() {
+        super.layoutIfNeeded()
+    }
+
     var category: ARCategory! { didSet { arCategoryView.category = category } }
-    
+    var isLast: Bool! { didSet { arCategoryView.isLast = isLast } }
 }

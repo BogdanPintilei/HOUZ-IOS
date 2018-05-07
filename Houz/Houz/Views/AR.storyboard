@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Suf-Ui-kEg">
-                                <rect key="frame" x="8" y="140" width="359" height="589"/>
+                                <rect key="frame" x="8" y="0.0" width="359" height="729"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="m0b-gk-Ko1">
                                     <size key="itemSize" width="149" height="176"/>
@@ -41,12 +41,14 @@
                                                 </view>
                                             </subviews>
                                         </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="vvk-yk-wCn" secondAttribute="trailing" id="3Hc-Om-Oki"/>
                                             <constraint firstItem="vvk-yk-wCn" firstAttribute="top" secondItem="8f5-jE-n8m" secondAttribute="top" id="g32-5M-P1a"/>
                                             <constraint firstItem="vvk-yk-wCn" firstAttribute="leading" secondItem="8f5-jE-n8m" secondAttribute="leading" id="vec-mL-5FZ"/>
                                             <constraint firstAttribute="bottom" secondItem="vvk-yk-wCn" secondAttribute="bottom" id="zMP-cI-oI9"/>
                                         </constraints>
+                                        <size key="customSize" width="149" height="176"/>
                                         <connections>
                                             <outlet property="arCategoryView" destination="vvk-yk-wCn" id="utt-7A-kUd"/>
                                         </connections>
@@ -60,14 +62,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Suf-Ui-kEg" firstAttribute="top" secondItem="xvK-i1-mTM" secondAttribute="top" id="005-XX-Q2S"/>
                             <constraint firstItem="i69-7N-jiN" firstAttribute="trailing" secondItem="Suf-Ui-kEg" secondAttribute="trailing" constant="8" id="ayx-xB-uQd"/>
                             <constraint firstItem="Suf-Ui-kEg" firstAttribute="leading" secondItem="i69-7N-jiN" secondAttribute="leading" constant="8" id="n2f-1b-Wn7"/>
-                            <constraint firstItem="Suf-Ui-kEg" firstAttribute="top" secondItem="i69-7N-jiN" secondAttribute="top" id="x7W-mM-DbM"/>
                             <constraint firstItem="i69-7N-jiN" firstAttribute="bottom" secondItem="Suf-Ui-kEg" secondAttribute="bottom" id="xHr-rz-zdn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="i69-7N-jiN"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Browse  " id="RPt-qC-h52">
+                    <navigationItem key="navigationItem" title="Browse  " largeTitleDisplayMode="always" id="RPt-qC-h52">
                         <barButtonItem key="backBarButtonItem" title=" " id="xbb-pA-cjY"/>
                     </navigationItem>
                     <connections>

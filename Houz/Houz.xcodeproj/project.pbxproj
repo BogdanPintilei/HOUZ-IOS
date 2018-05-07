@@ -14,6 +14,7 @@
 		435A59A8209F5DB600599BB2 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A59A7209F5DB600599BB2 /* UIColor.swift */; };
 		435A59AA209F62D100599BB2 /* ARCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A59A9209F62D100599BB2 /* ARCategoryCollectionViewCell.swift */; };
 		435A59AC209F643D00599BB2 /* LocalTestDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A59AB209F643D00599BB2 /* LocalTestDataRepository.swift */; };
+		436EC424209FA5240032DE55 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436EC423209FA5240032DE55 /* UIView.swift */; };
 		4399D41B209F3AF500423AF3 /* BrowseARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4399D41A209F3AF500423AF3 /* BrowseARViewController.swift */; };
 		4399D41E209F3B3000423AF3 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4399D41D209F3B3000423AF3 /* UIViewController.swift */; };
 		43E9CFFE209DE32300AC2E52 /* HOUZFeed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E9CFFD209DE32300AC2E52 /* HOUZFeed.storyboard */; };
@@ -37,6 +38,7 @@
 		435A59A7209F5DB600599BB2 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		435A59A9209F62D100599BB2 /* ARCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		435A59AB209F643D00599BB2 /* LocalTestDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalTestDataRepository.swift; sourceTree = "<group>"; };
+		436EC423209FA5240032DE55 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		4399D41A209F3AF500423AF3 /* BrowseARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseARViewController.swift; sourceTree = "<group>"; };
 		4399D41D209F3B3000423AF3 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		43E9CFFD209DE32300AC2E52 /* HOUZFeed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HOUZFeed.storyboard; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			children = (
 				4399D41D209F3B3000423AF3 /* UIViewController.swift */,
 				435A59A7209F5DB600599BB2 /* UIColor.swift */,
+				436EC423209FA5240032DE55 /* UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				436EC424209FA5240032DE55 /* UIView.swift in Sources */,
 				435A599C209F523A00599BB2 /* ARSubcategory.swift in Sources */,
 				435A59AA209F62D100599BB2 /* ARCategoryCollectionViewCell.swift in Sources */,
 				435A59A8209F5DB600599BB2 /* UIColor.swift in Sources */,
@@ -505,7 +509,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BEVZKKG84K;
 				INFOPLIST_FILE = Houz/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Bogdan.Houz-develop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -521,7 +528,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BEVZKKG84K;
 				INFOPLIST_FILE = Houz/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Bogdan.Houz-develop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
