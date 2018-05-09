@@ -11,18 +11,18 @@ import UIKit
 class ARCategory: NSObject {
 
     var name: String?
-    var subcategory: ARSubcategory?
+    var subcategories: [ARSubcategory]?
     var imageURL: String?
     var image: UIImage?
 
     init(
         name: String? = nil,
-        subcategory: ARSubcategory? = nil,
+        subcategories: [ARSubcategory]? = nil,
         imageURL: String? = nil,
         image: UIImage? = nil
     ) {
         self.name = name
-        self.subcategory = subcategory
+        self.subcategories = subcategories
         self.imageURL = imageURL
         self.image = image
     }

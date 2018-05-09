@@ -14,6 +14,11 @@
 		435A59A8209F5DB600599BB2 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A59A7209F5DB600599BB2 /* UIColor.swift */; };
 		435A59AA209F62D100599BB2 /* ARCategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A59A9209F62D100599BB2 /* ARCategoryCollectionViewCell.swift */; };
 		435A59AC209F643D00599BB2 /* LocalTestDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A59AB209F643D00599BB2 /* LocalTestDataRepository.swift */; };
+		4365334320A2C06000E51EA1 /* SegueHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365334220A2C06000E51EA1 /* SegueHandler.swift */; };
+		4365334620A2C18E00E51EA1 /* ARSubcategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365334520A2C18E00E51EA1 /* ARSubcategoryView.swift */; };
+		4365334820A2C19600E51EA1 /* ARSubcategoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4365334720A2C19600E51EA1 /* ARSubcategoryView.xib */; };
+		4365334B20A2C63400E51EA1 /* ARSubcategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365334A20A2C63400E51EA1 /* ARSubcategoryTableViewCell.swift */; };
+		4365334D20A2C75800E51EA1 /* ARSubcategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4365334C20A2C75800E51EA1 /* ARSubcategoryViewController.swift */; };
 		436EC424209FA5240032DE55 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 436EC423209FA5240032DE55 /* UIView.swift */; };
 		4399D41B209F3AF500423AF3 /* BrowseARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4399D41A209F3AF500423AF3 /* BrowseARViewController.swift */; };
 		4399D41E209F3B3000423AF3 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4399D41D209F3B3000423AF3 /* UIViewController.swift */; };
@@ -38,6 +43,11 @@
 		435A59A7209F5DB600599BB2 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		435A59A9209F62D100599BB2 /* ARCategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		435A59AB209F643D00599BB2 /* LocalTestDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalTestDataRepository.swift; sourceTree = "<group>"; };
+		4365334220A2C06000E51EA1 /* SegueHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueHandler.swift; sourceTree = "<group>"; };
+		4365334520A2C18E00E51EA1 /* ARSubcategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSubcategoryView.swift; sourceTree = "<group>"; };
+		4365334720A2C19600E51EA1 /* ARSubcategoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ARSubcategoryView.xib; sourceTree = "<group>"; };
+		4365334A20A2C63400E51EA1 /* ARSubcategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSubcategoryTableViewCell.swift; sourceTree = "<group>"; };
+		4365334C20A2C75800E51EA1 /* ARSubcategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSubcategoryViewController.swift; sourceTree = "<group>"; };
 		436EC423209FA5240032DE55 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		4399D41A209F3AF500423AF3 /* BrowseARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseARViewController.swift; sourceTree = "<group>"; };
 		4399D41D209F3B3000423AF3 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
@@ -95,10 +105,29 @@
 			path = ARCategoryView;
 			sourceTree = "<group>";
 		};
+		4365334420A2C15400E51EA1 /* ARSubcategoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				4365334A20A2C63400E51EA1 /* ARSubcategoryTableViewCell.swift */,
+				4365334920A2C60000E51EA1 /* ARSubcategoryView */,
+			);
+			path = ARSubcategoryCell;
+			sourceTree = "<group>";
+		};
+		4365334920A2C60000E51EA1 /* ARSubcategoryView */ = {
+			isa = PBXGroup;
+			children = (
+				4365334520A2C18E00E51EA1 /* ARSubcategoryView.swift */,
+				4365334720A2C19600E51EA1 /* ARSubcategoryView.xib */,
+			);
+			path = ARSubcategoryView;
+			sourceTree = "<group>";
+		};
 		4399D41C209F3AFA00423AF3 /* AR */ = {
 			isa = PBXGroup;
 			children = (
 				4399D41A209F3AF500423AF3 /* BrowseARViewController.swift */,
+				4365334C20A2C75800E51EA1 /* ARSubcategoryViewController.swift */,
 			);
 			path = AR;
 			sourceTree = "<group>";
@@ -118,6 +147,7 @@
 				4399D41D209F3B3000423AF3 /* UIViewController.swift */,
 				435A59A7209F5DB600599BB2 /* UIColor.swift */,
 				436EC423209FA5240032DE55 /* UIView.swift */,
+				4365334220A2C06000E51EA1 /* SegueHandler.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -187,6 +217,7 @@
 		43E9CFFC209DE23200AC2E52 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				4365334420A2C15400E51EA1 /* ARSubcategoryCell */,
 				435A599D209F585500599BB2 /* ARCategoryCell */,
 			);
 			path = Cells;
@@ -298,6 +329,7 @@
 				43E9CFFE209DE32300AC2E52 /* HOUZFeed.storyboard in Resources */,
 				5A0E86C620998B61008B31A5 /* LaunchScreen.storyboard in Resources */,
 				43E9D000209DE35D00AC2E52 /* Random.storyboard in Resources */,
+				4365334820A2C19600E51EA1 /* ARSubcategoryView.xib in Resources */,
 				5A0E86C320998B61008B31A5 /* Assets.xcassets in Resources */,
 				5A0E86C120998B60008B31A5 /* Main.storyboard in Resources */,
 				435A59A4209F58D600599BB2 /* ARCategoryView.xib in Resources */,
@@ -352,13 +384,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4365334D20A2C75800E51EA1 /* ARSubcategoryViewController.swift in Sources */,
+				4365334B20A2C63400E51EA1 /* ARSubcategoryTableViewCell.swift in Sources */,
 				436EC424209FA5240032DE55 /* UIView.swift in Sources */,
 				435A599C209F523A00599BB2 /* ARSubcategory.swift in Sources */,
 				435A59AA209F62D100599BB2 /* ARCategoryCollectionViewCell.swift in Sources */,
 				435A59A8209F5DB600599BB2 /* UIColor.swift in Sources */,
+				4365334620A2C18E00E51EA1 /* ARSubcategoryView.swift in Sources */,
 				435A599A209F522800599BB2 /* ARCategory.swift in Sources */,
 				5A0E86BC20998B60008B31A5 /* AppDelegate.swift in Sources */,
 				435A59A6209F58EA00599BB2 /* ARCategoryView.swift in Sources */,
+				4365334320A2C06000E51EA1 /* SegueHandler.swift in Sources */,
 				4399D41B209F3AF500423AF3 /* BrowseARViewController.swift in Sources */,
 				4399D41E209F3B3000423AF3 /* UIViewController.swift in Sources */,
 				435A59AC209F643D00599BB2 /* LocalTestDataRepository.swift in Sources */,

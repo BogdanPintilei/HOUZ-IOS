@@ -17,5 +17,7 @@ class ARCategoryCollectionViewCell: UICollectionViewCell {
     }
 
     var category: ARCategory! { didSet { arCategoryView.category = category } }
+    
     var isLast: Bool! { didSet { arCategoryView.isLast = isLast } }
+    
 }

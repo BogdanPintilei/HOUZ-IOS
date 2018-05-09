@@ -12,6 +12,7 @@ import CHTCollectionViewWaterfallLayout
 class BrowseARViewController: UIViewController {
 
     var arCategories: [ARCategory]!
+    var selectedCategory: ARCategory?
     var cellNumber: Int!
 
     @IBOutlet weak var collectionView: UICollectionView!
@@ -69,7 +70,8 @@ extension BrowseARViewController: UICollectionViewDelegate, UICollectionViewData
         case arCategories.count:
             collectionView.scrollToItem(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
         default:
-            print("select cell")
+            selectedCategory = arCategories[indexPath.row]
+            arCategories[indexPath.row].subcategories != nil ? performSegue(withIdentifier: .showARSubcategories) : performSegue(withIdentifier: .showProductList)
         }
     }
 
@@ -104,4 +106,23 @@ extension BrowseARViewController: CHTCollectionViewDelegateWaterfallLayout {
         }
     }
 
+}
+
+extension BrowseARViewController: SegueHandler {
+    
+    enum SegueIdentifier: String {
+        case showARSubcategories
+        case showProductList
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segueIdentifier(for: segue) {
+        case .showARSubcategories:
+            print("show AR subcategories")
+            let vc = segue.destination as! ARSubcategoryViewController
+            vc.subcategories = selectedCategory?.subcategories
+        case .showProductList:
+            print("show product list")
+        }
+    }
 }

@@ -15,46 +15,42 @@ class CategoryRepository {
         let arCategories = [
             ARCategory(
                 name: "Garden Mockup",
-                subcategory: SubcategoryRepository.subcategory(),
+                subcategories: SubcategoryRepository.subcategories(),
                 imageURL: "imageURL",
                 image: #imageLiteral(resourceName: "category_mockup_background")
             ),
             ARCategory(
                 name: "Garden Mockup",
-                subcategory: SubcategoryRepository.subcategory(),
                 imageURL: "imageURL",
                 image: #imageLiteral(resourceName: "category_mockup_background")
             ),
             ARCategory(
                 name: "Garden Mockup",
-                subcategory: SubcategoryRepository.subcategory(),
+                subcategories: SubcategoryRepository.subcategories(),
                 imageURL: "imageURL",
                 image: #imageLiteral(resourceName: "category_mockup_background")
             ),
             ARCategory(
                 name: "Garden Mockup",
-                subcategory: SubcategoryRepository.subcategory(),
                 imageURL: "imageURL",
                 image: #imageLiteral(resourceName: "category_mockup_background")
             ),
             ARCategory(
                 name: "Garden Mockup",
-                subcategory: SubcategoryRepository.subcategory(),
+                subcategories: SubcategoryRepository.subcategories(),
                 imageURL: "imageURL",
                 image: #imageLiteral(resourceName: "category_mockup_background")
             ), ARCategory(
                 name: "Garden Mockup",
-                subcategory: SubcategoryRepository.subcategory(),
                 imageURL: "imageURL",
                 image: #imageLiteral(resourceName: "category_mockup_background")
             ), ARCategory(
                 name: "Garden Mockup",
-                subcategory: SubcategoryRepository.subcategory(),
+                subcategories: SubcategoryRepository.subcategories(),
                 imageURL: "imageURL",
                 image: #imageLiteral(resourceName: "category_mockup_background")
             ), ARCategory(
                 name: "Garden Mockup",
-                subcategory: SubcategoryRepository.subcategory(),
                 imageURL: "imageURL",
                 image: #imageLiteral(resourceName: "category_mockup_background")
             )
@@ -73,4 +69,13 @@ class SubcategoryRepository {
         return subcategory
     }
 
+    class func subcategories() -> [ARSubcategory] {
+        let subcategories = [
+            ARSubcategory(name: "subcategory mockup", imageURL: "imageURL", image: #imageLiteral(resourceName: "category_mockup_background")),
+            ARSubcategory(name: "subcategory mockup", imageURL: "imageURL", image: #imageLiteral(resourceName: "category_mockup_background")),
+            ARSubcategory(name: "subcategory mockup", imageURL: "imageURL", image: #imageLiteral(resourceName: "category_mockup_background"))
+        ]
+
+        return subcategories
+    }
 }
