@@ -31,7 +31,7 @@ extension ARProductViewController: UICollectionViewDelegate, UICollectionViewDat
         return (products?.count)!
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width / 2 - 5 , height: collectionView.frame.height/2)
+        return CGSize(width: collectionView.frame.width / 2 - 4 , height: collectionView.frame.height/3)
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AProductCollectionViewCellID", for: indexPath) as! ARProductCollectionViewCell
