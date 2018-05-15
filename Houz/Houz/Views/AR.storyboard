@@ -25,11 +25,11 @@
                                     <size key="itemSize" width="149" height="176"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ARCategoryCollectionViewCellId" id="8f5-jE-n8m" customClass="ARCategoryCollectionViewCell" customModule="Houz" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="149" height="176"/>
+                                        <rect key="frame" x="8" y="0.0" width="149" height="176"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="149" height="176"/>
@@ -91,7 +91,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="88" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Cyc-zl-0bm">
-                                <rect key="frame" x="0.0" y="140" width="375" height="589"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ARSubcategoryTableViewCellID" rowHeight="88" id="XKb-Sl-Yag" customClass="ARSubcategoryTableViewCell" customModule="Houz" customModuleProvider="target">
@@ -144,21 +144,68 @@
             </objects>
             <point key="canvasLocation" x="2033" y="-421"/>
         </scene>
-        <!--title-->
+        <!--Product Title-->
         <scene sceneID="4Em-yu-g2a">
             <objects>
-                <viewController id="M0B-M8-fL9" sceneMemberID="viewController">
+                <viewController id="M0B-M8-fL9" customClass="ARProductViewController" customModule="Houz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3bt-zJ-kXh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lFz-fh-qF6">
+                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xho-a3-c1x">
+                                    <size key="itemSize" width="166" height="226"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AProductCollectionViewCellID" id="QgF-1s-TOp" customClass="ARProductCollectionViewCell" customModule="Houz" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="166" height="226"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="166" height="226"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J3J-Vd-biy" customClass="ARProductView" customModule="Houz" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="166" height="226"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="J3J-Vd-biy" firstAttribute="leading" secondItem="QgF-1s-TOp" secondAttribute="leading" id="AlZ-Sd-2Oh"/>
+                                            <constraint firstItem="J3J-Vd-biy" firstAttribute="top" secondItem="QgF-1s-TOp" secondAttribute="top" id="ae9-Hv-Zmb"/>
+                                            <constraint firstAttribute="bottom" secondItem="J3J-Vd-biy" secondAttribute="bottom" id="akk-9A-KcO"/>
+                                            <constraint firstAttribute="trailing" secondItem="J3J-Vd-biy" secondAttribute="trailing" id="nIk-r1-ITK"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="arProductView" destination="J3J-Vd-biy" id="8gw-KT-i4c"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="M0B-M8-fL9" id="qXa-00-ML9"/>
+                                    <outlet property="delegate" destination="M0B-M8-fL9" id="JB1-eL-0Ip"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lFz-fh-qF6" firstAttribute="leading" secondItem="75w-51-s0R" secondAttribute="leading" id="N6l-Qh-tXz"/>
+                            <constraint firstItem="75w-51-s0R" firstAttribute="trailing" secondItem="lFz-fh-qF6" secondAttribute="trailing" id="dVo-2A-faE"/>
+                            <constraint firstItem="lFz-fh-qF6" firstAttribute="top" secondItem="75w-51-s0R" secondAttribute="top" id="hun-7a-QCt"/>
+                            <constraint firstItem="75w-51-s0R" firstAttribute="bottom" secondItem="lFz-fh-qF6" secondAttribute="bottom" id="muJ-if-SHe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="75w-51-s0R"/>
                     </view>
-                    <navigationItem key="navigationItem" title="title" id="zuF-d5-x7z"/>
+                    <navigationItem key="navigationItem" title="Product Title" id="zuF-d5-x7z"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cSp-ab-Nby" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2074" y="480"/>
+            <point key="canvasLocation" x="2292" y="479.55665024630542"/>
         </scene>
         <!--AR-->
         <scene sceneID="VPR-Rp-TmX">
@@ -183,6 +230,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="WyY-cm-IiP"/>
+        <segue reference="125-BJ-3aN"/>
     </inferredMetricsTieBreakers>
 </document>

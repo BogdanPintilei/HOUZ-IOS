@@ -79,3 +79,20 @@ class SubcategoryRepository {
         return subcategories
     }
 }
+
+class ProductRepository {
+
+    class func products() -> [ARProduct] {
+        let products = [
+            ARProduct(name: "The Collest", productURL: "https://www.apple.com", imageURL: "imageURl", image: #imageLiteral(resourceName: "category_mockup_background")),
+            ARProduct(name: "The Collest", productURL: "https://www.apple.com", imageURL: "imageURl", image: #imageLiteral(resourceName: "category_mockup_background")),
+            ARProduct(name: "The Collest", productURL: "https://www.apple.com", imageURL: "imageURl", image: #imageLiteral(resourceName: "category_mockup_background")),
+            ARProduct(name: "The Collest", productURL: "https://www.apple.com", imageURL: "imageURl", image: #imageLiteral(resourceName: "category_mockup_background")),
+            ARProduct(name: "The Collest", productURL: "https://www.apple.com", imageURL: "imageURl", image: #imageLiteral(resourceName: "category_mockup_background")),
+            ARProduct(name: "The Collest", productURL: "https://www.apple.com", imageURL: "imageURl", image: #imageLiteral(resourceName: "category_mockup_background")),
+        ]
+
+        return products
+    }
+
+}

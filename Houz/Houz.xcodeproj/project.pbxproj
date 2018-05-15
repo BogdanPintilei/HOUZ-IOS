@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		431D9A1120AAADEF007BED9E /* ARProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431D9A1020AAADEF007BED9E /* ARProductViewController.swift */; };
+		431D9A1520AAAE3F007BED9E /* ARProductView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 431D9A1420AAAE3F007BED9E /* ARProductView.xib */; };
+		431D9A1720AAAE53007BED9E /* ARProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431D9A1620AAAE53007BED9E /* ARProductView.swift */; };
+		431D9A1920AAAF5B007BED9E /* ARProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431D9A1820AAAF5B007BED9E /* ARProductCollectionViewCell.swift */; };
+		431D9A1B20AAAF96007BED9E /* ARProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431D9A1A20AAAF96007BED9E /* ARProduct.swift */; };
 		435A599A209F522800599BB2 /* ARCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A5999209F522800599BB2 /* ARCategory.swift */; };
 		435A599C209F523A00599BB2 /* ARSubcategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435A599B209F523A00599BB2 /* ARSubcategory.swift */; };
 		435A59A4209F58D600599BB2 /* ARCategoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 435A59A3209F58D600599BB2 /* ARCategoryView.xib */; };
@@ -36,6 +41,11 @@
 
 /* Begin PBXFileReference section */
 		2B319A96F546126681C59C05 /* Pods-Houz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Houz.release.xcconfig"; path = "Pods/Target Support Files/Pods-Houz/Pods-Houz.release.xcconfig"; sourceTree = "<group>"; };
+		431D9A1020AAADEF007BED9E /* ARProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARProductViewController.swift; sourceTree = "<group>"; };
+		431D9A1420AAAE3F007BED9E /* ARProductView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ARProductView.xib; sourceTree = "<group>"; };
+		431D9A1620AAAE53007BED9E /* ARProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARProductView.swift; sourceTree = "<group>"; };
+		431D9A1820AAAF5B007BED9E /* ARProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		431D9A1A20AAAF96007BED9E /* ARProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARProduct.swift; sourceTree = "<group>"; };
 		435A5999209F522800599BB2 /* ARCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCategory.swift; sourceTree = "<group>"; };
 		435A599B209F523A00599BB2 /* ARSubcategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSubcategory.swift; sourceTree = "<group>"; };
 		435A59A3209F58D600599BB2 /* ARCategoryView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ARCategoryView.xib; sourceTree = "<group>"; };
@@ -87,6 +97,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		431D9A1220AAAE06007BED9E /* ARProductCell */ = {
+			isa = PBXGroup;
+			children = (
+				431D9A1820AAAF5B007BED9E /* ARProductCollectionViewCell.swift */,
+				431D9A1320AAAE28007BED9E /* ARProductView */,
+			);
+			path = ARProductCell;
+			sourceTree = "<group>";
+		};
+		431D9A1320AAAE28007BED9E /* ARProductView */ = {
+			isa = PBXGroup;
+			children = (
+				431D9A1620AAAE53007BED9E /* ARProductView.swift */,
+				431D9A1420AAAE3F007BED9E /* ARProductView.xib */,
+			);
+			path = ARProductView;
+			sourceTree = "<group>";
+		};
 		435A599D209F585500599BB2 /* ARCategoryCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +156,7 @@
 			children = (
 				4399D41A209F3AF500423AF3 /* BrowseARViewController.swift */,
 				4365334C20A2C75800E51EA1 /* ARSubcategoryViewController.swift */,
+				431D9A1020AAADEF007BED9E /* ARProductViewController.swift */,
 			);
 			path = AR;
 			sourceTree = "<group>";
@@ -137,6 +166,7 @@
 			children = (
 				435A5999209F522800599BB2 /* ARCategory.swift */,
 				435A599B209F523A00599BB2 /* ARSubcategory.swift */,
+				431D9A1A20AAAF96007BED9E /* ARProduct.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -217,6 +247,7 @@
 		43E9CFFC209DE23200AC2E52 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				431D9A1220AAAE06007BED9E /* ARProductCell */,
 				4365334420A2C15400E51EA1 /* ARSubcategoryCell */,
 				435A599D209F585500599BB2 /* ARCategoryCell */,
 			);
@@ -325,6 +356,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				431D9A1520AAAE3F007BED9E /* ARProductView.xib in Resources */,
 				43E9D002209DE37900AC2E52 /* Profile.storyboard in Resources */,
 				43E9CFFE209DE32300AC2E52 /* HOUZFeed.storyboard in Resources */,
 				5A0E86C620998B61008B31A5 /* LaunchScreen.storyboard in Resources */,
@@ -386,16 +418,20 @@
 			files = (
 				4365334D20A2C75800E51EA1 /* ARSubcategoryViewController.swift in Sources */,
 				4365334B20A2C63400E51EA1 /* ARSubcategoryTableViewCell.swift in Sources */,
+				431D9A1B20AAAF96007BED9E /* ARProduct.swift in Sources */,
+				431D9A1120AAADEF007BED9E /* ARProductViewController.swift in Sources */,
 				436EC424209FA5240032DE55 /* UIView.swift in Sources */,
 				435A599C209F523A00599BB2 /* ARSubcategory.swift in Sources */,
 				435A59AA209F62D100599BB2 /* ARCategoryCollectionViewCell.swift in Sources */,
 				435A59A8209F5DB600599BB2 /* UIColor.swift in Sources */,
 				4365334620A2C18E00E51EA1 /* ARSubcategoryView.swift in Sources */,
+				431D9A1920AAAF5B007BED9E /* ARProductCollectionViewCell.swift in Sources */,
 				435A599A209F522800599BB2 /* ARCategory.swift in Sources */,
 				5A0E86BC20998B60008B31A5 /* AppDelegate.swift in Sources */,
 				435A59A6209F58EA00599BB2 /* ARCategoryView.swift in Sources */,
 				4365334320A2C06000E51EA1 /* SegueHandler.swift in Sources */,
 				4399D41B209F3AF500423AF3 /* BrowseARViewController.swift in Sources */,
+				431D9A1720AAAE53007BED9E /* ARProductView.swift in Sources */,
 				4399D41E209F3B3000423AF3 /* UIViewController.swift in Sources */,
 				435A59AC209F643D00599BB2 /* LocalTestDataRepository.swift in Sources */,
 			);
