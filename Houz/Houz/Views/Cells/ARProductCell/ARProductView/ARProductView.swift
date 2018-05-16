@@ -11,7 +11,8 @@ import UIKit
 class ARProductView: UIView {
 
     @IBOutlet var view: UIView!
-
+    @IBOutlet weak var productImageView: UIImageView!
+    
     var arProduct: ARProduct! { didSet { configureViewWithARProduct() } }
 
     required init?(coder aDecoder: NSCoder) {
@@ -22,7 +23,7 @@ class ARProductView: UIView {
     }
 
     private func configureViewWithARProduct() {
-
+        productImageView.image = arProduct.image
     }
 
 }

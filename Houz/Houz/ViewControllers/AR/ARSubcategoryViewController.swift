@@ -20,6 +20,7 @@ class ARSubcategoryViewController: UIViewController {
 
     private func customizeUI() {
         self.setNavigationBarTransparent()
+        self.navigationItem.largeTitleDisplayMode = .always
     }
 
 }

@@ -6,12 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ARProductView" customModule="Houz" customModuleProvider="target">
             <connections>
+                <outlet property="productImageView" destination="aAC-Qf-3rg" id="FXV-jy-2ru"/>
                 <outlet property="view" destination="iN0-l3-epB" id="pyr-s7-kCz"/>
             </connections>
         </placeholder>
@@ -22,7 +24,26 @@
             <subviews>
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0vc-Bu-PWq">
                     <rect key="frame" x="0.0" y="0.0" width="351" height="394"/>
-                    <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aAC-Qf-3rg">
+                            <rect key="frame" x="0.0" y="0.0" width="351" height="394"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ACZ-md-JsS">
+                            <rect key="frame" x="0.0" y="276" width="351" height="118"/>
+                            <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ACZ-md-JsS" secondAttribute="trailing" id="GQA-Ji-Hir"/>
+                        <constraint firstItem="aAC-Qf-3rg" firstAttribute="leading" secondItem="0vc-Bu-PWq" secondAttribute="leading" id="Ow4-Nx-3jM"/>
+                        <constraint firstItem="aAC-Qf-3rg" firstAttribute="top" secondItem="0vc-Bu-PWq" secondAttribute="top" id="Wjf-0I-FcO"/>
+                        <constraint firstItem="ACZ-md-JsS" firstAttribute="height" secondItem="aAC-Qf-3rg" secondAttribute="height" multiplier="0.3" id="cT5-PT-v1H"/>
+                        <constraint firstItem="ACZ-md-JsS" firstAttribute="leading" secondItem="0vc-Bu-PWq" secondAttribute="leading" id="cmC-ug-q9N"/>
+                        <constraint firstAttribute="bottom" secondItem="ACZ-md-JsS" secondAttribute="bottom" id="eIB-tJ-JNk"/>
+                        <constraint firstAttribute="bottom" secondItem="aAC-Qf-3rg" secondAttribute="bottom" id="qJ1-79-HpZ"/>
+                        <constraint firstAttribute="trailing" secondItem="aAC-Qf-3rg" secondAttribute="trailing" id="x30-3B-XD1"/>
+                    </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                             <integer key="value" value="8"/>
