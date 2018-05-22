@@ -1,16 +1,20 @@
 PODS:
   - CHTCollectionViewWaterfallLayout/Swift (0.9.7)
+  - Hero (1.2.0)
 
 DEPENDENCIES:
   - CHTCollectionViewWaterfallLayout/Swift
+  - Hero
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - CHTCollectionViewWaterfallLayout
+    - Hero
 
 SPEC CHECKSUMS:
   CHTCollectionViewWaterfallLayout: 9d11068fafecac106695bb5a5d6d0f738483b598
+  Hero: 33dadf2cd1c98af71e213dcbc2902e6e03622a4e
 
-PODFILE CHECKSUM: efd6531282d0c6a5dd895ac53d8db376be3ade2e
+PODFILE CHECKSUM: a50d7e4888bcb7052a36bc9a8cd681ad2e9fd9eb
 
 COCOAPODS: 1.5.0

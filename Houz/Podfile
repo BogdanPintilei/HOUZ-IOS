@@ -5,6 +5,7 @@ use_frameworks!
 
 def use_pods
     pod 'CHTCollectionViewWaterfallLayout/Swift'
+    pod 'Hero'
 end
 
 target 'Houz' do

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Hero
 
 class ARProductViewController: UIViewController {
 
@@ -32,7 +33,7 @@ extension ARProductViewController: UICollectionViewDelegate, UICollectionViewDat
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width / 2 - 4 , height: collectionView.frame.height/3)
+        return CGSize(width: collectionView.frame.width / 2 - 4 , height: collectionView.frame.height/2.5)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
