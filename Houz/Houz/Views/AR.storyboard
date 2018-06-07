@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fmZ-tC-s03">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fmZ-tC-s03">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -69,7 +70,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="i69-7N-jiN"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Browse  " id="RPt-qC-h52">
+                    <navigationItem key="navigationItem" title="Browse  " largeTitleDisplayMode="always" id="RPt-qC-h52">
                         <barButtonItem key="backBarButtonItem" title=" " id="xbb-pA-cjY"/>
                     </navigationItem>
                     <connections>
@@ -207,6 +208,71 @@
             </objects>
             <point key="canvasLocation" x="2292" y="479.55665024630542"/>
         </scene>
+        <!--Product Detail View Controller-->
+        <scene sceneID="q9b-Ey-FZV">
+            <objects>
+                <viewController storyboardIdentifier="ProfileDetailsStoryboardID" id="wHs-Cj-YTg" customClass="ProductDetailViewController" customModule="Houz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cbc-0K-EHt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="njc-rx-rwt">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="category_mockup_background" translatesAutoresizingMaskIntoConstraints="NO" id="Ez5-ZF-SG7">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSz-Xl-Hys">
+                                        <rect key="frame" x="313" y="32" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="close:" destination="wHs-Cj-YTg" eventType="touchUpInside" id="1aU-sC-RTX"/>
+                                        </connections>
+                                    </button>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q8y-oD-OXE">
+                                        <rect key="frame" x="0.0" y="568.33333333333337" width="375" height="243.66666666666663"/>
+                                        <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="q8y-oD-OXE" secondAttribute="bottom" id="7Q4-kb-fRD"/>
+                                    <constraint firstItem="GSz-Xl-Hys" firstAttribute="top" secondItem="njc-rx-rwt" secondAttribute="top" constant="32" id="8ua-SX-n6w"/>
+                                    <constraint firstAttribute="trailing" secondItem="GSz-Xl-Hys" secondAttribute="trailing" constant="16" id="GBI-KI-Bfw"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ez5-ZF-SG7" secondAttribute="bottom" id="LN6-au-voK"/>
+                                    <constraint firstItem="q8y-oD-OXE" firstAttribute="leading" secondItem="njc-rx-rwt" secondAttribute="leading" id="NRu-f9-G8e"/>
+                                    <constraint firstItem="Ez5-ZF-SG7" firstAttribute="top" secondItem="njc-rx-rwt" secondAttribute="top" id="l1D-CO-mTf"/>
+                                    <constraint firstAttribute="trailing" secondItem="q8y-oD-OXE" secondAttribute="trailing" id="mbn-zA-vEO"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ez5-ZF-SG7" secondAttribute="trailing" id="rdv-c6-C7S"/>
+                                    <constraint firstItem="Ez5-ZF-SG7" firstAttribute="leading" secondItem="njc-rx-rwt" secondAttribute="leading" id="zGo-jf-Q5A"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="njc-rx-rwt" firstAttribute="leading" secondItem="BA7-vV-eaf" secondAttribute="leading" id="3VB-Xc-59h"/>
+                            <constraint firstItem="njc-rx-rwt" firstAttribute="top" secondItem="Cbc-0K-EHt" secondAttribute="top" id="EUm-xp-Ien"/>
+                            <constraint firstItem="njc-rx-rwt" firstAttribute="trailing" secondItem="BA7-vV-eaf" secondAttribute="trailing" id="LoI-DM-ryr"/>
+                            <constraint firstItem="q8y-oD-OXE" firstAttribute="height" secondItem="Cbc-0K-EHt" secondAttribute="height" multiplier="0.3" id="QdS-0u-VfX"/>
+                            <constraint firstAttribute="bottom" secondItem="njc-rx-rwt" secondAttribute="bottom" id="xmB-zs-3bo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BA7-vV-eaf"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="ARProductBackground"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <navigationItem key="navigationItem" id="ABe-Hs-NNy"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="productView" destination="njc-rx-rwt" id="3Bq-9B-vVi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KZp-P5-1cT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3249" y="480"/>
+        </scene>
         <!--AR-->
         <scene sceneID="VPR-Rp-TmX">
             <objects>
@@ -229,7 +295,10 @@
             <point key="canvasLocation" x="8.8000000000000007" y="113.79310344827587"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="category_mockup_background" width="245" height="184"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Zmi-PY-WoB"/>
+        <segue reference="125-BJ-3aN"/>
     </inferredMetricsTieBreakers>
 </document>

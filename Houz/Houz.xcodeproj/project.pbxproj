@@ -36,6 +36,8 @@
 		5A0E86C120998B60008B31A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0E86BF20998B60008B31A5 /* Main.storyboard */; };
 		5A0E86C320998B61008B31A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A0E86C220998B61008B31A5 /* Assets.xcassets */; };
 		5A0E86C620998B61008B31A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0E86C420998B61008B31A5 /* LaunchScreen.storyboard */; };
+		5A5CE49C20C818AA00097778 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CE49B20C818AA00097778 /* ProductDetailViewController.swift */; };
+		5A5CE49E20C90CBA00097778 /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CE49D20C90CBA00097778 /* AppStoryboard.swift */; };
 		7F8202B083203FE3A353C19A /* Pods_Houz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6CCEAE5A7DD88B46789CABE /* Pods_Houz.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +74,8 @@
 		5A0E86C220998B61008B31A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A0E86C520998B61008B31A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A0E86C720998B61008B31A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A5CE49B20C818AA00097778 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		5A5CE49D20C90CBA00097778 /* AppStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoryboard.swift; sourceTree = "<group>"; };
 		9112DB3461D8B07E662D90A9 /* Pods-Houz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Houz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Houz/Pods-Houz.debug.xcconfig"; sourceTree = "<group>"; };
 		F6CCEAE5A7DD88B46789CABE /* Pods_Houz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Houz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -157,6 +161,7 @@
 				4399D41A209F3AF500423AF3 /* BrowseARViewController.swift */,
 				4365334C20A2C75800E51EA1 /* ARSubcategoryViewController.swift */,
 				431D9A1020AAADEF007BED9E /* ARProductViewController.swift */,
+				5A5CE49B20C818AA00097778 /* ProductDetailViewController.swift */,
 			);
 			path = AR;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				435A59AB209F643D00599BB2 /* LocalTestDataRepository.swift */,
+				5A5CE49D20C90CBA00097778 /* AppStoryboard.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -418,6 +424,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A5CE49E20C90CBA00097778 /* AppStoryboard.swift in Sources */,
 				4365334D20A2C75800E51EA1 /* ARSubcategoryViewController.swift in Sources */,
 				4365334B20A2C63400E51EA1 /* ARSubcategoryTableViewCell.swift in Sources */,
 				431D9A1B20AAAF96007BED9E /* ARProduct.swift in Sources */,
@@ -434,6 +441,7 @@
 				4365334320A2C06000E51EA1 /* SegueHandler.swift in Sources */,
 				4399D41B209F3AF500423AF3 /* BrowseARViewController.swift in Sources */,
 				431D9A1720AAAE53007BED9E /* ARProductView.swift in Sources */,
+				5A5CE49C20C818AA00097778 /* ProductDetailViewController.swift in Sources */,
 				4399D41E209F3B3000423AF3 /* UIViewController.swift in Sources */,
 				435A59AC209F643D00599BB2 /* LocalTestDataRepository.swift in Sources */,
 			);
@@ -583,7 +591,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BEVZKKG84K;
 				INFOPLIST_FILE = Houz/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Bogdan.Houz-develop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -599,7 +610,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BEVZKKG84K;
 				INFOPLIST_FILE = Houz/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Bogdan.Houz-develop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
