@@ -27,6 +27,10 @@ class ARProductViewController: UIViewController {
     private func cellHeroID(id: Int) -> String {
         return "cell\(id)"
     }
+    
+    private func cellLabelHeroID(id: Int) -> String {
+        return "cell_label\(id)"
+    }
 }
 
 extension ARProductViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -44,14 +48,15 @@ extension ARProductViewController: UICollectionViewDelegate, UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AProductCollectionViewCellID", for: indexPath) as! ARProductCollectionViewCell
         cell.arProduct = products![indexPath.row]
-//        cell.hero.id = cellHeroID(id: indexPath.row)
         cell.arProductView.hero.id = cellHeroID(id: indexPath.row)
+        cell.arProductView.productTitleLabel.hero.id = cellLabelHeroID(id: indexPath.row)
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let vc = AppStoryboard.AR.instance.instantiateViewController(withIdentifier: "ProfileDetailsStoryboardID") as! ProductDetailViewController
         vc.heroID = cellHeroID(id: indexPath.row)
+        vc.productTitleLabelHeroID = cellLabelHeroID(id: indexPath.row)
         self.present(vc, animated: true, completion: nil)
     }
 

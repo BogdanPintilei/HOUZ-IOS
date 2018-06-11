@@ -11,6 +11,7 @@ import UIKit
 class ARProductView: UIView {
 
     @IBOutlet var view: UIView!
+    @IBOutlet var productTitleLabel: UILabel!
     @IBOutlet weak var productImageView: UIImageView!
     
     var arProduct: ARProduct! { didSet { configureViewWithARProduct() } }
