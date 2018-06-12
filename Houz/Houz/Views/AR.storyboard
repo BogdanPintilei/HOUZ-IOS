@@ -352,6 +352,10 @@
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yp7-ak-EdJ">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Wmc-XG-0o3" appends="YES" id="fFI-qO-bvK"/>
+                                </connections>
                             </arscnView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59L-uj-noR">
                                 <rect key="frame" x="329" y="32" width="30" height="30"/>
@@ -579,6 +583,11 @@
                         <outlet property="delegate" destination="XkJ-Ae-fU1" id="xlu-Ki-uPn"/>
                     </connections>
                 </pongPressGestureRecognizer>
+                <tapGestureRecognizer id="Wmc-XG-0o3">
+                    <connections>
+                        <action selector="tapScreen:" destination="XkJ-Ae-fU1" id="FoX-rd-OMS"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="4197.6000000000004" y="479.55665024630542"/>
         </scene>

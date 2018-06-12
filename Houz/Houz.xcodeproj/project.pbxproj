@@ -40,7 +40,9 @@
 		5A5CE49E20C90CBA00097778 /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CE49D20C90CBA00097778 /* AppStoryboard.swift */; };
 		5A5CE4A020C969B500097778 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CE49F20C969B500097778 /* UIImageView.swift */; };
 		5A993F4F20CDA4CB006FCE17 /* ARCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A993F4E20CDA4CB006FCE17 /* ARCameraViewController.swift */; };
-		5A993F5320CEFB7A006FCE17 /* ThreeDimensionalObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A993F5220CEFB7A006FCE17 /* ThreeDimensionalObject.swift */; };
+		5A993F5520CEFE30006FCE17 /* ThreeDimensionalObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A993F5420CEFE30006FCE17 /* ThreeDimensionalObject.swift */; };
+		5A993F5720CEFE88006FCE17 /* ARObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A993F5620CEFE88006FCE17 /* ARObject.swift */; };
+		5A993F6220CF783F006FCE17 /* ar.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A993F6120CF783F006FCE17 /* ar.scnassets */; };
 		7F8202B083203FE3A353C19A /* Pods_Houz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6CCEAE5A7DD88B46789CABE /* Pods_Houz.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,7 +83,9 @@
 		5A5CE49D20C90CBA00097778 /* AppStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoryboard.swift; sourceTree = "<group>"; };
 		5A5CE49F20C969B500097778 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		5A993F4E20CDA4CB006FCE17 /* ARCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCameraViewController.swift; sourceTree = "<group>"; };
-		5A993F5220CEFB7A006FCE17 /* ThreeDimensionalObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDimensionalObject.swift; sourceTree = "<group>"; };
+		5A993F5420CEFE30006FCE17 /* ThreeDimensionalObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDimensionalObject.swift; sourceTree = "<group>"; };
+		5A993F5620CEFE88006FCE17 /* ARObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARObject.swift; sourceTree = "<group>"; };
+		5A993F6120CF783F006FCE17 /* ar.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = ar.scnassets; sourceTree = "<group>"; };
 		9112DB3461D8B07E662D90A9 /* Pods-Houz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Houz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Houz/Pods-Houz.debug.xcconfig"; sourceTree = "<group>"; };
 		F6CCEAE5A7DD88B46789CABE /* Pods_Houz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Houz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -179,7 +183,8 @@
 				435A5999209F522800599BB2 /* ARCategory.swift */,
 				435A599B209F523A00599BB2 /* ARSubcategory.swift */,
 				431D9A1A20AAAF96007BED9E /* ARProduct.swift */,
-				5A993F5220CEFB7A006FCE17 /* ThreeDimensionalObject.swift */,
+				5A993F5620CEFE88006FCE17 /* ARObject.swift */,
+				5A993F5420CEFE30006FCE17 /* ThreeDimensionalObject.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -297,6 +302,7 @@
 				43E9CFF6209DE23200AC2E52 /* ViewControllers */,
 				43E9CFF4209DE23200AC2E52 /* Extensions */,
 				43E9CFF5209DE23200AC2E52 /* Helpers */,
+				5A993F6120CF783F006FCE17 /* ar.scnassets */,
 				5A0E86C220998B61008B31A5 /* Assets.xcassets */,
 				5A0E86C720998B61008B31A5 /* Info.plist */,
 			);
@@ -371,6 +377,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A993F6220CF783F006FCE17 /* ar.scnassets in Resources */,
 				431D9A1520AAAE3F007BED9E /* ARProductView.xib in Resources */,
 				43E9D002209DE37900AC2E52 /* Profile.storyboard in Resources */,
 				43E9CFFE209DE32300AC2E52 /* HOUZFeed.storyboard in Resources */,
@@ -447,11 +454,12 @@
 				431D9A1920AAAF5B007BED9E /* ARProductCollectionViewCell.swift in Sources */,
 				435A599A209F522800599BB2 /* ARCategory.swift in Sources */,
 				5A0E86BC20998B60008B31A5 /* AppDelegate.swift in Sources */,
-				5A993F5320CEFB7A006FCE17 /* ThreeDimensionalObject.swift in Sources */,
 				435A59A6209F58EA00599BB2 /* ARCategoryView.swift in Sources */,
 				4365334320A2C06000E51EA1 /* SegueHandler.swift in Sources */,
+				5A993F5520CEFE30006FCE17 /* ThreeDimensionalObject.swift in Sources */,
 				4399D41B209F3AF500423AF3 /* BrowseARViewController.swift in Sources */,
 				5A5CE4A020C969B500097778 /* UIImageView.swift in Sources */,
+				5A993F5720CEFE88006FCE17 /* ARObject.swift in Sources */,
 				431D9A1720AAAE53007BED9E /* ARProductView.swift in Sources */,
 				5A5CE49C20C818AA00097778 /* ProductDetailViewController.swift in Sources */,
 				4399D41E209F3B3000423AF3 /* UIViewController.swift in Sources */,

@@ -43,8 +43,9 @@ class ProductDetailViewController: UIViewController {
     }
     
     @IBAction func testProduct(_ sender: Any) {
-        let vc = AppStoryboard.AR.instance.instantiateViewController(withIdentifier: "ARCameraViewControllerStoryboardID")
+        let vc = AppStoryboard.AR.instance.instantiateViewController(withIdentifier: "ARCameraViewControllerStoryboardID") as! ARCameraViewController
         vc.hero.modalAnimationType = .zoom
+        vc.threeDimensionalObject = ThreeDimensionalObject(name: "OK", location: "ar.scnassets/cherub/cherub.scn")
         present(vc, animated: true, completion: nil)
     }
     

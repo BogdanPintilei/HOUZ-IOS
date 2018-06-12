@@ -7,20 +7,21 @@
 //
 
 import UIKit
-import SceneKit
 
-class ThreeDimensionalObject: SCNNode {
+class ThreeDimensionalObject: NSObject {
 
-    func loadModel(location: String) {
-        guard let virtualObjectScene = SCNScene(named: location) else {
-            print("failed to load")
-            return
-        }
-        let wrapperNode = SCNNode()
-        for child in virtualObjectScene.rootNode.childNodes {
-            wrapperNode.addChildNode(child)
-        }
-        addChildNode(wrapperNode)
+    var name: String?
+    var location: String?
+    var image: UIImage?
+    
+    init(
+        name: String? = "",
+        location: String? = "",
+        image: UIImage? = UIImage()
+        ) {
+        self.name = name
+        self.location = location
+        self.image = image
     }
-
+    
 }
