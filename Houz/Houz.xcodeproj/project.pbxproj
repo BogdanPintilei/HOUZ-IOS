@@ -43,6 +43,10 @@
 		5A993F5520CEFE30006FCE17 /* ThreeDimensionalObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A993F5420CEFE30006FCE17 /* ThreeDimensionalObject.swift */; };
 		5A993F5720CEFE88006FCE17 /* ARObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A993F5620CEFE88006FCE17 /* ARObject.swift */; };
 		5A993F6220CF783F006FCE17 /* ar.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A993F6120CF783F006FCE17 /* ar.scnassets */; };
+		5A993F6520D02DB1006FCE17 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A993F6420D019B9006FCE17 /* WebViewViewController.swift */; };
+		5A993F6720D02EF3006FCE17 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A993F6620D02EF3006FCE17 /* LoadingView.swift */; };
+		5A993F6920D0353D006FCE17 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A993F6820D0353D006FCE17 /* SearchBar.swift */; };
+		5A993F6D20D03882006FCE17 /* HiddenNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A993F6C20D03882006FCE17 /* HiddenNavigationViewController.swift */; };
 		7F8202B083203FE3A353C19A /* Pods_Houz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6CCEAE5A7DD88B46789CABE /* Pods_Houz.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +90,10 @@
 		5A993F5420CEFE30006FCE17 /* ThreeDimensionalObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDimensionalObject.swift; sourceTree = "<group>"; };
 		5A993F5620CEFE88006FCE17 /* ARObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARObject.swift; sourceTree = "<group>"; };
 		5A993F6120CF783F006FCE17 /* ar.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = ar.scnassets; sourceTree = "<group>"; };
+		5A993F6420D019B9006FCE17 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
+		5A993F6620D02EF3006FCE17 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		5A993F6820D0353D006FCE17 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		5A993F6C20D03882006FCE17 /* HiddenNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenNavigationViewController.swift; sourceTree = "<group>"; };
 		9112DB3461D8B07E662D90A9 /* Pods-Houz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Houz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Houz/Pods-Houz.debug.xcconfig"; sourceTree = "<group>"; };
 		F6CCEAE5A7DD88B46789CABE /* Pods_Houz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Houz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -197,6 +205,7 @@
 				435A59A7209F5DB600599BB2 /* UIColor.swift */,
 				436EC423209FA5240032DE55 /* UIView.swift */,
 				4365334220A2C06000E51EA1 /* SegueHandler.swift */,
+				5A993F6820D0353D006FCE17 /* SearchBar.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -206,6 +215,8 @@
 			children = (
 				435A59AB209F643D00599BB2 /* LocalTestDataRepository.swift */,
 				5A5CE49D20C90CBA00097778 /* AppStoryboard.swift */,
+				5A993F6620D02EF3006FCE17 /* LoadingView.swift */,
+				5A993F6C20D03882006FCE17 /* HiddenNavigationViewController.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -214,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				4399D41C209F3AFA00423AF3 /* AR */,
+				5A993F6320D01999006FCE17 /* Various */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -307,6 +319,14 @@
 				5A0E86C720998B61008B31A5 /* Info.plist */,
 			);
 			path = Houz;
+			sourceTree = "<group>";
+		};
+		5A993F6320D01999006FCE17 /* Various */ = {
+			isa = PBXGroup;
+			children = (
+				5A993F6420D019B9006FCE17 /* WebViewViewController.swift */,
+			);
+			path = Various;
 			sourceTree = "<group>";
 		};
 		FA960DFE5BE4F4C316430978 /* Frameworks */ = {
@@ -422,11 +442,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Houz/Pods-Houz-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CHTCollectionViewWaterfallLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -442,6 +464,7 @@
 			files = (
 				5A5CE49E20C90CBA00097778 /* AppStoryboard.swift in Sources */,
 				4365334D20A2C75800E51EA1 /* ARSubcategoryViewController.swift in Sources */,
+				5A993F6D20D03882006FCE17 /* HiddenNavigationViewController.swift in Sources */,
 				4365334B20A2C63400E51EA1 /* ARSubcategoryTableViewCell.swift in Sources */,
 				431D9A1B20AAAF96007BED9E /* ARProduct.swift in Sources */,
 				431D9A1120AAADEF007BED9E /* ARProductViewController.swift in Sources */,
@@ -450,8 +473,11 @@
 				435A59AA209F62D100599BB2 /* ARCategoryCollectionViewCell.swift in Sources */,
 				5A993F4F20CDA4CB006FCE17 /* ARCameraViewController.swift in Sources */,
 				435A59A8209F5DB600599BB2 /* UIColor.swift in Sources */,
+				5A993F6520D02DB1006FCE17 /* WebViewViewController.swift in Sources */,
+				5A993F6720D02EF3006FCE17 /* LoadingView.swift in Sources */,
 				4365334620A2C18E00E51EA1 /* ARSubcategoryView.swift in Sources */,
 				431D9A1920AAAF5B007BED9E /* ARProductCollectionViewCell.swift in Sources */,
+				5A993F6920D0353D006FCE17 /* SearchBar.swift in Sources */,
 				435A599A209F522800599BB2 /* ARCategory.swift in Sources */,
 				5A0E86BC20998B60008B31A5 /* AppDelegate.swift in Sources */,
 				435A59A6209F58EA00599BB2 /* ARCategoryView.swift in Sources */,

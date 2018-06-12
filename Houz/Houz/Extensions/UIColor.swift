@@ -13,6 +13,8 @@ extension UIColor {
 
     struct AppColors {
         static let imageBackgroundImageTint = UIColor(red: 0, green: 0, blue: 0, alpha: 0.5)
+        static let red = UIColor(red: 1, green: 0.208, blue: 0.208, alpha: 1)
+        static let light_gray = UIColor(red: 0.921, green: 0.921, blue: 0.921, alpha: 1)
     }
-    
+
 }

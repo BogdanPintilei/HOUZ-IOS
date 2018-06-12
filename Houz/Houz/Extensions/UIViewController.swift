@@ -19,4 +19,26 @@ extension UIViewController {
         self.navigationController?.navigationBar.isTranslucent = true
     }
     
+    // MARK: SearchBar
+    
+    func addSearchBar(searchBar: UISearchBar, tintColor: UIColor, backgroundColor: UIColor, placeholder: String) {
+        searchBar.showsCancelButton = false
+        searchBar.placeholder = placeholder
+        searchBar.tintColor = tintColor
+        searchBar.returnKeyType = .done
+        searchBar.textField?.backgroundColor = backgroundColor
+        self.navigationItem.titleView = searchBar
+    }
+
+    // Mark: Alerts
+    
+    func showAlert(title: String? = nil, message: String? = nil, actions: [UIAlertAction], alertType: UIAlertControllerStyle? = .alert) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: alertType!)
+        for action in actions {
+            alertController.addAction(action)
+        }
+        alertController.view.tintColor = UIColor.black
+        self.present(alertController, animated: true, completion: nil)
+    }
+
 }

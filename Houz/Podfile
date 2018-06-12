@@ -5,6 +5,7 @@ use_frameworks!
 
 def use_pods
     pod 'CHTCollectionViewWaterfallLayout/Swift'
+    pod 'NVActivityIndicatorView'
     pod 'Hero'
 end
 
