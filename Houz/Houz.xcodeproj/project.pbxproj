@@ -47,6 +47,12 @@
 		5A993F6720D02EF3006FCE17 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A993F6620D02EF3006FCE17 /* LoadingView.swift */; };
 		5A993F6920D0353D006FCE17 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A993F6820D0353D006FCE17 /* SearchBar.swift */; };
 		5A993F6D20D03882006FCE17 /* HiddenNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A993F6C20D03882006FCE17 /* HiddenNavigationViewController.swift */; };
+		5A993F7820D25B98006FCE17 /* RandomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A993F7720D25B98006FCE17 /* RandomViewController.swift */; };
+		5A993F7B20D25E5D006FCE17 /* Houz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A993F7A20D25E5D006FCE17 /* Houz.swift */; };
+		5A993F8120D2DCF0006FCE17 /* RandomHouzView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A993F8020D2DCF0006FCE17 /* RandomHouzView.xib */; };
+		5A993F8420D2DD0B006FCE17 /* RandomHouzView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A993F8320D2DD0B006FCE17 /* RandomHouzView.swift */; };
+		5A993F8720D412B4006FCE17 /* RandomHouzOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A993F8620D412B4006FCE17 /* RandomHouzOverlayView.xib */; };
+		5A993F8920D412D4006FCE17 /* RandomHouzOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A993F8820D412D4006FCE17 /* RandomHouzOverlayView.swift */; };
 		7F8202B083203FE3A353C19A /* Pods_Houz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6CCEAE5A7DD88B46789CABE /* Pods_Houz.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +100,12 @@
 		5A993F6620D02EF3006FCE17 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		5A993F6820D0353D006FCE17 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		5A993F6C20D03882006FCE17 /* HiddenNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenNavigationViewController.swift; sourceTree = "<group>"; };
+		5A993F7720D25B98006FCE17 /* RandomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomViewController.swift; sourceTree = "<group>"; };
+		5A993F7A20D25E5D006FCE17 /* Houz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Houz.swift; sourceTree = "<group>"; };
+		5A993F8020D2DCF0006FCE17 /* RandomHouzView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RandomHouzView.xib; sourceTree = "<group>"; };
+		5A993F8320D2DD0B006FCE17 /* RandomHouzView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomHouzView.swift; sourceTree = "<group>"; };
+		5A993F8620D412B4006FCE17 /* RandomHouzOverlayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RandomHouzOverlayView.xib; sourceTree = "<group>"; };
+		5A993F8820D412D4006FCE17 /* RandomHouzOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomHouzOverlayView.swift; sourceTree = "<group>"; };
 		9112DB3461D8B07E662D90A9 /* Pods-Houz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Houz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Houz/Pods-Houz.debug.xcconfig"; sourceTree = "<group>"; };
 		F6CCEAE5A7DD88B46789CABE /* Pods_Houz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Houz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -188,11 +200,8 @@
 		43E9CFF3209DE23200AC2E52 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				435A5999209F522800599BB2 /* ARCategory.swift */,
-				435A599B209F523A00599BB2 /* ARSubcategory.swift */,
-				431D9A1A20AAAF96007BED9E /* ARProduct.swift */,
-				5A993F5620CEFE88006FCE17 /* ARObject.swift */,
-				5A993F5420CEFE30006FCE17 /* ThreeDimensionalObject.swift */,
+				5A993F7920D25E33006FCE17 /* AR */,
+				5A993F7A20D25E5D006FCE17 /* Houz.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -225,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				4399D41C209F3AFA00423AF3 /* AR */,
+				5A993F7620D25B71006FCE17 /* Random */,
 				5A993F6320D01999006FCE17 /* Various */,
 			);
 			path = ViewControllers;
@@ -279,6 +289,8 @@
 		43E9CFFC209DE23200AC2E52 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				5A993F7C20D2D932006FCE17 /* RandomHouzView */,
+				5A993F8520D4126B006FCE17 /* RandomHouzOverlayView */,
 				431D9A1220AAAE06007BED9E /* ARProductCell */,
 				4365334420A2C15400E51EA1 /* ARSubcategoryCell */,
 				435A599D209F585500599BB2 /* ARCategoryCell */,
@@ -327,6 +339,44 @@
 				5A993F6420D019B9006FCE17 /* WebViewViewController.swift */,
 			);
 			path = Various;
+			sourceTree = "<group>";
+		};
+		5A993F7620D25B71006FCE17 /* Random */ = {
+			isa = PBXGroup;
+			children = (
+				5A993F7720D25B98006FCE17 /* RandomViewController.swift */,
+			);
+			path = Random;
+			sourceTree = "<group>";
+		};
+		5A993F7920D25E33006FCE17 /* AR */ = {
+			isa = PBXGroup;
+			children = (
+				435A5999209F522800599BB2 /* ARCategory.swift */,
+				435A599B209F523A00599BB2 /* ARSubcategory.swift */,
+				431D9A1A20AAAF96007BED9E /* ARProduct.swift */,
+				5A993F5620CEFE88006FCE17 /* ARObject.swift */,
+				5A993F5420CEFE30006FCE17 /* ThreeDimensionalObject.swift */,
+			);
+			path = AR;
+			sourceTree = "<group>";
+		};
+		5A993F7C20D2D932006FCE17 /* RandomHouzView */ = {
+			isa = PBXGroup;
+			children = (
+				5A993F8020D2DCF0006FCE17 /* RandomHouzView.xib */,
+				5A993F8320D2DD0B006FCE17 /* RandomHouzView.swift */,
+			);
+			path = RandomHouzView;
+			sourceTree = "<group>";
+		};
+		5A993F8520D4126B006FCE17 /* RandomHouzOverlayView */ = {
+			isa = PBXGroup;
+			children = (
+				5A993F8620D412B4006FCE17 /* RandomHouzOverlayView.xib */,
+				5A993F8820D412D4006FCE17 /* RandomHouzOverlayView.swift */,
+			);
+			path = RandomHouzOverlayView;
 			sourceTree = "<group>";
 		};
 		FA960DFE5BE4F4C316430978 /* Frameworks */ = {
@@ -398,10 +448,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A993F6220CF783F006FCE17 /* ar.scnassets in Resources */,
+				5A993F8120D2DCF0006FCE17 /* RandomHouzView.xib in Resources */,
 				431D9A1520AAAE3F007BED9E /* ARProductView.xib in Resources */,
 				43E9D002209DE37900AC2E52 /* Profile.storyboard in Resources */,
 				43E9CFFE209DE32300AC2E52 /* HOUZFeed.storyboard in Resources */,
 				5A0E86C620998B61008B31A5 /* LaunchScreen.storyboard in Resources */,
+				5A993F8720D412B4006FCE17 /* RandomHouzOverlayView.xib in Resources */,
 				43E9D000209DE35D00AC2E52 /* Random.storyboard in Resources */,
 				4365334820A2C19600E51EA1 /* ARSubcategoryView.xib in Resources */,
 				5A0E86C320998B61008B31A5 /* Assets.xcassets in Resources */,
@@ -442,13 +494,17 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Houz/Pods-Houz-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/Koloda/Koloda.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CHTCollectionViewWaterfallLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Koloda.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -468,6 +524,7 @@
 				4365334B20A2C63400E51EA1 /* ARSubcategoryTableViewCell.swift in Sources */,
 				431D9A1B20AAAF96007BED9E /* ARProduct.swift in Sources */,
 				431D9A1120AAADEF007BED9E /* ARProductViewController.swift in Sources */,
+				5A993F7B20D25E5D006FCE17 /* Houz.swift in Sources */,
 				436EC424209FA5240032DE55 /* UIView.swift in Sources */,
 				435A599C209F523A00599BB2 /* ARSubcategory.swift in Sources */,
 				435A59AA209F62D100599BB2 /* ARCategoryCollectionViewCell.swift in Sources */,
@@ -476,6 +533,8 @@
 				5A993F6520D02DB1006FCE17 /* WebViewViewController.swift in Sources */,
 				5A993F6720D02EF3006FCE17 /* LoadingView.swift in Sources */,
 				4365334620A2C18E00E51EA1 /* ARSubcategoryView.swift in Sources */,
+				5A993F7820D25B98006FCE17 /* RandomViewController.swift in Sources */,
+				5A993F8420D2DD0B006FCE17 /* RandomHouzView.swift in Sources */,
 				431D9A1920AAAF5B007BED9E /* ARProductCollectionViewCell.swift in Sources */,
 				5A993F6920D0353D006FCE17 /* SearchBar.swift in Sources */,
 				435A599A209F522800599BB2 /* ARCategory.swift in Sources */,
@@ -485,6 +544,7 @@
 				5A993F5520CEFE30006FCE17 /* ThreeDimensionalObject.swift in Sources */,
 				4399D41B209F3AF500423AF3 /* BrowseARViewController.swift in Sources */,
 				5A5CE4A020C969B500097778 /* UIImageView.swift in Sources */,
+				5A993F8920D412D4006FCE17 /* RandomHouzOverlayView.swift in Sources */,
 				5A993F5720CEFE88006FCE17 /* ARObject.swift in Sources */,
 				431D9A1720AAAE53007BED9E /* ARProductView.swift in Sources */,
 				5A5CE49C20C818AA00097778 /* ProductDetailViewController.swift in Sources */,

@@ -1,26 +1,34 @@
 PODS:
   - CHTCollectionViewWaterfallLayout/Swift (0.9.7)
   - Hero (1.2.0)
+  - Koloda (4.3.1):
+    - pop (~> 1.0)
   - NVActivityIndicatorView (4.2.1):
     - NVActivityIndicatorView/Presenter (= 4.2.1)
   - NVActivityIndicatorView/Presenter (4.2.1)
+  - pop (1.0.10)
 
 DEPENDENCIES:
   - CHTCollectionViewWaterfallLayout/Swift
   - Hero
+  - Koloda (~> 4.3.1)
   - NVActivityIndicatorView
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - CHTCollectionViewWaterfallLayout
     - Hero
+    - Koloda
     - NVActivityIndicatorView
+    - pop
 
 SPEC CHECKSUMS:
   CHTCollectionViewWaterfallLayout: 9d11068fafecac106695bb5a5d6d0f738483b598
   Hero: 33dadf2cd1c98af71e213dcbc2902e6e03622a4e
+  Koloda: 0d39b2aa188ccd1fac48d752acaf9802e683c625
   NVActivityIndicatorView: 8068ba3ad39cb44cbaab25d89ff2546b3f092681
+  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
 
-PODFILE CHECKSUM: 31dae3d75eb07385e641144ca76187f556dc735f
+PODFILE CHECKSUM: 5a2923820ea9f1bbb8eeea9f88f1b6aa4060c92a
 
 COCOAPODS: 1.5.3

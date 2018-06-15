@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class CategoryRepository {
 
@@ -95,4 +96,24 @@ class ProductRepository {
         return products
     }
 
+}
+
+class RanadomRepository {
+
+    class func randomHOUZSESImages() -> [UIImage] {
+        let houses = [#imageLiteral(resourceName: "category_mockup_background"), #imageLiteral(resourceName: "category_mockup_background"), #imageLiteral(resourceName: "category_mockup_background"), #imageLiteral(resourceName: "category_mockup_background"), #imageLiteral(resourceName: "category_mockup_background"), #imageLiteral(resourceName: "category_mockup_background"), #imageLiteral(resourceName: "category_mockup_background"), #imageLiteral(resourceName: "category_mockup_background"), #imageLiteral(resourceName: "category_mockup_background"), #imageLiteral(resourceName: "category_mockup_background")]
+
+        return houses
+    }
+
+    class func randomHOUZES() -> [Houz] {
+        let houzes = [
+            Houz(id: 1, name: "mine", profileImageURL: "not_yet", profileImage: #imageLiteral(resourceName: "category_mockup_background")),
+            Houz(id: 2, name: "mine", profileImageURL: "not_yet", profileImage: #imageLiteral(resourceName: "category_mockup_background")),
+            Houz(id: 3, name: "mine", profileImageURL: "not_yet", profileImage: #imageLiteral(resourceName: "category_mockup_background")),
+            Houz(id: 4, name: "mine", profileImageURL: "not_yet", profileImage: #imageLiteral(resourceName: "category_mockup_background"))
+        ]
+        
+        return houzes
+    }
 }

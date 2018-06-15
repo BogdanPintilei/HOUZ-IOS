@@ -1,50 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Rd-mY-vK3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EcF-xY-WCw">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Random-->
         <scene sceneID="ZEv-Zd-jxe">
             <objects>
-                <viewController id="EcF-xY-WCw" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RandomStoryboardID" id="EcF-xY-WCw" customClass="RandomViewController" customModule="Houz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dfX-lG-oat">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="84V-4o-42s" customClass="KolodaView" customModule="Koloda">
+                                <rect key="frame" x="24" y="68" width="327" height="493"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="I05-bc-61E">
+                                <rect key="frame" x="67.666666666666686" y="601" width="240" height="88"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="128-jb-BgN">
+                                        <rect key="frame" x="0.0" y="0.0" width="88" height="88"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="88" id="cj4-tM-7iS"/>
+                                            <constraint firstAttribute="width" secondItem="128-jb-BgN" secondAttribute="height" multiplier="1:1" id="nSd-fR-5bj"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="ICON skip"/>
+                                        <state key="highlighted" image="ICON skip selected"/>
+                                        <connections>
+                                            <action selector="skipCard:" destination="EcF-xY-WCw" eventType="touchUpInside" id="Va6-he-bPj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKy-6C-86j">
+                                        <rect key="frame" x="152" y="0.0" width="88" height="88"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="qKy-6C-86j" secondAttribute="height" multiplier="1:1" id="UsL-vc-pQc"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="ICON check"/>
+                                        <state key="highlighted" image="ICON check selected"/>
+                                        <connections>
+                                            <action selector="likeCard:" destination="EcF-xY-WCw" eventType="touchUpInside" id="KJS-ef-lsf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="qKy-6C-86j" firstAttribute="height" secondItem="128-jb-BgN" secondAttribute="height" id="wZu-la-sPR"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="I05-bc-61E" firstAttribute="top" secondItem="84V-4o-42s" secondAttribute="bottom" constant="40" id="78R-sq-eTo"/>
+                            <constraint firstItem="d9R-i7-MHK" firstAttribute="trailing" secondItem="84V-4o-42s" secondAttribute="trailing" constant="24" id="BBO-ep-XRG"/>
+                            <constraint firstItem="d9R-i7-MHK" firstAttribute="bottom" secondItem="I05-bc-61E" secondAttribute="bottom" constant="40" id="L6R-Dy-Lqz"/>
+                            <constraint firstItem="I05-bc-61E" firstAttribute="centerX" secondItem="dfX-lG-oat" secondAttribute="centerX" id="SsM-XO-Akf"/>
+                            <constraint firstItem="84V-4o-42s" firstAttribute="leading" secondItem="d9R-i7-MHK" secondAttribute="leading" constant="24" id="d0k-Pm-yMt"/>
+                            <constraint firstItem="84V-4o-42s" firstAttribute="top" secondItem="d9R-i7-MHK" secondAttribute="top" constant="24" id="uDc-Vw-l57"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="d9R-i7-MHK"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Random" id="ORi-Oc-AVz"/>
                     <navigationItem key="navigationItem" id="bYz-rj-Zp3"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="kolodaView" destination="84V-4o-42s" id="CLs-QL-fEu"/>
+                        <outlet property="likeButton" destination="qKy-6C-86j" id="Ed4-fW-c54"/>
+                        <outlet property="skipButton" destination="128-jb-BgN" id="Iqa-Zt-BZR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I36-SV-Mej" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="948" y="113.79310344827587"/>
-        </scene>
-        <!--Random-->
-        <scene sceneID="hUK-gO-dNu">
-            <objects>
-                <navigationController storyboardIdentifier="RandomStoryboardID" automaticallyAdjustsScrollViewInsets="NO" id="9Rd-mY-vK3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Random" id="Lk8-hx-rKS"/>
-                    <toolbarItems/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YAz-7d-sbx">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="EcF-xY-WCw" kind="relationship" relationship="rootViewController" id="Fyc-iR-edR"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pv4-Dg-w7R" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="8.8000000000000007" y="113.79310344827587"/>
+            <point key="canvasLocation" x="712.79999999999995" y="110.83743842364532"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ICON check" width="42" height="42"/>
+        <image name="ICON check selected" width="42" height="42"/>
+        <image name="ICON skip" width="42" height="42"/>
+        <image name="ICON skip selected" width="42" height="42"/>
+    </resources>
 </document>
