@@ -14,10 +14,13 @@
         <scene sceneID="clT-BE-hh5">
             <objects>
                 <tabBarController id="LMd-nJ-tJk" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4pV-75-v8m">
+                    <tabBar key="tabBar" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4pV-75-v8m">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="useGlobalCoordinateSpace useNoSnapshot translate(0, 64) zPosition(10)"/>
                         </userDefinedRuntimeAttributes>
@@ -38,7 +41,10 @@
         <scene sceneID="1VT-JP-zr9">
             <objects>
                 <viewControllerPlaceholder storyboardName="HOUZFeed" referencedIdentifier="FeedStoryboardID" id="PX2-tI-IkE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="jlf-1w-wBr"/>
+                    <tabBarItem key="tabBarItem" title="" image="ICON feed" id="jlf-1w-wBr">
+                        <inset key="imageInsets" minX="0.0" minY="4" maxX="0.0" maxY="-4"/>
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7jd-3B-Fhk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -48,7 +54,9 @@
         <scene sceneID="jyN-SK-6Jg">
             <objects>
                 <viewControllerPlaceholder storyboardName="Profile" referencedIdentifier="ProfileStoryboardID" id="85S-Cs-PlH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Jwx-sy-DZz"/>
+                    <tabBarItem key="tabBarItem" title="" image="ICON home" id="Jwx-sy-DZz">
+                        <inset key="imageInsets" minX="0.0" minY="4" maxX="0.0" maxY="-4"/>
+                    </tabBarItem>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zkg-CY-Ked" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -58,7 +66,9 @@
         <scene sceneID="Lus-I4-riN">
             <objects>
                 <viewControllerPlaceholder storyboardName="AR" referencedIdentifier="ARStoryboardID" id="ggo-gy-nqc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="MJ7-iW-gJW"/>
+                    <tabBarItem key="tabBarItem" title="" image="ICON products" id="MJ7-iW-gJW">
+                        <inset key="imageInsets" minX="0.0" minY="4" maxX="0.0" maxY="-4"/>
+                    </tabBarItem>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h3P-JZ-gsf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -68,7 +78,10 @@
         <scene sceneID="EYr-Er-xmf">
             <objects>
                 <viewControllerPlaceholder storyboardName="Create" referencedIdentifier="CreateStoryboardID" id="P8V-lf-hLR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Ic3-cB-F4G"/>
+                    <tabBarItem key="tabBarItem" title="" image="ICON create" id="Ic3-cB-F4G">
+                        <inset key="imageInsets" minX="0.0" minY="4" maxX="0.0" maxY="-4"/>
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nAl-ep-0WR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -78,7 +91,9 @@
         <scene sceneID="K8t-he-JLy">
             <objects>
                 <viewControllerPlaceholder storyboardName="Random" referencedIdentifier="RandomStoryboardID" id="vJg-Gj-Duq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Ke2-6h-c8g"/>
+                    <tabBarItem key="tabBarItem" title="" image="ICON search" id="Ke2-6h-c8g">
+                        <inset key="imageInsets" minX="0.0" minY="4" maxX="0.0" maxY="-4"/>
+                    </tabBarItem>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gIP-nu-nM7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -87,7 +102,7 @@
         <!--Web View View Controller-->
         <scene sceneID="NOZ-E6-j8a">
             <objects>
-                <viewController id="Rxe-JP-Sox" customClass="WebViewViewController" customModule="Favez" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Rxe-JP-Sox" customClass="WebViewViewController" customModule="Houz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7v4-le-VFz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -129,7 +144,6 @@
         <!--Hidden Navigation View Controller-->
         <scene sceneID="3Wb-Y4-mmA">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YrO-Ya-OVZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController storyboardIdentifier="WebViewScreenStoryboardID" automaticallyAdjustsScrollViewInsets="NO" id="x2X-KQ-Ps0" customClass="HiddenNavigationViewController" customModule="Houz" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8WI-98-uH5">
@@ -146,11 +160,17 @@
                         <segue destination="Rxe-JP-Sox" kind="relationship" relationship="rootViewController" id="tdm-vA-xGJ"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YrO-Ya-OVZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-727" y="926"/>
         </scene>
     </scenes>
     <resources>
         <image name="ICON close" width="30" height="30"/>
+        <image name="ICON create" width="42" height="42"/>
+        <image name="ICON feed" width="25" height="25"/>
+        <image name="ICON home" width="25" height="25"/>
+        <image name="ICON products" width="25" height="25"/>
+        <image name="ICON search" width="25" height="25"/>
     </resources>
 </document>

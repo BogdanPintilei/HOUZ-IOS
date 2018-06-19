@@ -12,7 +12,7 @@ import UIKit
 class LoadingView: UIView {
     
     static let indicatorView = NVActivityIndicatorView(frame: CGRect.zero, type: .circleStrokeSpin
-        , color: .gray, padding: 20)
+        , color: .black, padding: 20)
     
     static let win: UIWindow = UIApplication.shared.delegate!.window!!
     

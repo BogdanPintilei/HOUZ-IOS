@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WHs-g8-eEz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WHs-g8-eEz">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -26,11 +26,13 @@
             </objects>
             <point key="canvasLocation" x="948" y="113.79310344827587"/>
         </scene>
-        <!--Create-->
+        <!--Navigation Controller-->
         <scene sceneID="XEL-W1-QxH">
             <objects>
                 <navigationController storyboardIdentifier="CreateStoryboardID" automaticallyAdjustsScrollViewInsets="NO" id="WHs-g8-eEz" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Create" id="7tm-tA-tc9"/>
+                    <tabBarItem key="tabBarItem" title="" image="ICON create" id="7tm-tA-tc9">
+                        <inset key="imageInsets" minX="0.0" minY="8" maxX="0.0" maxY="-8"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="krl-u4-Kqp">
@@ -47,4 +49,7 @@
             <point key="canvasLocation" x="8.8000000000000007" y="113.79310344827587"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ICON create" width="42" height="42"/>
+    </resources>
 </document>

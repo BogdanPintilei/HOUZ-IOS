@@ -591,11 +591,13 @@
             </objects>
             <point key="canvasLocation" x="4197.6000000000004" y="479.55665024630542"/>
         </scene>
-        <!--AR-->
+        <!--Navigation Controller-->
         <scene sceneID="VPR-Rp-TmX">
             <objects>
                 <navigationController storyboardIdentifier="ARStoryboardID" automaticallyAdjustsScrollViewInsets="NO" id="fmZ-tC-s03" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="AR" id="TBi-2Y-7XN"/>
+                    <tabBarItem key="tabBarItem" title="" image="ICON products" id="TBi-2Y-7XN">
+                        <inset key="imageInsets" minX="0.0" minY="4" maxX="0.0" maxY="-4"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="UMm-p5-dda">
@@ -624,6 +626,7 @@
         <image name="ICON heart" width="48" height="39"/>
         <image name="ICON left arrow" width="20" height="32"/>
         <image name="ICON monetized" width="32" height="32"/>
+        <image name="ICON products" width="25" height="25"/>
         <image name="ICON right arrow" width="20" height="32"/>
         <image name="category_mockup_background" width="245" height="184"/>
     </resources>

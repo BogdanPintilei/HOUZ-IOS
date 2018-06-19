@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Random-->
+        <!--Random View Controller-->
         <scene sceneID="ZEv-Zd-jxe">
             <objects>
                 <viewController storyboardIdentifier="RandomStoryboardID" id="EcF-xY-WCw" customClass="RandomViewController" customModule="Houz" customModuleProvider="target" sceneMemberID="viewController">
@@ -68,7 +68,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="d9R-i7-MHK"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Random" id="ORi-Oc-AVz"/>
+                    <tabBarItem key="tabBarItem" title="" image="ICON search" id="ORi-Oc-AVz">
+                        <inset key="imageInsets" minX="0.0" minY="4" maxX="0.0" maxY="-4"/>
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="bYz-rj-Zp3"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -85,6 +88,7 @@
     <resources>
         <image name="ICON check" width="42" height="42"/>
         <image name="ICON check selected" width="42" height="42"/>
+        <image name="ICON search" width="25" height="25"/>
         <image name="ICON skip" width="42" height="42"/>
         <image name="ICON skip selected" width="42" height="42"/>
     </resources>

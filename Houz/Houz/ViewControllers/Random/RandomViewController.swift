@@ -22,7 +22,6 @@ class RandomViewController: UIViewController {
         super.viewDidLoad()
         setDelegates()
         getHouzes()
-        customizeUI()
     }
 
     @IBAction func skipCard(_ sender: Any) {
@@ -39,11 +38,10 @@ class RandomViewController: UIViewController {
     }
 
     private func getHouzes() {
-        houzes = RanadomRepository.randomHOUZES()
+        LoadingView.startLoadingAnimation()
+        houzes += RanadomRepository.randomHOUZES()
         kolodaView.reloadData()
-    }
-
-    private func customizeUI() {
+        LoadingView.stopLoadingAnimation()
     }
     
     private func setDefaultTintForButtons() {
@@ -58,16 +56,16 @@ class RandomViewController: UIViewController {
 extension RandomViewController: KolodaViewDelegate {
 
     func kolodaDidRunOutOfCards(_ koloda: KolodaView) {
-        koloda.reloadData()
+        getHouzes()
     }
     
     func koloda(_ koloda: KolodaView, draggedCardWithPercentage finishPercentage: CGFloat, in direction: SwipeResultDirection) {
         switch direction {
         case .left:
-            skipButton.tintColor = UIColor(red: 0.90, green: 0, blue: 0, alpha: finishPercentage)
+            skipButton.tintColor = UIColor.AppColors.red
             likeButton.tintColor = .black
         case.right:
-            likeButton.tintColor = UIColor(red: 0, green: 0.56, blue: 0, alpha: finishPercentage)
+            likeButton.tintColor = UIColor.AppColors.green
             skipButton.tintColor = .black
         default:
             break
@@ -86,8 +84,7 @@ extension RandomViewController: KolodaViewDelegate {
 extension RandomViewController: KolodaViewDataSource {
 
     func kolodaNumberOfCards(_ koloda: KolodaView) -> Int {
-        print("number of houzes \(houzes.count)")
-        return 1000
+        return houzes.count
     }
 
     func kolodaSpeedThatCardShouldDrag(_ koloda: KolodaView) -> DragSpeed {
@@ -96,7 +93,7 @@ extension RandomViewController: KolodaViewDataSource {
 
     func koloda(_ koloda: KolodaView, viewForCardAt index: Int) -> UIView {
         let view = RandomHouzView()
-        view.backgroundColor = .red
+        view.houz = houzes[index]
         return view
     }
 

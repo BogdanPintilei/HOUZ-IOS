@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RandomHouzView" customModule="Houz" customModuleProvider="target">
             <connections>
+                <outlet property="houzImageView" destination="rVr-3x-3Kr" id="Azx-oV-h2T"/>
                 <outlet property="titleLabel" destination="2hT-um-8F8" id="qSX-Fw-JJE"/>
                 <outlet property="view" destination="iN0-l3-epB" id="Ejc-gg-mE1"/>
             </connections>
@@ -21,22 +22,60 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="445"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hT-um-8F8">
-                    <rect key="frame" x="8" y="392" width="359" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="category_mockup_background" translatesAutoresizingMaskIntoConstraints="NO" id="rVr-3x-3Kr">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="445"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ojG-Kz-bK4">
+                    <rect key="frame" x="8" y="384" width="359" height="53"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Houz Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hT-um-8F8">
+                            <rect key="frame" x="16" y="12" width="327" height="29"/>
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="120" id="1XA-ZY-nFU"/>
+                        <constraint firstAttribute="bottom" secondItem="2hT-um-8F8" secondAttribute="bottom" constant="12" id="7ZB-uN-fNa"/>
+                        <constraint firstItem="2hT-um-8F8" firstAttribute="top" secondItem="ojG-Kz-bK4" secondAttribute="top" constant="12" id="IQ4-LC-e8G"/>
+                        <constraint firstItem="2hT-um-8F8" firstAttribute="leading" secondItem="ojG-Kz-bK4" secondAttribute="leading" constant="16" id="U6u-ek-HZC"/>
+                        <constraint firstAttribute="trailing" secondItem="2hT-um-8F8" secondAttribute="trailing" constant="16" id="YZG-JV-elS"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
             </subviews>
-            <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="2hT-um-8F8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="30H-Ve-C5i"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="2hT-um-8F8" secondAttribute="bottom" constant="32" id="GJJ-6Q-ama"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="2hT-um-8F8" secondAttribute="trailing" constant="8" id="tEk-Vs-c92"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ojG-Kz-bK4" secondAttribute="trailing" constant="8" id="10e-s7-wQe"/>
+                <constraint firstItem="rVr-3x-3Kr" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="8Oo-ND-Zzn"/>
+                <constraint firstItem="rVr-3x-3Kr" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="9pO-iA-tAp"/>
+                <constraint firstItem="rVr-3x-3Kr" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="XTx-97-emj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ojG-Kz-bK4" secondAttribute="bottom" constant="8" id="sd4-rs-NzC"/>
+                <constraint firstItem="rVr-3x-3Kr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="vx8-24-AgC"/>
+                <constraint firstItem="ojG-Kz-bK4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="zzn-gN-JMS"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <point key="canvasLocation" x="87.5" y="42.5"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="16"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="172.5" y="55.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="category_mockup_background" width="368" height="276"/>
+    </resources>
 </document>
