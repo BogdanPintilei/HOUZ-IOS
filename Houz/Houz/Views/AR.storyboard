@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Suf-Ui-kEg">
-                                <rect key="frame" x="8" y="0.0" width="359" height="729"/>
+                                <rect key="frame" x="8" y="140" width="359" height="589"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="m0b-gk-Ko1">
                                     <size key="itemSize" width="149" height="176"/>
@@ -64,8 +64,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Suf-Ui-kEg" firstAttribute="top" secondItem="xvK-i1-mTM" secondAttribute="top" id="005-XX-Q2S"/>
                             <constraint firstItem="i69-7N-jiN" firstAttribute="trailing" secondItem="Suf-Ui-kEg" secondAttribute="trailing" constant="8" id="ayx-xB-uQd"/>
+                            <constraint firstItem="Suf-Ui-kEg" firstAttribute="top" secondItem="i69-7N-jiN" secondAttribute="top" id="fUi-MZ-Q60"/>
                             <constraint firstItem="Suf-Ui-kEg" firstAttribute="leading" secondItem="i69-7N-jiN" secondAttribute="leading" constant="8" id="n2f-1b-Wn7"/>
                             <constraint firstItem="i69-7N-jiN" firstAttribute="bottom" secondItem="Suf-Ui-kEg" secondAttribute="bottom" id="xHr-rz-zdn"/>
                         </constraints>
@@ -92,6 +92,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zSt-yi-Jor">
+                                <rect key="frame" x="0.0" y="140" width="375" height="589"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="88" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ma3-bD-jql">
                                 <rect key="frame" x="0.0" y="140" width="375" height="589"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -129,9 +133,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Ma3-bD-jql" firstAttribute="leading" secondItem="e6a-w1-MZx" secondAttribute="leading" id="4w7-bE-CaA"/>
+                            <constraint firstItem="zSt-yi-Jor" firstAttribute="top" secondItem="oGZ-sh-Mla" secondAttribute="top" id="Ecl-nt-iX0"/>
                             <constraint firstAttribute="trailing" secondItem="Ma3-bD-jql" secondAttribute="trailing" id="GPB-u2-Ht3"/>
                             <constraint firstItem="oGZ-sh-Mla" firstAttribute="bottom" secondItem="Ma3-bD-jql" secondAttribute="bottom" id="QPC-Qa-EWH"/>
+                            <constraint firstItem="oGZ-sh-Mla" firstAttribute="bottom" secondItem="zSt-yi-Jor" secondAttribute="bottom" id="XGE-YD-L08"/>
+                            <constraint firstItem="oGZ-sh-Mla" firstAttribute="trailing" secondItem="zSt-yi-Jor" secondAttribute="trailing" id="ffc-BJ-IKE"/>
                             <constraint firstItem="Ma3-bD-jql" firstAttribute="top" secondItem="oGZ-sh-Mla" secondAttribute="top" id="u7U-E9-usJ"/>
+                            <constraint firstItem="zSt-yi-Jor" firstAttribute="leading" secondItem="oGZ-sh-Mla" secondAttribute="leading" id="zy4-w6-H0f"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="oGZ-sh-Mla"/>
                     </view>
@@ -154,8 +162,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FT2-NQ-3oD">
+                                <rect key="frame" x="0.0" y="140" width="375" height="589"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lFz-fh-qF6">
-                                <rect key="frame" x="8" y="88" width="359" height="641"/>
+                                <rect key="frame" x="8" y="140" width="359" height="589"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="8" id="xho-a3-c1x">
                                     <size key="itemSize" width="166" height="226"/>
@@ -197,9 +209,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="lFz-fh-qF6" firstAttribute="leading" secondItem="75w-51-s0R" secondAttribute="leading" constant="8" id="N6l-Qh-tXz"/>
+                            <constraint firstItem="FT2-NQ-3oD" firstAttribute="top" secondItem="75w-51-s0R" secondAttribute="top" id="c6r-MG-n5X"/>
                             <constraint firstItem="75w-51-s0R" firstAttribute="trailing" secondItem="lFz-fh-qF6" secondAttribute="trailing" constant="8" id="dVo-2A-faE"/>
+                            <constraint firstItem="FT2-NQ-3oD" firstAttribute="leading" secondItem="75w-51-s0R" secondAttribute="leading" id="deC-6j-leZ"/>
                             <constraint firstItem="lFz-fh-qF6" firstAttribute="top" secondItem="75w-51-s0R" secondAttribute="top" id="hun-7a-QCt"/>
+                            <constraint firstItem="FT2-NQ-3oD" firstAttribute="trailing" secondItem="75w-51-s0R" secondAttribute="trailing" id="iWE-Cs-5cC"/>
                             <constraint firstItem="75w-51-s0R" firstAttribute="bottom" secondItem="lFz-fh-qF6" secondAttribute="bottom" id="muJ-if-SHe"/>
+                            <constraint firstItem="75w-51-s0R" firstAttribute="bottom" secondItem="FT2-NQ-3oD" secondAttribute="bottom" id="o2x-sA-Eri"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="75w-51-s0R"/>
                     </view>
@@ -631,6 +647,6 @@
         <image name="category_mockup_background" width="245" height="184"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="125-BJ-3aN"/>
+        <segue reference="Zmi-PY-WoB"/>
     </inferredMetricsTieBreakers>
 </document>

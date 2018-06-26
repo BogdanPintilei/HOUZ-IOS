@@ -18,10 +18,10 @@ class ProductDetailViewController: UIViewController {
     var heroID: String? = ""
     var productTitleLabelHeroID: String? = ""
 
-    override var prefersStatusBarHidden: Bool {
-        return true
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         customizeUI()

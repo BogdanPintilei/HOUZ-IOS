@@ -75,20 +75,6 @@ extension BrowseARViewController: UICollectionViewDelegate, UICollectionViewData
         }
     }
 
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let offset = scrollView.contentOffset.y / 150
-        offset > -1 ? changeNavigationBar(offset: 1) : changeNavigationBar(offset: offset)
-    }
-
-    private func changeNavigationBar(offset: CGFloat) {
-        let backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: offset)
-        let textColor = UIColor(red: 0, green: 0, blue: 0, alpha: offset)
-        navigationController?.navigationBar.backgroundColor = backgroundColor
-        let textAttributes = [NSAttributedStringKey.foregroundColor: textColor]
-        navigationController?.navigationBar.titleTextAttributes = textAttributes
-        UIApplication.shared.statusBarView?.backgroundColor = backgroundColor
-    }
-
 }
 
 extension BrowseARViewController: CHTCollectionViewDelegateWaterfallLayout {
