@@ -76,7 +76,7 @@ extension RandomViewController: KolodaViewDelegate {
         setDefaultTintForButtons()
         return true
     }
-
+    
 }
 
 // MARK: KolodaView DataSource
@@ -100,5 +100,5 @@ extension RandomViewController: KolodaViewDataSource {
     func koloda(_ koloda: KolodaView, viewForCardOverlayAt index: Int) -> OverlayView? {
         return Bundle.main.loadNibNamed("RandomHouzOverlayView", owner: self, options: nil)?[0] as? OverlayView
     }
-
+    
 }
