@@ -12,15 +12,15 @@ import UIKit
 extension UIViewController {
 
     // MARK: Navigation controller helper methods
-    
+
     func setNavigationBarTransparent() {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = true
     }
-    
+
     // MARK: SearchBar
-    
+
     func addSearchBar(searchBar: UISearchBar, tintColor: UIColor, backgroundColor: UIColor, placeholder: String) {
         searchBar.showsCancelButton = false
         searchBar.placeholder = placeholder
@@ -31,7 +31,7 @@ extension UIViewController {
     }
 
     // Mark: Alerts
-    
+
     func showAlert(title: String? = nil, message: String? = nil, actions: [UIAlertAction], alertType: UIAlertControllerStyle? = .alert) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: alertType!)
         for action in actions {

@@ -31,6 +31,7 @@ class ARProductViewController: UIViewController {
     private func cellLabelHeroID(id: Int) -> String {
         return "cell_label\(id)"
     }
+    
 }
 
 extension ARProductViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {

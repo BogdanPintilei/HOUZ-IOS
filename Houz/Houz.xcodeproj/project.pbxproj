@@ -53,6 +53,7 @@
 		5A993F8420D2DD0B006FCE17 /* RandomHouzView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A993F8320D2DD0B006FCE17 /* RandomHouzView.swift */; };
 		5A993F8720D412B4006FCE17 /* RandomHouzOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A993F8620D412B4006FCE17 /* RandomHouzOverlayView.xib */; };
 		5A993F8920D412D4006FCE17 /* RandomHouzOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A993F8820D412D4006FCE17 /* RandomHouzOverlayView.swift */; };
+		5AD941A720E26F2F009A89EE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD941A620E26F2F009A89EE /* ProfileViewController.swift */; };
 		7F8202B083203FE3A353C19A /* Pods_Houz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6CCEAE5A7DD88B46789CABE /* Pods_Houz.framework */; };
 /* End PBXBuildFile section */
 
@@ -106,6 +107,7 @@
 		5A993F8320D2DD0B006FCE17 /* RandomHouzView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomHouzView.swift; sourceTree = "<group>"; };
 		5A993F8620D412B4006FCE17 /* RandomHouzOverlayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RandomHouzOverlayView.xib; sourceTree = "<group>"; };
 		5A993F8820D412D4006FCE17 /* RandomHouzOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomHouzOverlayView.swift; sourceTree = "<group>"; };
+		5AD941A620E26F2F009A89EE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		9112DB3461D8B07E662D90A9 /* Pods-Houz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Houz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Houz/Pods-Houz.debug.xcconfig"; sourceTree = "<group>"; };
 		F6CCEAE5A7DD88B46789CABE /* Pods_Houz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Houz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -235,6 +237,7 @@
 			children = (
 				4399D41C209F3AFA00423AF3 /* AR */,
 				5A993F7620D25B71006FCE17 /* Random */,
+				5AD941A520E26F10009A89EE /* Profile */,
 				5A993F6320D01999006FCE17 /* Various */,
 			);
 			path = ViewControllers;
@@ -377,6 +380,14 @@
 				5A993F8820D412D4006FCE17 /* RandomHouzOverlayView.swift */,
 			);
 			path = RandomHouzOverlayView;
+			sourceTree = "<group>";
+		};
+		5AD941A520E26F10009A89EE /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				5AD941A620E26F2F009A89EE /* ProfileViewController.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		FA960DFE5BE4F4C316430978 /* Frameworks */ = {
@@ -524,6 +535,7 @@
 				4365334B20A2C63400E51EA1 /* ARSubcategoryTableViewCell.swift in Sources */,
 				431D9A1B20AAAF96007BED9E /* ARProduct.swift in Sources */,
 				431D9A1120AAADEF007BED9E /* ARProductViewController.swift in Sources */,
+				5AD941A720E26F2F009A89EE /* ProfileViewController.swift in Sources */,
 				5A993F7B20D25E5D006FCE17 /* Houz.swift in Sources */,
 				436EC424209FA5240032DE55 /* UIView.swift in Sources */,
 				435A599C209F523A00599BB2 /* ARSubcategory.swift in Sources */,

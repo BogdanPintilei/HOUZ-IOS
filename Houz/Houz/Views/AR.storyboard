@@ -220,6 +220,9 @@
                         <viewLayoutGuide key="safeArea" id="75w-51-s0R"/>
                     </view>
                     <navigationItem key="navigationItem" title="Subcategory Title" largeTitleDisplayMode="always" id="zuF-d5-x7z"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cSp-ab-Nby" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
