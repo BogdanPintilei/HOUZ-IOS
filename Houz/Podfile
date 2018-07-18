@@ -8,6 +8,7 @@ def use_pods
     pod 'NVActivityIndicatorView'
     pod 'Hero'
     pod 'Koloda', '~> 4.3.1'
+    pod 'XLPagerTabStrip', '~> 8.0'
 end
 
 target 'Houz' do

@@ -7,29 +7,26 @@
 //
 
 import UIKit
+import XLPagerTabStrip
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: ButtonBarPagerTabStripViewController {
+
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
 
     override func viewDidLoad() {
+        self.customizeButtonBarViewUI()
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+    override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {
 
-    /*
-    // MARK: - Navigation
+        let galleryVC = AppStoryboard.Profile.instance.instantiateViewController(withIdentifier: StoryboardID.galleryVCID)
+        let profilePostsVC = AppStoryboard.Profile.instance.instantiateViewController(withIdentifier: StoryboardID.profilePostsVC)
+        let likedHistoryVC = AppStoryboard.Profile.instance.instantiateViewController(withIdentifier: StoryboardID.likedHistoryVC)
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        return [galleryVC, profilePostsVC, likedHistoryVC]
     }
-    */
 
 }

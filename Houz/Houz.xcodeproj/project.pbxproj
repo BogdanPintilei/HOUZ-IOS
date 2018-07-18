@@ -39,6 +39,11 @@
 		5A5CE49C20C818AA00097778 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CE49B20C818AA00097778 /* ProductDetailViewController.swift */; };
 		5A5CE49E20C90CBA00097778 /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CE49D20C90CBA00097778 /* AppStoryboard.swift */; };
 		5A5CE4A020C969B500097778 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CE49F20C969B500097778 /* UIImageView.swift */; };
+		5A894CB920FF8ACB00F0D3DC /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A894CB820FF8ACB00F0D3DC /* ProfileViewModel.swift */; };
+		5A894CBB20FFA88B00F0D3DC /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A894CBA20FFA88B00F0D3DC /* GalleryViewController.swift */; };
+		5A894CBE20FFA90300F0D3DC /* LikedHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A894CBD20FFA90300F0D3DC /* LikedHistoryViewController.swift */; };
+		5A894CC020FFA94F00F0D3DC /* ProfilePostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A894CBF20FFA94F00F0D3DC /* ProfilePostsViewController.swift */; };
+		5A894CC220FFB2F100F0D3DC /* XLPagerTabStrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A894CC120FFB2F100F0D3DC /* XLPagerTabStrip.swift */; };
 		5A993F4F20CDA4CB006FCE17 /* ARCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A993F4E20CDA4CB006FCE17 /* ARCameraViewController.swift */; };
 		5A993F5520CEFE30006FCE17 /* ThreeDimensionalObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A993F5420CEFE30006FCE17 /* ThreeDimensionalObject.swift */; };
 		5A993F5720CEFE88006FCE17 /* ARObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A993F5620CEFE88006FCE17 /* ARObject.swift */; };
@@ -93,6 +98,11 @@
 		5A5CE49B20C818AA00097778 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		5A5CE49D20C90CBA00097778 /* AppStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoryboard.swift; sourceTree = "<group>"; };
 		5A5CE49F20C969B500097778 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		5A894CB820FF8ACB00F0D3DC /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		5A894CBA20FFA88B00F0D3DC /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		5A894CBD20FFA90300F0D3DC /* LikedHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedHistoryViewController.swift; sourceTree = "<group>"; };
+		5A894CBF20FFA94F00F0D3DC /* ProfilePostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePostsViewController.swift; sourceTree = "<group>"; };
+		5A894CC120FFB2F100F0D3DC /* XLPagerTabStrip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XLPagerTabStrip.swift; sourceTree = "<group>"; };
 		5A993F4E20CDA4CB006FCE17 /* ARCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCameraViewController.swift; sourceTree = "<group>"; };
 		5A993F5420CEFE30006FCE17 /* ThreeDimensionalObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDimensionalObject.swift; sourceTree = "<group>"; };
 		5A993F5620CEFE88006FCE17 /* ARObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARObject.swift; sourceTree = "<group>"; };
@@ -217,6 +227,7 @@
 				436EC423209FA5240032DE55 /* UIView.swift */,
 				4365334220A2C06000E51EA1 /* SegueHandler.swift */,
 				5A993F6820D0353D006FCE17 /* SearchBar.swift */,
+				5A894CC120FFB2F100F0D3DC /* XLPagerTabStrip.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -277,14 +288,8 @@
 		43E9CFFB209DE23200AC2E52 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5A894CB720FF86B000F0D3DC /* Storyboards */,
 				43E9CFFC209DE23200AC2E52 /* Cells */,
-				5A0E86C420998B61008B31A5 /* LaunchScreen.storyboard */,
-				5A0E86BF20998B60008B31A5 /* Main.storyboard */,
-				43E9CFFD209DE32300AC2E52 /* HOUZFeed.storyboard */,
-				43E9CFFF209DE35D00AC2E52 /* Random.storyboard */,
-				43E9D003209DE3AA00AC2E52 /* Create.storyboard */,
-				43E9D005209DE3D200AC2E52 /* AR.storyboard */,
-				43E9D001209DE37900AC2E52 /* Profile.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -334,6 +339,30 @@
 				5A0E86C720998B61008B31A5 /* Info.plist */,
 			);
 			path = Houz;
+			sourceTree = "<group>";
+		};
+		5A894CB720FF86B000F0D3DC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5A0E86C420998B61008B31A5 /* LaunchScreen.storyboard */,
+				5A0E86BF20998B60008B31A5 /* Main.storyboard */,
+				43E9CFFD209DE32300AC2E52 /* HOUZFeed.storyboard */,
+				43E9CFFF209DE35D00AC2E52 /* Random.storyboard */,
+				43E9D003209DE3AA00AC2E52 /* Create.storyboard */,
+				43E9D005209DE3D200AC2E52 /* AR.storyboard */,
+				43E9D001209DE37900AC2E52 /* Profile.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5A894CBC20FFA8A400F0D3DC /* ProfileSections */ = {
+			isa = PBXGroup;
+			children = (
+				5A894CBA20FFA88B00F0D3DC /* GalleryViewController.swift */,
+				5A894CBD20FFA90300F0D3DC /* LikedHistoryViewController.swift */,
+				5A894CBF20FFA94F00F0D3DC /* ProfilePostsViewController.swift */,
+			);
+			path = ProfileSections;
 			sourceTree = "<group>";
 		};
 		5A993F6320D01999006FCE17 /* Various */ = {
@@ -386,6 +415,8 @@
 			isa = PBXGroup;
 			children = (
 				5AD941A620E26F2F009A89EE /* ProfileViewController.swift */,
+				5A894CB820FF8ACB00F0D3DC /* ProfileViewModel.swift */,
+				5A894CBC20FFA8A400F0D3DC /* ProfileSections */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -507,6 +538,7 @@
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/Koloda/Koloda.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
 				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -515,6 +547,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Koloda.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -532,9 +565,11 @@
 				5A5CE49E20C90CBA00097778 /* AppStoryboard.swift in Sources */,
 				4365334D20A2C75800E51EA1 /* ARSubcategoryViewController.swift in Sources */,
 				5A993F6D20D03882006FCE17 /* HiddenNavigationViewController.swift in Sources */,
+				5A894CC020FFA94F00F0D3DC /* ProfilePostsViewController.swift in Sources */,
 				4365334B20A2C63400E51EA1 /* ARSubcategoryTableViewCell.swift in Sources */,
 				431D9A1B20AAAF96007BED9E /* ARProduct.swift in Sources */,
 				431D9A1120AAADEF007BED9E /* ARProductViewController.swift in Sources */,
+				5A894CBE20FFA90300F0D3DC /* LikedHistoryViewController.swift in Sources */,
 				5AD941A720E26F2F009A89EE /* ProfileViewController.swift in Sources */,
 				5A993F7B20D25E5D006FCE17 /* Houz.swift in Sources */,
 				436EC424209FA5240032DE55 /* UIView.swift in Sources */,
@@ -549,8 +584,10 @@
 				5A993F8420D2DD0B006FCE17 /* RandomHouzView.swift in Sources */,
 				431D9A1920AAAF5B007BED9E /* ARProductCollectionViewCell.swift in Sources */,
 				5A993F6920D0353D006FCE17 /* SearchBar.swift in Sources */,
+				5A894CC220FFB2F100F0D3DC /* XLPagerTabStrip.swift in Sources */,
 				435A599A209F522800599BB2 /* ARCategory.swift in Sources */,
 				5A0E86BC20998B60008B31A5 /* AppDelegate.swift in Sources */,
+				5A894CBB20FFA88B00F0D3DC /* GalleryViewController.swift in Sources */,
 				435A59A6209F58EA00599BB2 /* ARCategoryView.swift in Sources */,
 				4365334320A2C06000E51EA1 /* SegueHandler.swift in Sources */,
 				5A993F5520CEFE30006FCE17 /* ThreeDimensionalObject.swift in Sources */,
@@ -559,6 +596,7 @@
 				5A993F8920D412D4006FCE17 /* RandomHouzOverlayView.swift in Sources */,
 				5A993F5720CEFE88006FCE17 /* ARObject.swift in Sources */,
 				431D9A1720AAAE53007BED9E /* ARProductView.swift in Sources */,
+				5A894CB920FF8ACB00F0D3DC /* ProfileViewModel.swift in Sources */,
 				5A5CE49C20C818AA00097778 /* ProductDetailViewController.swift in Sources */,
 				4399D41E209F3B3000423AF3 /* UIViewController.swift in Sources */,
 				435A59AC209F643D00599BB2 /* LocalTestDataRepository.swift in Sources */,
