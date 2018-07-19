@@ -39,6 +39,9 @@
 		5A5A59832100F75300A310E6 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5A59822100F75300A310E6 /* FeedTableViewController.swift */; };
 		5A5A59852100F76E00A310E6 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5A59842100F76E00A310E6 /* FeedViewModel.swift */; };
 		5A5A598B2100FC9500A310E6 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5A598A2100FC9500A310E6 /* FeedItem.swift */; };
+		5A5A598F2101022D00A310E6 /* ImageFeedItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5A598E2101022D00A310E6 /* ImageFeedItemTableViewCell.swift */; };
+		5A5A59932101026900A310E6 /* ImageFeedItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5A59922101026900A310E6 /* ImageFeedItemView.swift */; };
+		5A5A59952101028000A310E6 /* ImageFeedItemView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A5A59942101028000A310E6 /* ImageFeedItemView.xib */; };
 		5A5CE49C20C818AA00097778 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CE49B20C818AA00097778 /* ProductDetailViewController.swift */; };
 		5A5CE49E20C90CBA00097778 /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CE49D20C90CBA00097778 /* AppStoryboard.swift */; };
 		5A5CE4A020C969B500097778 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CE49F20C969B500097778 /* UIImageView.swift */; };
@@ -101,6 +104,9 @@
 		5A5A59822100F75300A310E6 /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		5A5A59842100F76E00A310E6 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		5A5A598A2100FC9500A310E6 /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+		5A5A598E2101022D00A310E6 /* ImageFeedItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFeedItemTableViewCell.swift; sourceTree = "<group>"; };
+		5A5A59922101026900A310E6 /* ImageFeedItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFeedItemView.swift; sourceTree = "<group>"; };
+		5A5A59942101028000A310E6 /* ImageFeedItemView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageFeedItemView.xib; sourceTree = "<group>"; };
 		5A5CE49B20C818AA00097778 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		5A5CE49D20C90CBA00097778 /* AppStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoryboard.swift; sourceTree = "<group>"; };
 		5A5CE49F20C969B500097778 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
@@ -372,6 +378,8 @@
 		5A5A59872100FC2400A310E6 /* ImageFeedItem */ = {
 			isa = PBXGroup;
 			children = (
+				5A5A598E2101022D00A310E6 /* ImageFeedItemTableViewCell.swift */,
+				5A5A598C2101020200A310E6 /* ImageFeedView */,
 			);
 			path = ImageFeedItem;
 			sourceTree = "<group>";
@@ -388,6 +396,15 @@
 			children = (
 			);
 			path = VideoFeedItem;
+			sourceTree = "<group>";
+		};
+		5A5A598C2101020200A310E6 /* ImageFeedView */ = {
+			isa = PBXGroup;
+			children = (
+				5A5A59922101026900A310E6 /* ImageFeedItemView.swift */,
+				5A5A59942101028000A310E6 /* ImageFeedItemView.xib */,
+			);
+			path = ImageFeedView;
 			sourceTree = "<group>";
 		};
 		5A894CB720FF86B000F0D3DC /* Storyboards */ = {
@@ -551,6 +568,7 @@
 				5A0E86C120998B60008B31A5 /* Main.storyboard in Resources */,
 				435A59A4209F58D600599BB2 /* ARCategoryView.xib in Resources */,
 				43E9D004209DE3AA00AC2E52 /* Create.storyboard in Resources */,
+				5A5A59952101028000A310E6 /* ImageFeedItemView.xib in Resources */,
 				43E9D006209DE3D200AC2E52 /* AR.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -585,6 +603,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Houz/Pods-Houz-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Koloda/Koloda.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
@@ -594,6 +613,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CHTCollectionViewWaterfallLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Koloda.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
@@ -638,11 +658,13 @@
 				435A599A209F522800599BB2 /* ARCategory.swift in Sources */,
 				5A0E86BC20998B60008B31A5 /* AppDelegate.swift in Sources */,
 				5A894CBB20FFA88B00F0D3DC /* GalleryViewController.swift in Sources */,
+				5A5A59932101026900A310E6 /* ImageFeedItemView.swift in Sources */,
 				435A59A6209F58EA00599BB2 /* ARCategoryView.swift in Sources */,
 				4365334320A2C06000E51EA1 /* SegueHandler.swift in Sources */,
 				5A5A59832100F75300A310E6 /* FeedTableViewController.swift in Sources */,
 				5A993F5520CEFE30006FCE17 /* ThreeDimensionalObject.swift in Sources */,
 				5A5A59852100F76E00A310E6 /* FeedViewModel.swift in Sources */,
+				5A5A598F2101022D00A310E6 /* ImageFeedItemTableViewCell.swift in Sources */,
 				4399D41B209F3AF500423AF3 /* BrowseARViewController.swift in Sources */,
 				5A5CE4A020C969B500097778 /* UIImageView.swift in Sources */,
 				5A993F8920D412D4006FCE17 /* RandomHouzOverlayView.swift in Sources */,
@@ -799,10 +821,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BEVZKKG84K;
 				INFOPLIST_FILE = Houz/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Bogdan.Houz-develop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -818,10 +837,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BEVZKKG84K;
 				INFOPLIST_FILE = Houz/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Bogdan.Houz-develop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

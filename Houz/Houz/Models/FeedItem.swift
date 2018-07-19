@@ -47,9 +47,9 @@ class FeedItem: Codable {
         id = try container.decodeIfPresent(Int.self, forKey: CodingKeys.id)
         title = try container.decodeIfPresent(String.self, forKey: CodingKeys.title)
         itemDescription = try container.decodeIfPresent(String.self, forKey: CodingKeys.itemDescription)
-        likeCount = try container.decodeIfPresent(Int.sels, forKey: CodingKeys.likeCount)
-        imageURL = try container.decodeIfPresent(String, forKey: CodingKeys.imageURL)
-        videoURL = try container.decodeIfPresent(String, forKey: CodingKeys.videoURL)
+        likeCount = try container.decodeIfPresent(Int.self, forKey: CodingKeys.likeCount)
+        imageURL = try container.decodeIfPresent(String.self, forKey: CodingKeys.imageURL)
+        videoURL = try container.decodeIfPresent(String.self, forKey: CodingKeys.videoURL)
     }
     
 }

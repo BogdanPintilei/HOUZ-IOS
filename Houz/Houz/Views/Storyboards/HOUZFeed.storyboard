@@ -36,10 +36,39 @@
         <scene sceneID="Ach-aa-DUC">
             <objects>
                 <tableViewController id="S0q-2e-FBJ" customClass="FeedTableViewController" customModule="Houz" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="zEv-Ve-Dwo">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="zEv-Ve-Dwo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <sections>
+                            <tableViewSection id="OXl-aY-RVU">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="264" id="SHN-UM-utw" customClass="ImageFeedItemTableViewCell" customModule="Houz" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="264"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SHN-UM-utw" id="lZ7-zH-7j9">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="263.66666666666669"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aAL-JT-RAy" customClass="ImageFeedItemView" customModule="Houz" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="263.66666666666669"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="aAL-JT-RAy" secondAttribute="trailing" id="8Xf-sG-srN"/>
+                                                <constraint firstItem="aAL-JT-RAy" firstAttribute="top" secondItem="lZ7-zH-7j9" secondAttribute="top" id="8g4-aV-JQ6"/>
+                                                <constraint firstItem="aAL-JT-RAy" firstAttribute="leading" secondItem="lZ7-zH-7j9" secondAttribute="leading" id="BAP-rn-Cq1"/>
+                                                <constraint firstAttribute="bottom" secondItem="aAL-JT-RAy" secondAttribute="bottom" id="ncL-ZX-8o0"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageFeedItemView" destination="aAL-JT-RAy" id="93U-9v-GcG"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
                         <connections>
                             <outlet property="dataSource" destination="S0q-2e-FBJ" id="TlY-8W-Z2p"/>
                             <outlet property="delegate" destination="S0q-2e-FBJ" id="0Eb-r0-YYR"/>
@@ -49,7 +78,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t8C-gS-hMi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="690" y="114"/>
+            <point key="canvasLocation" x="688.79999999999995" y="113.79310344827587"/>
         </scene>
     </scenes>
     <resources>
