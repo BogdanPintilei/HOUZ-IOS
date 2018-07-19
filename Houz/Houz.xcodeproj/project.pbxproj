@@ -36,6 +36,9 @@
 		5A0E86C120998B60008B31A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0E86BF20998B60008B31A5 /* Main.storyboard */; };
 		5A0E86C320998B61008B31A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A0E86C220998B61008B31A5 /* Assets.xcassets */; };
 		5A0E86C620998B61008B31A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0E86C420998B61008B31A5 /* LaunchScreen.storyboard */; };
+		5A5A59832100F75300A310E6 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5A59822100F75300A310E6 /* FeedTableViewController.swift */; };
+		5A5A59852100F76E00A310E6 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5A59842100F76E00A310E6 /* FeedViewModel.swift */; };
+		5A5A598B2100FC9500A310E6 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5A598A2100FC9500A310E6 /* FeedItem.swift */; };
 		5A5CE49C20C818AA00097778 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CE49B20C818AA00097778 /* ProductDetailViewController.swift */; };
 		5A5CE49E20C90CBA00097778 /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CE49D20C90CBA00097778 /* AppStoryboard.swift */; };
 		5A5CE4A020C969B500097778 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CE49F20C969B500097778 /* UIImageView.swift */; };
@@ -95,6 +98,9 @@
 		5A0E86C220998B61008B31A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A0E86C520998B61008B31A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A0E86C720998B61008B31A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A5A59822100F75300A310E6 /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		5A5A59842100F76E00A310E6 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		5A5A598A2100FC9500A310E6 /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		5A5CE49B20C818AA00097778 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		5A5CE49D20C90CBA00097778 /* AppStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoryboard.swift; sourceTree = "<group>"; };
 		5A5CE49F20C969B500097778 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
@@ -214,6 +220,7 @@
 			children = (
 				5A993F7920D25E33006FCE17 /* AR */,
 				5A993F7A20D25E5D006FCE17 /* Houz.swift */,
+				5A5A598A2100FC9500A310E6 /* FeedItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -246,6 +253,7 @@
 		43E9CFF6209DE23200AC2E52 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				5A5A59812100F71200A310E6 /* Feed */,
 				4399D41C209F3AFA00423AF3 /* AR */,
 				5A993F7620D25B71006FCE17 /* Random */,
 				5AD941A520E26F10009A89EE /* Profile */,
@@ -297,6 +305,7 @@
 		43E9CFFC209DE23200AC2E52 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				5A5A59862100FA7100A310E6 /* FeedCells */,
 				5A993F7C20D2D932006FCE17 /* RandomHouzView */,
 				5A993F8520D4126B006FCE17 /* RandomHouzOverlayView */,
 				431D9A1220AAAE06007BED9E /* ARProductCell */,
@@ -339,6 +348,46 @@
 				5A0E86C720998B61008B31A5 /* Info.plist */,
 			);
 			path = Houz;
+			sourceTree = "<group>";
+		};
+		5A5A59812100F71200A310E6 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				5A5A59842100F76E00A310E6 /* FeedViewModel.swift */,
+				5A5A59822100F75300A310E6 /* FeedTableViewController.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		5A5A59862100FA7100A310E6 /* FeedCells */ = {
+			isa = PBXGroup;
+			children = (
+				5A5A59872100FC2400A310E6 /* ImageFeedItem */,
+				5A5A59882100FC5100A310E6 /* ProductFeedItem */,
+				5A5A59892100FC7600A310E6 /* VideoFeedItem */,
+			);
+			path = FeedCells;
+			sourceTree = "<group>";
+		};
+		5A5A59872100FC2400A310E6 /* ImageFeedItem */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ImageFeedItem;
+			sourceTree = "<group>";
+		};
+		5A5A59882100FC5100A310E6 /* ProductFeedItem */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ProductFeedItem;
+			sourceTree = "<group>";
+		};
+		5A5A59892100FC7600A310E6 /* VideoFeedItem */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VideoFeedItem;
 			sourceTree = "<group>";
 		};
 		5A894CB720FF86B000F0D3DC /* Storyboards */ = {
@@ -576,6 +625,7 @@
 				435A599C209F523A00599BB2 /* ARSubcategory.swift in Sources */,
 				435A59AA209F62D100599BB2 /* ARCategoryCollectionViewCell.swift in Sources */,
 				5A993F4F20CDA4CB006FCE17 /* ARCameraViewController.swift in Sources */,
+				5A5A598B2100FC9500A310E6 /* FeedItem.swift in Sources */,
 				435A59A8209F5DB600599BB2 /* UIColor.swift in Sources */,
 				5A993F6520D02DB1006FCE17 /* WebViewViewController.swift in Sources */,
 				5A993F6720D02EF3006FCE17 /* LoadingView.swift in Sources */,
@@ -590,7 +640,9 @@
 				5A894CBB20FFA88B00F0D3DC /* GalleryViewController.swift in Sources */,
 				435A59A6209F58EA00599BB2 /* ARCategoryView.swift in Sources */,
 				4365334320A2C06000E51EA1 /* SegueHandler.swift in Sources */,
+				5A5A59832100F75300A310E6 /* FeedTableViewController.swift in Sources */,
 				5A993F5520CEFE30006FCE17 /* ThreeDimensionalObject.swift in Sources */,
+				5A5A59852100F76E00A310E6 /* FeedViewModel.swift in Sources */,
 				4399D41B209F3AF500423AF3 /* BrowseARViewController.swift in Sources */,
 				5A5CE4A020C969B500097778 /* UIImageView.swift in Sources */,
 				5A993F8920D412D4006FCE17 /* RandomHouzOverlayView.swift in Sources */,
