@@ -25,10 +25,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oaA-Bl-ImO">
-                    <rect key="frame" x="16" y="16" width="380" height="443"/>
+                    <rect key="frame" x="16" y="16" width="380" height="451"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LML-o5-RcS">
-                            <rect key="frame" x="0.0" y="79" width="380" height="364"/>
+                            <rect key="frame" x="0.0" y="79" width="380" height="372"/>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0M-aq-vGH">
                             <rect key="frame" x="12" y="12" width="356" height="30"/>
@@ -63,7 +63,7 @@
                     </userDefinedRuntimeAttributes>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RwY-XK-Yaq">
-                    <rect key="frame" x="32" y="475" width="32" height="32"/>
+                    <rect key="frame" x="32" y="483" width="24" height="24"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="RwY-XK-Yaq" secondAttribute="height" multiplier="1:1" id="AE7-nd-mDB"/>
                     </constraints>
@@ -74,21 +74,23 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fp0-8D-xCO">
-                    <rect key="frame" x="190" y="475" width="32" height="32"/>
+                    <rect key="frame" x="194" y="483" width="24" height="24"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="Fp0-8D-xCO" secondAttribute="height" multiplier="1:1" id="eGr-oO-tHA"/>
-                        <constraint firstAttribute="height" constant="32" id="eNP-Kh-CRC"/>
+                        <constraint firstAttribute="height" constant="24" id="eNP-Kh-CRC"/>
                     </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" image="ICON message"/>
                     <connections>
                         <action selector="message:" destination="-1" eventType="touchUpInside" id="CcE-nD-9yI"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xqt-AI-3xy">
-                    <rect key="frame" x="348" y="475" width="32" height="32"/>
+                    <rect key="frame" x="356" y="483" width="24" height="24"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="xqt-AI-3xy" secondAttribute="height" multiplier="1:1" id="PHQ-Kw-skS"/>
                     </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" image="ICON share"/>
                     <connections>
                         <action selector="share:" destination="-1" eventType="touchUpInside" id="hKZ-T4-NzV"/>
