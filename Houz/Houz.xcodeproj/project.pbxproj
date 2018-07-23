@@ -32,6 +32,8 @@
 		43E9D002209DE37900AC2E52 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E9D001209DE37900AC2E52 /* Profile.storyboard */; };
 		43E9D004209DE3AA00AC2E52 /* Create.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E9D003209DE3AA00AC2E52 /* Create.storyboard */; };
 		43E9D006209DE3D200AC2E52 /* AR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E9D005209DE3D200AC2E52 /* AR.storyboard */; };
+		5A08148F210630E000C73E1A /* StoryboardID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A08148E210630E000C73E1A /* StoryboardID.swift */; };
+		5A0814912106312A00C73E1A /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0814902106312A00C73E1A /* UITableView.swift */; };
 		5A0E86BC20998B60008B31A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0E86BB20998B60008B31A5 /* AppDelegate.swift */; };
 		5A0E86C120998B60008B31A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0E86BF20998B60008B31A5 /* Main.storyboard */; };
 		5A0E86C320998B61008B31A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A0E86C220998B61008B31A5 /* Assets.xcassets */; };
@@ -95,6 +97,8 @@
 		43E9D001209DE37900AC2E52 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		43E9D003209DE3AA00AC2E52 /* Create.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Create.storyboard; sourceTree = "<group>"; };
 		43E9D005209DE3D200AC2E52 /* AR.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AR.storyboard; sourceTree = "<group>"; };
+		5A08148E210630E000C73E1A /* StoryboardID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardID.swift; sourceTree = "<group>"; };
+		5A0814902106312A00C73E1A /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		5A0E86B820998B60008B31A5 /* Houz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Houz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A0E86BB20998B60008B31A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A0E86C020998B60008B31A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -234,6 +238,7 @@
 		43E9CFF4209DE23200AC2E52 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				5A0814902106312A00C73E1A /* UITableView.swift */,
 				4399D41D209F3B3000423AF3 /* UIViewController.swift */,
 				5A5CE49F20C969B500097778 /* UIImageView.swift */,
 				435A59A7209F5DB600599BB2 /* UIColor.swift */,
@@ -252,6 +257,7 @@
 				5A5CE49D20C90CBA00097778 /* AppStoryboard.swift */,
 				5A993F6620D02EF3006FCE17 /* LoadingView.swift */,
 				5A993F6C20D03882006FCE17 /* HiddenNavigationViewController.swift */,
+				5A08148E210630E000C73E1A /* StoryboardID.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -666,6 +672,8 @@
 				5A5A59852100F76E00A310E6 /* FeedViewModel.swift in Sources */,
 				5A5A598F2101022D00A310E6 /* ImageFeedItemTableViewCell.swift in Sources */,
 				4399D41B209F3AF500423AF3 /* BrowseARViewController.swift in Sources */,
+				5A0814912106312A00C73E1A /* UITableView.swift in Sources */,
+				5A08148F210630E000C73E1A /* StoryboardID.swift in Sources */,
 				5A5CE4A020C969B500097778 /* UIImageView.swift in Sources */,
 				5A993F8920D412D4006FCE17 /* RandomHouzOverlayView.swift in Sources */,
 				5A993F5720CEFE88006FCE17 /* ARObject.swift in Sources */,
@@ -821,7 +829,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BEVZKKG84K;
 				INFOPLIST_FILE = Houz/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Bogdan.Houz-develop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -837,7 +848,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BEVZKKG84K;
 				INFOPLIST_FILE = Houz/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Bogdan.Houz-develop";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

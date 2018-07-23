@@ -19,18 +19,3 @@ enum AppStoryboard: String {
     
 }
 
-struct StoryboardID {
-    
-    static var galleryVCID: String {
-        return "GalleryViewControllerStoryboardID"
-    }
-    
-    static var profilePostsVC: String {
-        return "ProfilePostsViewControllerStoryboardID"
-    }
-    
-    static var likedHistoryVC: String {
-        return "LikedHistoryViewControllerStoryboardID"
-    }
-    
-}

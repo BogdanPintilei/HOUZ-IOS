@@ -8,9 +8,10 @@
 
 import UIKit
 
-class ImageFeedItemTableViewCell: UITableViewCell {
+class ImageFeedItemTableViewCell: UITableViewCell, Reusable {
 
     @IBOutlet var imageFeedItemView: ImageFeedItemView!
 
-    
+    var imageFeedItem: FeedItem! { didSet { imageFeedItemView.feedItem = imageFeedItem } }
+
 }

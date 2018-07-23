@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,7 +26,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="S0q-2e-FBJ" kind="relationship" relationship="rootViewController" id="B2y-BB-cDh"/>
+                        <segue destination="6JR-c6-dAP" kind="relationship" relationship="rootViewController" id="sXD-3B-kGH"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kza-ix-maS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -33,25 +34,26 @@
             <point key="canvasLocation" x="-185" y="114"/>
         </scene>
         <!--HOUZ-->
-        <scene sceneID="Ach-aa-DUC">
+        <scene sceneID="PlD-Vp-thl">
             <objects>
-                <tableViewController id="S0q-2e-FBJ" customClass="FeedTableViewController" customModule="Houz" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="zEv-Ve-Dwo">
+                <viewController id="6JR-c6-dAP" customClass="FeedViewController" customModule="Houz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M1Z-RF-18L">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <sections>
-                            <tableViewSection id="OXl-aY-RVU">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="264" id="SHN-UM-utw" customClass="ImageFeedItemTableViewCell" customModule="Houz" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="264"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="350" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pgS-hq-Cj4">
+                                <rect key="frame" x="0.0" y="140" width="375" height="589"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ImageFeedItemTableViewCell" rowHeight="350" id="SHN-UM-utw" customClass="ImageFeedItemTableViewCell" customModule="Houz" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="350"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SHN-UM-utw" id="lZ7-zH-7j9">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="263.66666666666669"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aAL-JT-RAy" customClass="ImageFeedItemView" customModule="Houz" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="263.66666666666669"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </view>
                                             </subviews>
@@ -66,19 +68,30 @@
                                             <outlet property="imageFeedItemView" destination="aAL-JT-RAy" id="93U-9v-GcG"/>
                                         </connections>
                                     </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
-                        <connections>
-                            <outlet property="dataSource" destination="S0q-2e-FBJ" id="TlY-8W-Z2p"/>
-                            <outlet property="delegate" destination="S0q-2e-FBJ" id="0Eb-r0-YYR"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="HOUZ" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="y5w-1C-yde"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="t8C-gS-hMi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="6JR-c6-dAP" id="Lol-X5-vwQ"/>
+                                    <outlet property="delegate" destination="6JR-c6-dAP" id="IE1-he-b9j"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pgS-hq-Cj4" firstAttribute="leading" secondItem="R5e-y0-P0x" secondAttribute="leading" id="VOz-Ub-j5l"/>
+                            <constraint firstItem="pgS-hq-Cj4" firstAttribute="top" secondItem="R5e-y0-P0x" secondAttribute="top" id="VR0-6K-QkG"/>
+                            <constraint firstItem="pgS-hq-Cj4" firstAttribute="bottom" secondItem="R5e-y0-P0x" secondAttribute="bottom" id="WeF-bI-VbG"/>
+                            <constraint firstItem="pgS-hq-Cj4" firstAttribute="trailing" secondItem="R5e-y0-P0x" secondAttribute="trailing" id="Yw9-b1-nCp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="R5e-y0-P0x"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="HOUZ" id="9GF-Ja-3Sh"/>
+                    <connections>
+                        <outlet property="tableView" destination="pgS-hq-Cj4" id="sKc-ic-pUf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wtj-hq-ikX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="688.79999999999995" y="113.79310344827587"/>
+            <point key="canvasLocation" x="732" y="114"/>
         </scene>
     </scenes>
     <resources>
