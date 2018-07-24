@@ -27,8 +27,6 @@ class FeedViewController: UIViewController {
 
     private func customizeUI() {
         self.setNavigationBarTransparent()
-        tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 300
     }
 
 }
@@ -41,19 +39,19 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
         return viewModel.numberOfFeedItems
     }
 
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let item = viewModel.itemAt(index: indexPath.row)
-        switch item.type! {
-        case .image:
-            return 500
-        case .product:
-            return 300
-        case .video:
-            return 400
-        default:
-            return 100
-        }
-    }
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        let item = viewModel.itemAt(index: indexPath.row)
+//        switch item.type! {
+//        case .image:
+//            return 500
+//        case .product:
+//            return 300
+//        case .video:
+//            return 400
+//        default:
+//            return 100
+//        }
+//    }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let item = viewModel.itemAt(index: indexPath.row)
