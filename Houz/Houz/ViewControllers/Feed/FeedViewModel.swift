@@ -20,7 +20,6 @@ class FeedViewModel {
         feedItems = FeedRepository.feed()
     }
 
-
     func itemAt(index: Int) -> FeedItem {
         return index < numberOfFeedItems ? feedItems[index] : FeedItem()
     }

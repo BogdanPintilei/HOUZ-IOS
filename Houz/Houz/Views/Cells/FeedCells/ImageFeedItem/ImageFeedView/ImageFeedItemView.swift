@@ -15,7 +15,6 @@ class ImageFeedItemView: UIView {
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var descriptionLabel: UILabel!
     @IBOutlet var feedimageView: UIImageView!
-    @IBOutlet var titleSectionImage: UIImageView!
     
     var feedItem: FeedItem! { didSet { configureViewWithFeedItem() } }
 

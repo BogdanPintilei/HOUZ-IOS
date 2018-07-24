@@ -121,16 +121,16 @@ class FeedRepository {
 
     class func feed() -> [FeedItem] {
         let feed = [
-            FeedItem(id: 1, title: "Cool House", itemDescription: "This is a cool house", likeCount: 132, imageURL: "https://s3.amazonaws.com/mindfullness/image5.jpg", videoURL: ""),
-            FeedItem(id: 2, title: "Cool House", itemDescription: "This is a cool house", likeCount: 132, imageURL: "https://tamaramagel.com/wp-content/uploads/2016/05/20160121_TAMARAMAGEL_SCARSDALE-100-768x533.jpg", videoURL: ""),
-            FeedItem(id: 3, title: "Cool House", itemDescription: "This is a cool house", likeCount: 132, imageURL: "https://www.thesmartswarm.com/wp-content/uploads/2018/02/50-best-interior-design-projects-by-kelly-wearstler-1.jpg", videoURL: ""),
-            FeedItem(id: 4, title: "Cool House", itemDescription: "This is a cool house", likeCount: 132, imageURL: "https://senaterace2012.com/wp-content/uploads/cool-house-pool-arq-pinterest_63660.jpg", videoURL: ""),
-            FeedItem(id: 5, title: "Cool House", itemDescription: "This is a cool house", likeCount: 132, imageURL: "https://tamaramagel.com/wp-content/uploads/2016/05/20160121_TAMARAMAGEL_SCARSDALE-100-768x533.jpg", videoURL: ""),
-            FeedItem(id: 6, title: "Cool House", itemDescription: "This is a cool house", likeCount: 132, imageURL: "https://dornob.com/wp-content/uploads/2009/07/bedroom-designs-modern.jpg", videoURL: ""),
-            FeedItem(id: 7, title: "Cool House", itemDescription: "This is a cool house", likeCount: 132, imageURL: "https://tamaramagel.com/wp-content/uploads/2016/05/20160121_TAMARAMAGEL_SCARSDALE-100-768x533.jpg", videoURL: ""),
-            FeedItem(id: 8, title: "Cool House", itemDescription: "This is a cool house", likeCount: 132, imageURL: "https://tamaramagel.com/wp-content/uploads/2016/05/20160121_TAMARAMAGEL_SCARSDALE-100-768x533.jpg", videoURL: ""),
-            FeedItem(id: 9, title: "Cool House", itemDescription: "This is a cool house", likeCount: 132, imageURL: "https://senaterace2012.com/wp-content/uploads/cool-house-pool-arq-pinterest_63660.jpg", videoURL: ""),
-            FeedItem(id: 10, title: "Cool House", itemDescription: "This is a cool house", likeCount: 132, imageURL: "https://tamaramagel.com/wp-content/uploads/2016/05/20160121_TAMARAMAGEL_SCARSDALE-100-768x533.jpg", videoURL: "")
+            FeedItem(id: 1, type: FeedItemType.image, title: "Cool House", itemDescription: "This is a cool house", likeCount: 132, imageURL: "https://s3.amazonaws.com/mindfullness/image5.jpg", videoURL: ""),
+            FeedItem(id: 2, type: FeedItemType.image, title: "Cool House", itemDescription: "This is a cool house", likeCount: 132, imageURL: "https://tamaramagel.com/wp-content/uploads/2016/05/20160121_TAMARAMAGEL_SCARSDALE-100-768x533.jpg", videoURL: ""),
+            FeedItem(id: 3, type: FeedItemType.product, title: "Cool House Product", itemDescription: "This is a product", likeCount: 132, imageURL: "https://www.thesmartswarm.com/wp-content/uploads/2018/02/50-best-interior-design-projects-by-kelly-wearstler-1.jpg", videoURL: ""),
+            FeedItem(id: 4, type: FeedItemType.image, title: "Cool House", itemDescription: "This is a cool house", likeCount: 132, imageURL: "https://senaterace2012.com/wp-content/uploads/cool-house-pool-arq-pinterest_63660.jpg", videoURL: ""),
+            FeedItem(id: 5, type: FeedItemType.image, title: "Cool House", itemDescription: "This is a cool house", likeCount: 132, imageURL: "https://tamaramagel.com/wp-content/uploads/2016/05/20160121_TAMARAMAGEL_SCARSDALE-100-768x533.jpg", videoURL: ""),
+            FeedItem(id: 6, type: FeedItemType.image, title: "Cool House", itemDescription: "This is a cool house", likeCount: 132, imageURL: "https://dornob.com/wp-content/uploads/2009/07/bedroom-designs-modern.jpg", videoURL: ""),
+            FeedItem(id: 7, type: FeedItemType.product, title: "Cool House Product", itemDescription: "This is a cool house product", likeCount: 132, imageURL: "https://tamaramagel.com/wp-content/uploads/2016/05/20160121_TAMARAMAGEL_SCARSDALE-100-768x533.jpg", videoURL: ""),
+            FeedItem(id: 8, type: FeedItemType.image, title: "Cool House", itemDescription: "This is a cool house", likeCount: 132, imageURL: "https://tamaramagel.com/wp-content/uploads/2016/05/20160121_TAMARAMAGEL_SCARSDALE-100-768x533.jpg", videoURL: ""),
+            FeedItem(id: 9, type: FeedItemType.image, title: "Cool House", itemDescription: "This is a cool house", likeCount: 132, imageURL: "https://senaterace2012.com/wp-content/uploads/cool-house-pool-arq-pinterest_63660.jpg", videoURL: ""),
+            FeedItem(id: 10, type: FeedItemType.image, title: "Cool House", itemDescription: "This is a cool house", likeCount: 132, imageURL: "https://tamaramagel.com/wp-content/uploads/2016/05/20160121_TAMARAMAGEL_SCARSDALE-100-768x533.jpg", videoURL: "")
         ]
 
         return feed
