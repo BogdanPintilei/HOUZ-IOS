@@ -6,13 +6,12 @@
 //  Copyright © 2018 Bogdan. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 extension UIImageView {
     
-    func addBlurEffect() {
-        let blurEffect = UIBlurEffect(style: UIBlurEffectStyle.light)
+    func addBlurEffect(withStyle style: UIBlurEffectStyle) {
+        let blurEffect = UIBlurEffect(style: style)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
         blurEffectView.frame = self.bounds
         blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]

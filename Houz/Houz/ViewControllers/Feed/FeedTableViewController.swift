@@ -11,12 +11,19 @@ import UIKit
 class FeedViewController: UIViewController {
 
     @IBOutlet var tableView: UITableView!
-
+    
+    let viewModel = FeedViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         customizeUI()
+        initializeViewModel()
     }
 
+    private func initializeViewModel() {
+        viewModel.loadFeed()
+    }
+    
     private func customizeUI() {
         self.setNavigationBarTransparent()
     }
@@ -28,13 +35,12 @@ class FeedViewController: UIViewController {
 extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 100
+        return viewModel.numberOfFeedItems
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: ImageFeedItemTableViewCell = tableView.dequeueReusableCell(indexPath: indexPath)
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "boss", for: indexPath) as! ImageFeedItemTableViewCell
-//        cell.imageFeedItem = FeedItem(id: 1, title: "ok", itemDescription: "ok", likeCount: 21, imageURL: "ok", videoURL: "ok")
+        cell.imageFeedItem = viewModel.itemAt(index: indexPath.row)
         return cell
     }
 
