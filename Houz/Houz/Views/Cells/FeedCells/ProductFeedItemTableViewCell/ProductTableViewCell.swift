@@ -11,21 +11,21 @@ import Kingfisher
 
 class ProductTableViewCell: UITableViewCell, Reusable {
 
-    static var nib: UINib? {
-        return UINib(nibName: String(describing: ProductTableViewCell.self), bundle: nil)
-    }
-    
     @IBOutlet var backgroundImageView: UIImageView!
     @IBOutlet var productImageView: UIImageView!
     @IBOutlet var productTitleLabel: UILabel!
     @IBOutlet var productDescriptionLabel: UILabel!
 
+    static var nib: UINib? {
+        return UINib(nibName: String(describing: ProductTableViewCell.self), bundle: nil)
+    }
+    
+    var product: FeedItem! { didSet { configureCellWithProduct() } }
+
     override func awakeFromNib() {
         super.awakeFromNib()
         customizeUI()
     }
-
-    var product: FeedItem! { didSet { configureCellWithProduct() } }
 
     private func customizeUI() {
         backgroundImageView.addBlurEffect(withStyle: .regular)

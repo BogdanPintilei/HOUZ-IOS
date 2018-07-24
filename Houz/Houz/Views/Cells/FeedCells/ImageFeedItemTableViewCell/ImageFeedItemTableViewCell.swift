@@ -1,44 +1,44 @@
 //
-//  ImageFeedItemView.swift
+//  ImageFeedItemTableViewCell.swift
 //  Houz
 //
-//  Created by Bogdan Pintilei on 7/19/18.
+//  Created by Bogdan Pintilei on 7/25/18.
 //  Copyright © 2018 Bogdan. All rights reserved.
 //
 
 import UIKit
 import Kingfisher
 
-class ImageFeedItemView: UIView {
+class ImageFeedItemTableViewCell: UITableViewCell,Reusable {
 
-    @IBOutlet var view: UIView!
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var descriptionLabel: UILabel!
     @IBOutlet var feedimageView: UIImageView!
     
+    static var nib: UINib? {
+        return UINib(nibName: String(describing: ImageFeedItemTableViewCell.self), bundle: nil)
+    }
+    
     var feedItem: FeedItem! { didSet { configureViewWithFeedItem() } }
 
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        UINib(nibName: "ImageFeedItemView", bundle: nil).instantiate(withOwner: self, options: nil)
-        addSubview(view)
-        view.frame = self.bounds
+    override func awakeFromNib() {
+        super.awakeFromNib()
     }
 
     @IBAction func like(_ sender: Any) {
     }
-
+    
     @IBAction func message(_ sender: Any) {
     }
-
+    
     @IBAction func share(_ sender: Any) {
     }
-
+    
     private func configureViewWithFeedItem() {
         titleLabel.text = feedItem.title
         descriptionLabel.text = feedItem.itemDescription
         feedimageView.kf.indicatorType = .activity
         feedimageView.kf.setImage(with: URL(string: feedItem.imageURL!))
     }
-
+    
 }

@@ -16,7 +16,7 @@ class FeedViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.registerReusableCell(ProductTableViewCell.self)
+        registerCells()
         customizeUI()
         initializeViewModel()
     }
@@ -29,6 +29,11 @@ class FeedViewController: UIViewController {
         self.setNavigationBarTransparent()
     }
 
+    private func registerCells() {
+        tableView.registerReusableCell(ProductTableViewCell.self)
+        tableView.registerReusableCell(ImageFeedItemTableViewCell.self)
+    }
+    
 }
 
 // MARK: Table View Delegate & DataSource
@@ -39,26 +44,12 @@ extension FeedViewController: UITableViewDelegate, UITableViewDataSource {
         return viewModel.numberOfFeedItems
     }
 
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        let item = viewModel.itemAt(index: indexPath.row)
-//        switch item.type! {
-//        case .image:
-//            return 500
-//        case .product:
-//            return 300
-//        case .video:
-//            return 400
-//        default:
-//            return 100
-//        }
-//    }
-
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let item = viewModel.itemAt(index: indexPath.row)
         switch item.type! {
         case .image:
             let cell: ImageFeedItemTableViewCell = tableView.dequeueReusableCell(indexPath: indexPath)
-            cell.imageFeedItem = item
+            cell.feedItem = item
             return cell
         case .product:
             let cell: ProductTableViewCell = tableView.dequeueReusableCell(indexPath: indexPath)

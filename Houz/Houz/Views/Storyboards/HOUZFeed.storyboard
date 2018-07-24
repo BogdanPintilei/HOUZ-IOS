@@ -45,28 +45,13 @@
                                 <rect key="frame" x="0.0" y="140" width="375" height="589"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ImageFeedItemTableViewCell" id="SHN-UM-utw" customClass="ImageFeedItemTableViewCell" customModule="Houz" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="SHN-UM-utw" customClass="ImageFeedItemTableViewCell" customModule="Houz" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SHN-UM-utw" id="lZ7-zH-7j9">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aAL-JT-RAy" customClass="ImageFeedItemView" customModule="Houz" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </view>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="aAL-JT-RAy" secondAttribute="trailing" id="8Xf-sG-srN"/>
-                                                <constraint firstItem="aAL-JT-RAy" firstAttribute="top" secondItem="lZ7-zH-7j9" secondAttribute="top" id="8g4-aV-JQ6"/>
-                                                <constraint firstItem="aAL-JT-RAy" firstAttribute="leading" secondItem="lZ7-zH-7j9" secondAttribute="leading" id="BAP-rn-Cq1"/>
-                                                <constraint firstAttribute="bottom" secondItem="aAL-JT-RAy" secondAttribute="bottom" id="ncL-ZX-8o0"/>
-                                            </constraints>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="imageFeedItemView" destination="aAL-JT-RAy" id="93U-9v-GcG"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="KKB-27-yRr" customClass="ProductTableViewCell" customModule="Houz" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="72" width="375" height="44"/>
