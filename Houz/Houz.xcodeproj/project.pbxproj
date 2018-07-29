@@ -34,6 +34,8 @@
 		43E9D006209DE3D200AC2E52 /* AR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E9D005209DE3D200AC2E52 /* AR.storyboard */; };
 		5A08148F210630E000C73E1A /* StoryboardID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A08148E210630E000C73E1A /* StoryboardID.swift */; };
 		5A0814912106312A00C73E1A /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0814902106312A00C73E1A /* UITableView.swift */; };
+		5A0DEC13210A41A500C76494 /* PlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A0DEC12210A41A500C76494 /* PlayerView.xib */; };
+		5A0DEC16210A41D500C76494 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0DEC15210A41D500C76494 /* PlayerView.swift */; };
 		5A0E86BC20998B60008B31A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0E86BB20998B60008B31A5 /* AppDelegate.swift */; };
 		5A0E86C120998B60008B31A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0E86BF20998B60008B31A5 /* Main.storyboard */; };
 		5A0E86C320998B61008B31A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A0E86C220998B61008B31A5 /* Assets.xcassets */; };
@@ -67,7 +69,10 @@
 		5A993F8420D2DD0B006FCE17 /* RandomHouzView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A993F8320D2DD0B006FCE17 /* RandomHouzView.swift */; };
 		5A993F8720D412B4006FCE17 /* RandomHouzOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A993F8620D412B4006FCE17 /* RandomHouzOverlayView.xib */; };
 		5A993F8920D412D4006FCE17 /* RandomHouzOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A993F8820D412D4006FCE17 /* RandomHouzOverlayView.swift */; };
+		5AC98867210DCD730069248E /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC98866210DCD730069248E /* Date.swift */; };
 		5AD941A720E26F2F009A89EE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD941A620E26F2F009A89EE /* ProfileViewController.swift */; };
+		5AF633042108FE2C00FF2D9C /* VideoFeedItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF633022108FE2C00FF2D9C /* VideoFeedItemTableViewCell.swift */; };
+		5AF633052108FE2C00FF2D9C /* VideoFeedItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5AF633032108FE2C00FF2D9C /* VideoFeedItemTableViewCell.xib */; };
 		7F8202B083203FE3A353C19A /* Pods_Houz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6CCEAE5A7DD88B46789CABE /* Pods_Houz.framework */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +105,8 @@
 		43E9D005209DE3D200AC2E52 /* AR.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AR.storyboard; sourceTree = "<group>"; };
 		5A08148E210630E000C73E1A /* StoryboardID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardID.swift; sourceTree = "<group>"; };
 		5A0814902106312A00C73E1A /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		5A0DEC12210A41A500C76494 /* PlayerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerView.xib; sourceTree = "<group>"; };
+		5A0DEC15210A41D500C76494 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		5A0E86B820998B60008B31A5 /* Houz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Houz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A0E86BB20998B60008B31A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A0E86C020998B60008B31A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -135,7 +142,10 @@
 		5A993F8320D2DD0B006FCE17 /* RandomHouzView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomHouzView.swift; sourceTree = "<group>"; };
 		5A993F8620D412B4006FCE17 /* RandomHouzOverlayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RandomHouzOverlayView.xib; sourceTree = "<group>"; };
 		5A993F8820D412D4006FCE17 /* RandomHouzOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomHouzOverlayView.swift; sourceTree = "<group>"; };
+		5AC98866210DCD730069248E /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		5AD941A620E26F2F009A89EE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		5AF633022108FE2C00FF2D9C /* VideoFeedItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFeedItemTableViewCell.swift; sourceTree = "<group>"; };
+		5AF633032108FE2C00FF2D9C /* VideoFeedItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoFeedItemTableViewCell.xib; sourceTree = "<group>"; };
 		9112DB3461D8B07E662D90A9 /* Pods-Houz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Houz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Houz/Pods-Houz.debug.xcconfig"; sourceTree = "<group>"; };
 		F6CCEAE5A7DD88B46789CABE /* Pods_Houz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Houz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -248,6 +258,7 @@
 				4365334220A2C06000E51EA1 /* SegueHandler.swift */,
 				5A993F6820D0353D006FCE17 /* SearchBar.swift */,
 				5A894CC120FFB2F100F0D3DC /* XLPagerTabStrip.swift */,
+				5AC98866210DCD730069248E /* Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -312,6 +323,7 @@
 			children = (
 				5A894CB720FF86B000F0D3DC /* Storyboards */,
 				43E9CFFC209DE23200AC2E52 /* Cells */,
+				5A0DEC14210A41AF00C76494 /* PlayerView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -327,6 +339,15 @@
 				435A599D209F585500599BB2 /* ARCategoryCell */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		5A0DEC14210A41AF00C76494 /* PlayerView */ = {
+			isa = PBXGroup;
+			children = (
+				5A0DEC12210A41A500C76494 /* PlayerView.xib */,
+				5A0DEC15210A41D500C76494 /* PlayerView.swift */,
+			);
+			path = PlayerView;
 			sourceTree = "<group>";
 		};
 		5A0E86AF20998B60008B31A5 = {
@@ -404,6 +425,8 @@
 		5A5A59892100FC7600A310E6 /* VideoFeedItem */ = {
 			isa = PBXGroup;
 			children = (
+				5AF633022108FE2C00FF2D9C /* VideoFeedItemTableViewCell.swift */,
+				5AF633032108FE2C00FF2D9C /* VideoFeedItemTableViewCell.xib */,
 			);
 			path = VideoFeedItem;
 			sourceTree = "<group>";
@@ -567,7 +590,9 @@
 				43E9D000209DE35D00AC2E52 /* Random.storyboard in Resources */,
 				4365334820A2C19600E51EA1 /* ARSubcategoryView.xib in Resources */,
 				5A0E86C320998B61008B31A5 /* Assets.xcassets in Resources */,
+				5A0DEC13210A41A500C76494 /* PlayerView.xib in Resources */,
 				5A0E86C120998B60008B31A5 /* Main.storyboard in Resources */,
+				5AF633052108FE2C00FF2D9C /* VideoFeedItemTableViewCell.xib in Resources */,
 				435A59A4209F58D600599BB2 /* ARCategoryView.xib in Resources */,
 				43E9D004209DE3AA00AC2E52 /* Create.storyboard in Resources */,
 				5A344CD421079F310088CE94 /* ProductTableViewCell.xib in Resources */,
@@ -607,6 +632,7 @@
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Koloda/Koloda.framework",
+				"${BUILT_PRODUCTS_DIR}/MMPlayerView/MMPlayerView.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
 				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
@@ -617,6 +643,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Koloda.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMPlayerView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
@@ -644,12 +671,15 @@
 				5AD941A720E26F2F009A89EE /* ProfileViewController.swift in Sources */,
 				5A344CD321079F310088CE94 /* ProductTableViewCell.swift in Sources */,
 				5A993F7B20D25E5D006FCE17 /* Houz.swift in Sources */,
+				5A0DEC16210A41D500C76494 /* PlayerView.swift in Sources */,
 				436EC424209FA5240032DE55 /* UIView.swift in Sources */,
+				5AF633042108FE2C00FF2D9C /* VideoFeedItemTableViewCell.swift in Sources */,
 				435A599C209F523A00599BB2 /* ARSubcategory.swift in Sources */,
 				435A59AA209F62D100599BB2 /* ARCategoryCollectionViewCell.swift in Sources */,
 				5A993F4F20CDA4CB006FCE17 /* ARCameraViewController.swift in Sources */,
 				5A5A598B2100FC9500A310E6 /* FeedItem.swift in Sources */,
 				435A59A8209F5DB600599BB2 /* UIColor.swift in Sources */,
+				5AC98867210DCD730069248E /* Date.swift in Sources */,
 				5A993F6520D02DB1006FCE17 /* WebViewViewController.swift in Sources */,
 				5A993F6720D02EF3006FCE17 /* LoadingView.swift in Sources */,
 				4365334620A2C18E00E51EA1 /* ARSubcategoryView.swift in Sources */,

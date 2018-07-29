@@ -4,6 +4,7 @@ PODS:
   - Kingfisher (4.8.0)
   - Koloda (4.3.1):
     - pop (~> 1.0)
+  - MMPlayerView (3.1.4)
   - NVActivityIndicatorView (4.2.1):
     - NVActivityIndicatorView/Presenter (= 4.2.1)
   - NVActivityIndicatorView/Presenter (4.2.1)
@@ -15,6 +16,7 @@ DEPENDENCIES:
   - Hero
   - Kingfisher
   - Koloda (~> 4.3.1)
+  - MMPlayerView (~> 3.1.3)
   - NVActivityIndicatorView
   - XLPagerTabStrip (~> 8.0)
 
@@ -24,6 +26,7 @@ SPEC REPOS:
     - Hero
     - Kingfisher
     - Koloda
+    - MMPlayerView
     - NVActivityIndicatorView
     - pop
     - XLPagerTabStrip
@@ -33,10 +36,11 @@ SPEC CHECKSUMS:
   Hero: 33dadf2cd1c98af71e213dcbc2902e6e03622a4e
   Kingfisher: 976d828df2b24834c6a3f2fc4d82cdbd26552be1
   Koloda: 0d39b2aa188ccd1fac48d752acaf9802e683c625
+  MMPlayerView: 816fe3ee53d77d8c5bb7d6b1727c856d0918ae03
   NVActivityIndicatorView: 8068ba3ad39cb44cbaab25d89ff2546b3f092681
   pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
   XLPagerTabStrip: c908b17cbf42fcd2598ee1adfc49bae25444d88a
 
-PODFILE CHECKSUM: ce39055df0397e3b3ae5974d6c16de50526dd5d5
+PODFILE CHECKSUM: 6f78f5ca9cd42a28fb7ba2a39f0c77d720dbc16a
 
 COCOAPODS: 1.5.3
