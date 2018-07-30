@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WHs-g8-eEz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0cc-HW-9yc">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,43 +10,56 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--CreateViewController-->
         <scene sceneID="Jbo-J0-ZLa">
             <objects>
-                <viewController id="0cc-HW-9yc" sceneMemberID="viewController">
+                <viewController restorationIdentifier="CreateStoryboardID" storyboardIdentifier="CreateStoryboardID" title="CreateViewController" id="0cc-HW-9yc" customClass="CreateViewController" customModule="Houz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nBL-mP-Y37">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="vp3-E4-gEt"/>
                     </view>
-                    <navigationItem key="navigationItem" id="BiF-Zs-myZ"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tm4-6v-pdI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="948" y="113.79310344827587"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="XEL-W1-QxH">
-            <objects>
-                <navigationController storyboardIdentifier="CreateStoryboardID" automaticallyAdjustsScrollViewInsets="NO" id="WHs-g8-eEz" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="ICON create" id="7tm-tA-tc9">
                         <inset key="imageInsets" minX="0.0" minY="8" maxX="0.0" maxY="-8"/>
                     </tabBarItem>
-                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="BiF-Zs-myZ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="krl-u4-Kqp">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="0cc-HW-9yc" kind="relationship" relationship="rootViewController" id="umT-BM-Ntl"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fQG-v7-Mf9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tm4-6v-pdI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8.8000000000000007" y="113.79310344827587"/>
+            <point key="canvasLocation" x="113" y="106"/>
+        </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="Pyz-Yc-EEc">
+            <objects>
+                <viewController storyboardIdentifier="CameraViewControllerStoryboardID" id="BKQ-tO-YuC" customClass="CameraViewController" customModule="Houz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rET-Kv-3Ih">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8o-or-vhf">
+                                <rect key="frame" x="16" y="44" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="dismiss:" destination="BKQ-tO-YuC" eventType="touchUpInside" id="aNG-xd-G1E"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="b8o-or-vhf" firstAttribute="top" secondItem="lcO-8M-7vf" secondAttribute="top" id="4aS-DS-QOv"/>
+                            <constraint firstItem="b8o-or-vhf" firstAttribute="leading" secondItem="lcO-8M-7vf" secondAttribute="leading" constant="16" id="tIZ-Ne-hke"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lcO-8M-7vf"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r6H-tT-MAs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="950" y="106"/>
         </scene>
     </scenes>
     <resources>

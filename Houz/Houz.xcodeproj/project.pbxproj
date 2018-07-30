@@ -69,6 +69,12 @@
 		5A993F8420D2DD0B006FCE17 /* RandomHouzView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A993F8320D2DD0B006FCE17 /* RandomHouzView.swift */; };
 		5A993F8720D412B4006FCE17 /* RandomHouzOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A993F8620D412B4006FCE17 /* RandomHouzOverlayView.xib */; };
 		5A993F8920D412D4006FCE17 /* RandomHouzOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A993F8820D412D4006FCE17 /* RandomHouzOverlayView.swift */; };
+		5AB8E71A210F809A00813209 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB8E719210F809A00813209 /* CustomTabBarController.swift */; };
+		5AB8E71D210F81FB00813209 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB8E71C210F81FB00813209 /* CameraViewController.swift */; };
+		5AB8E720210F88D200813209 /* AppScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB8E71F210F88D200813209 /* AppScreen.swift */; };
+		5AB8E722210F97AD00813209 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB8E721210F97AD00813209 /* CreateViewController.swift */; };
+		5AB8E724210F9C2700813209 /* NavigatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB8E723210F9C2700813209 /* NavigatorType.swift */; };
+		5AB8E726210F9C6500813209 /* CreateNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB8E725210F9C6500813209 /* CreateNavigator.swift */; };
 		5AC98867210DCD730069248E /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC98866210DCD730069248E /* Date.swift */; };
 		5AD941A720E26F2F009A89EE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD941A620E26F2F009A89EE /* ProfileViewController.swift */; };
 		5AF633042108FE2C00FF2D9C /* VideoFeedItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF633022108FE2C00FF2D9C /* VideoFeedItemTableViewCell.swift */; };
@@ -142,6 +148,12 @@
 		5A993F8320D2DD0B006FCE17 /* RandomHouzView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomHouzView.swift; sourceTree = "<group>"; };
 		5A993F8620D412B4006FCE17 /* RandomHouzOverlayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RandomHouzOverlayView.xib; sourceTree = "<group>"; };
 		5A993F8820D412D4006FCE17 /* RandomHouzOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomHouzOverlayView.swift; sourceTree = "<group>"; };
+		5AB8E719210F809A00813209 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		5AB8E71C210F81FB00813209 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		5AB8E71F210F88D200813209 /* AppScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppScreen.swift; sourceTree = "<group>"; };
+		5AB8E721210F97AD00813209 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
+		5AB8E723210F9C2700813209 /* NavigatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatorType.swift; sourceTree = "<group>"; };
+		5AB8E725210F9C6500813209 /* CreateNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNavigator.swift; sourceTree = "<group>"; };
 		5AC98866210DCD730069248E /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		5AD941A620E26F2F009A89EE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		5AF633022108FE2C00FF2D9C /* VideoFeedItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFeedItemTableViewCell.swift; sourceTree = "<group>"; };
@@ -266,11 +278,13 @@
 		43E9CFF5209DE23200AC2E52 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				5AB8E71E210F889A00813209 /* Navigator */,
 				435A59AB209F643D00599BB2 /* LocalTestDataRepository.swift */,
 				5A5CE49D20C90CBA00097778 /* AppStoryboard.swift */,
 				5A993F6620D02EF3006FCE17 /* LoadingView.swift */,
 				5A993F6C20D03882006FCE17 /* HiddenNavigationViewController.swift */,
 				5A08148E210630E000C73E1A /* StoryboardID.swift */,
+				5AB8E719210F809A00813209 /* CustomTabBarController.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -279,8 +293,9 @@
 			isa = PBXGroup;
 			children = (
 				5A5A59812100F71200A310E6 /* Feed */,
-				4399D41C209F3AFA00423AF3 /* AR */,
 				5A993F7620D25B71006FCE17 /* Random */,
+				5AB8E71B210F819C00813209 /* Create */,
+				4399D41C209F3AFA00423AF3 /* AR */,
 				5AD941A520E26F10009A89EE /* Profile */,
 				5A993F6320D01999006FCE17 /* Various */,
 			);
@@ -501,6 +516,25 @@
 			path = RandomHouzOverlayView;
 			sourceTree = "<group>";
 		};
+		5AB8E71B210F819C00813209 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				5AB8E71C210F81FB00813209 /* CameraViewController.swift */,
+				5AB8E721210F97AD00813209 /* CreateViewController.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		5AB8E71E210F889A00813209 /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				5AB8E71F210F88D200813209 /* AppScreen.swift */,
+				5AB8E723210F9C2700813209 /* NavigatorType.swift */,
+				5AB8E725210F9C6500813209 /* CreateNavigator.swift */,
+			);
+			path = Navigator;
+			sourceTree = "<group>";
+		};
 		5AD941A520E26F10009A89EE /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -665,6 +699,7 @@
 				5A993F6D20D03882006FCE17 /* HiddenNavigationViewController.swift in Sources */,
 				5A894CC020FFA94F00F0D3DC /* ProfilePostsViewController.swift in Sources */,
 				4365334B20A2C63400E51EA1 /* ARSubcategoryTableViewCell.swift in Sources */,
+				5AB8E720210F88D200813209 /* AppScreen.swift in Sources */,
 				431D9A1B20AAAF96007BED9E /* ARProduct.swift in Sources */,
 				431D9A1120AAADEF007BED9E /* ARProductViewController.swift in Sources */,
 				5A894CBE20FFA90300F0D3DC /* LikedHistoryViewController.swift in Sources */,
@@ -676,16 +711,19 @@
 				5AF633042108FE2C00FF2D9C /* VideoFeedItemTableViewCell.swift in Sources */,
 				435A599C209F523A00599BB2 /* ARSubcategory.swift in Sources */,
 				435A59AA209F62D100599BB2 /* ARCategoryCollectionViewCell.swift in Sources */,
+				5AB8E726210F9C6500813209 /* CreateNavigator.swift in Sources */,
 				5A993F4F20CDA4CB006FCE17 /* ARCameraViewController.swift in Sources */,
 				5A5A598B2100FC9500A310E6 /* FeedItem.swift in Sources */,
 				435A59A8209F5DB600599BB2 /* UIColor.swift in Sources */,
 				5AC98867210DCD730069248E /* Date.swift in Sources */,
 				5A993F6520D02DB1006FCE17 /* WebViewViewController.swift in Sources */,
 				5A993F6720D02EF3006FCE17 /* LoadingView.swift in Sources */,
+				5AB8E71A210F809A00813209 /* CustomTabBarController.swift in Sources */,
 				4365334620A2C18E00E51EA1 /* ARSubcategoryView.swift in Sources */,
 				5A993F7820D25B98006FCE17 /* RandomViewController.swift in Sources */,
 				5A993F8420D2DD0B006FCE17 /* RandomHouzView.swift in Sources */,
 				431D9A1920AAAF5B007BED9E /* ARProductCollectionViewCell.swift in Sources */,
+				5AB8E724210F9C2700813209 /* NavigatorType.swift in Sources */,
 				5A993F6920D0353D006FCE17 /* SearchBar.swift in Sources */,
 				5A894CC220FFB2F100F0D3DC /* XLPagerTabStrip.swift in Sources */,
 				435A599A209F522800599BB2 /* ARCategory.swift in Sources */,
@@ -700,11 +738,13 @@
 				5A0814912106312A00C73E1A /* UITableView.swift in Sources */,
 				5A08148F210630E000C73E1A /* StoryboardID.swift in Sources */,
 				5A5CE4A020C969B500097778 /* UIImageView.swift in Sources */,
+				5AB8E71D210F81FB00813209 /* CameraViewController.swift in Sources */,
 				5A993F8920D412D4006FCE17 /* RandomHouzOverlayView.swift in Sources */,
 				5A993F5720CEFE88006FCE17 /* ARObject.swift in Sources */,
 				431D9A1720AAAE53007BED9E /* ARProductView.swift in Sources */,
 				5A894CB920FF8ACB00F0D3DC /* ProfileViewModel.swift in Sources */,
 				5A344CDB2107D0D40088CE94 /* ImageFeedItemTableViewCell.swift in Sources */,
+				5AB8E722210F97AD00813209 /* CreateViewController.swift in Sources */,
 				5A5CE49C20C818AA00097778 /* ProductDetailViewController.swift in Sources */,
 				4399D41E209F3B3000423AF3 /* UIViewController.swift in Sources */,
 				435A59AC209F643D00599BB2 /* LocalTestDataRepository.swift in Sources */,
