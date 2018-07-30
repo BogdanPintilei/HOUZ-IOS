@@ -23,8 +23,7 @@ class VideoFeedItemTableViewCell: UITableViewCell, Reusable {
 
     override func prepareForReuse() {
         super.prepareForReuse()
-        self.imageView?.isHidden = false
-        feedItem = FeedItem()
+        reuseCell()
     }
 
     private func configureViewWithFeedItem() {
@@ -34,4 +33,9 @@ class VideoFeedItemTableViewCell: UITableViewCell, Reusable {
         feedItemImageView.kf.setImage(with: URL(string: feedItem.imageURL!))
     }
 
+    private func reuseCell() {
+        self.imageView?.isHidden = false
+        feedItem = FeedItem()
+    }
+    
 }
