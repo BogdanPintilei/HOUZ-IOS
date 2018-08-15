@@ -144,9 +144,14 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Cache/Cache.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Gallery/Gallery.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Hero/Hero.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Hue/Hue.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Imaginary/Imaginary.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Koloda/Koloda.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Lightbox/Lightbox.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MMPlayerView/MMPlayerView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework"
@@ -154,9 +159,14 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Cache/Cache.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Gallery/Gallery.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Hero/Hero.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Hue/Hue.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Imaginary/Imaginary.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Koloda/Koloda.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Lightbox/Lightbox.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/MMPlayerView/MMPlayerView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework"

@@ -44,7 +44,7 @@
 		5A344CD421079F310088CE94 /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A344CD221079F310088CE94 /* ProductTableViewCell.xib */; };
 		5A344CDB2107D0D40088CE94 /* ImageFeedItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A344CD92107D0D40088CE94 /* ImageFeedItemTableViewCell.swift */; };
 		5A344CDC2107D0D40088CE94 /* ImageFeedItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A344CDA2107D0D40088CE94 /* ImageFeedItemTableViewCell.xib */; };
-		5A5A59832100F75300A310E6 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5A59822100F75300A310E6 /* FeedTableViewController.swift */; };
+		5A5A59832100F75300A310E6 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5A59822100F75300A310E6 /* FeedViewController.swift */; };
 		5A5A59852100F76E00A310E6 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5A59842100F76E00A310E6 /* FeedViewModel.swift */; };
 		5A5A598B2100FC9500A310E6 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5A598A2100FC9500A310E6 /* FeedItem.swift */; };
 		5A5CE49C20C818AA00097778 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5CE49B20C818AA00097778 /* ProductDetailViewController.swift */; };
@@ -75,6 +75,7 @@
 		5AB8E722210F97AD00813209 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB8E721210F97AD00813209 /* CreateViewController.swift */; };
 		5AB8E724210F9C2700813209 /* NavigatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB8E723210F9C2700813209 /* NavigatorType.swift */; };
 		5AB8E726210F9C6500813209 /* CreateNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB8E725210F9C6500813209 /* CreateNavigator.swift */; };
+		5AB8E728210FA15700813209 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB8E727210FA15700813209 /* CameraViewModel.swift */; };
 		5AC98867210DCD730069248E /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC98866210DCD730069248E /* Date.swift */; };
 		5AD941A720E26F2F009A89EE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD941A620E26F2F009A89EE /* ProfileViewController.swift */; };
 		5AF633042108FE2C00FF2D9C /* VideoFeedItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF633022108FE2C00FF2D9C /* VideoFeedItemTableViewCell.swift */; };
@@ -123,7 +124,7 @@
 		5A344CD221079F310088CE94 /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
 		5A344CD92107D0D40088CE94 /* ImageFeedItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFeedItemTableViewCell.swift; sourceTree = "<group>"; };
 		5A344CDA2107D0D40088CE94 /* ImageFeedItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageFeedItemTableViewCell.xib; sourceTree = "<group>"; };
-		5A5A59822100F75300A310E6 /* FeedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		5A5A59822100F75300A310E6 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		5A5A59842100F76E00A310E6 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		5A5A598A2100FC9500A310E6 /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		5A5CE49B20C818AA00097778 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
@@ -154,6 +155,7 @@
 		5AB8E721210F97AD00813209 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
 		5AB8E723210F9C2700813209 /* NavigatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatorType.swift; sourceTree = "<group>"; };
 		5AB8E725210F9C6500813209 /* CreateNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNavigator.swift; sourceTree = "<group>"; };
+		5AB8E727210FA15700813209 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
 		5AC98866210DCD730069248E /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		5AD941A620E26F2F009A89EE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		5AF633022108FE2C00FF2D9C /* VideoFeedItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFeedItemTableViewCell.swift; sourceTree = "<group>"; };
@@ -404,7 +406,7 @@
 			isa = PBXGroup;
 			children = (
 				5A5A59842100F76E00A310E6 /* FeedViewModel.swift */,
-				5A5A59822100F75300A310E6 /* FeedTableViewController.swift */,
+				5A5A59822100F75300A310E6 /* FeedViewController.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -519,7 +521,7 @@
 		5AB8E71B210F819C00813209 /* Create */ = {
 			isa = PBXGroup;
 			children = (
-				5AB8E71C210F81FB00813209 /* CameraViewController.swift */,
+				5AB8E729210FA15B00813209 /* CameraViewController */,
 				5AB8E721210F97AD00813209 /* CreateViewController.swift */,
 			);
 			path = Create;
@@ -533,6 +535,15 @@
 				5AB8E725210F9C6500813209 /* CreateNavigator.swift */,
 			);
 			path = Navigator;
+			sourceTree = "<group>";
+		};
+		5AB8E729210FA15B00813209 /* CameraViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5AB8E727210FA15700813209 /* CameraViewModel.swift */,
+				5AB8E71C210F81FB00813209 /* CameraViewController.swift */,
+			);
+			path = CameraViewController;
 			sourceTree = "<group>";
 		};
 		5AD941A520E26F10009A89EE /* Profile */ = {
@@ -663,9 +674,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Houz/Pods-Houz-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CHTCollectionViewWaterfallLayout/CHTCollectionViewWaterfallLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/Cache/Cache.framework",
+				"${BUILT_PRODUCTS_DIR}/Gallery/Gallery.framework",
 				"${BUILT_PRODUCTS_DIR}/Hero/Hero.framework",
+				"${BUILT_PRODUCTS_DIR}/Hue/Hue.framework",
+				"${BUILT_PRODUCTS_DIR}/Imaginary/Imaginary.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Koloda/Koloda.framework",
+				"${BUILT_PRODUCTS_DIR}/Lightbox/Lightbox.framework",
 				"${BUILT_PRODUCTS_DIR}/MMPlayerView/MMPlayerView.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
@@ -674,9 +690,14 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CHTCollectionViewWaterfallLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Gallery.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hero.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Hue.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Imaginary.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Koloda.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lightbox.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMPlayerView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
@@ -712,6 +733,7 @@
 				435A599C209F523A00599BB2 /* ARSubcategory.swift in Sources */,
 				435A59AA209F62D100599BB2 /* ARCategoryCollectionViewCell.swift in Sources */,
 				5AB8E726210F9C6500813209 /* CreateNavigator.swift in Sources */,
+				5AB8E728210FA15700813209 /* CameraViewModel.swift in Sources */,
 				5A993F4F20CDA4CB006FCE17 /* ARCameraViewController.swift in Sources */,
 				5A5A598B2100FC9500A310E6 /* FeedItem.swift in Sources */,
 				435A59A8209F5DB600599BB2 /* UIColor.swift in Sources */,
@@ -731,7 +753,7 @@
 				5A894CBB20FFA88B00F0D3DC /* GalleryViewController.swift in Sources */,
 				435A59A6209F58EA00599BB2 /* ARCategoryView.swift in Sources */,
 				4365334320A2C06000E51EA1 /* SegueHandler.swift in Sources */,
-				5A5A59832100F75300A310E6 /* FeedTableViewController.swift in Sources */,
+				5A5A59832100F75300A310E6 /* FeedViewController.swift in Sources */,
 				5A993F5520CEFE30006FCE17 /* ThreeDimensionalObject.swift in Sources */,
 				5A5A59852100F76E00A310E6 /* FeedViewModel.swift in Sources */,
 				4399D41B209F3AF500423AF3 /* BrowseARViewController.swift in Sources */,

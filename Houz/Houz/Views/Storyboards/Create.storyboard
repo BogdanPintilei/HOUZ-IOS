@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,7 +21,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="vp3-E4-gEt"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="ICON create" id="7tm-tA-tc9">
+                    <tabBarItem key="tabBarItem" title="" image="ICON create" selectedImage="ICON create" id="7tm-tA-tc9">
                         <inset key="imageInsets" minX="0.0" minY="8" maxX="0.0" maxY="-8"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="BiF-Zs-myZ"/>
@@ -28,41 +29,82 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tm4-6v-pdI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="113" y="106"/>
+            <point key="canvasLocation" x="90" y="106"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="Pyz-Yc-EEc">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r6H-tT-MAs" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="CameraViewControllerStoryboardID" id="BKQ-tO-YuC" customClass="CameraViewController" customModule="Houz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rET-Kv-3Ih">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8o-or-vhf">
-                                <rect key="frame" x="16" y="44" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wjY-rd-JzU">
+                                <rect key="frame" x="97" y="244" width="180" height="80"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title=" Post" image="ICON camera">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
-                                    <action selector="dismiss:" destination="BKQ-tO-YuC" eventType="touchUpInside" id="aNG-xd-G1E"/>
+                                    <action selector="post:" destination="BKQ-tO-YuC" eventType="touchUpInside" id="pjk-P5-sxG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSJ-jw-Dgq">
+                                <rect key="frame" x="97" y="388" width="180" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="6A6-R1-grj"/>
+                                    <constraint firstAttribute="width" constant="180" id="jZF-g4-rr6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Add Product" image="ICON shopping">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRf-FL-1ei">
+                                <rect key="frame" x="16" y="60" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SRf-FL-1ei" secondAttribute="height" multiplier="1:1" id="oSq-Kf-q2v"/>
+                                    <constraint firstAttribute="height" constant="36" id="t5q-vv-a3v"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="ICON close"/>
+                                <connections>
+                                    <action selector="close:" destination="BKQ-tO-YuC" eventType="touchUpInside" id="qOS-MA-Mw8"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="b8o-or-vhf" firstAttribute="top" secondItem="lcO-8M-7vf" secondAttribute="top" id="4aS-DS-QOv"/>
-                            <constraint firstItem="b8o-or-vhf" firstAttribute="leading" secondItem="lcO-8M-7vf" secondAttribute="leading" constant="16" id="tIZ-Ne-hke"/>
+                            <constraint firstItem="ZSJ-jw-Dgq" firstAttribute="top" secondItem="wjY-rd-JzU" secondAttribute="bottom" constant="64" id="2SS-Vl-xWD"/>
+                            <constraint firstItem="SRf-FL-1ei" firstAttribute="top" secondItem="lcO-8M-7vf" secondAttribute="top" constant="16" id="4vr-sh-KSo"/>
+                            <constraint firstItem="SRf-FL-1ei" firstAttribute="leading" secondItem="lcO-8M-7vf" secondAttribute="leading" constant="16" id="JP0-Bb-ocy"/>
+                            <constraint firstItem="ZSJ-jw-Dgq" firstAttribute="centerX" secondItem="rET-Kv-3Ih" secondAttribute="centerX" id="MQf-5Z-BP9"/>
+                            <constraint firstItem="wjY-rd-JzU" firstAttribute="width" secondItem="ZSJ-jw-Dgq" secondAttribute="width" id="TgI-BI-erc"/>
+                            <constraint firstItem="wjY-rd-JzU" firstAttribute="centerX" secondItem="ZSJ-jw-Dgq" secondAttribute="centerX" id="ozd-0V-953"/>
+                            <constraint firstItem="wjY-rd-JzU" firstAttribute="top" secondItem="rET-Kv-3Ih" secondAttribute="top" constant="244" id="s5u-Iw-UWi"/>
+                            <constraint firstItem="wjY-rd-JzU" firstAttribute="height" secondItem="ZSJ-jw-Dgq" secondAttribute="height" id="tey-Tq-jn8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lcO-8M-7vf"/>
                     </view>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="addProductButtonCenterConstraint" destination="MQf-5Z-BP9" id="yly-KH-FIr"/>
+                        <outlet property="closeButtonLeftConstraint" destination="JP0-Bb-ocy" id="Ty8-Ae-IEC"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="r6H-tT-MAs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="950" y="106"/>
+            <point key="canvasLocation" x="813.60000000000002" y="105.66502463054188"/>
         </scene>
     </scenes>
     <resources>
+        <image name="ICON camera" width="42" height="42"/>
+        <image name="ICON close" width="30" height="30"/>
         <image name="ICON create" width="42" height="42"/>
+        <image name="ICON shopping" width="42" height="42"/>
     </resources>
 </document>

@@ -7,13 +7,16 @@
 //
 
 import UIKit
+import Gallery
+import Hero
 
 class CreateNavigator: NavigatorType {
     
     func create(screen: AppScreen) -> UIViewController? {
         switch screen {
         case .camera:
-            return AppStoryboard.Create.instance.instantiateViewController(withIdentifier: screen.id)
+            let vc =  AppStoryboard.Create.instance.instantiateViewController(withIdentifier: screen.id) as! CameraViewController
+            return vc
         default:
             return nil
         }
