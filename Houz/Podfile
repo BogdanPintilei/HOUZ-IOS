@@ -14,6 +14,7 @@ def use_pods
     pod 'Gallery'
     pod 'Lightbox'
     pod 'Toast-Swift'
+    pod 'SkyFloatingLabelTextField', '~> 3.0'
 end
 
 target 'Houz' do

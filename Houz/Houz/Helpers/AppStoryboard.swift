@@ -11,7 +11,7 @@ import UIKit
 
 enum AppStoryboard: String {
     
-    case Main, HOUZFeed, Random, Create, AR, Profile
+    case Main, HOUZFeed, Random, Create, AR, Profile, Authenticathion
     
     var instance: UIStoryboard {
         return UIStoryboard(name: self.rawValue, bundle: Bundle.main)

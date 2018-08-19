@@ -16,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         UITabBar.appearance().layer.borderWidth = 0
         UITabBar.appearance().clipsToBounds = true
+        if !SessionManager.isLoggedIn() {
+            self.window?.rootViewController? = AuthenticathionNavigator().create(screen: .login)!
+        }
         return true
     }
 

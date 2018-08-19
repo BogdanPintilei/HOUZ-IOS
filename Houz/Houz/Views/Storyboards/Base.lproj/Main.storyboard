@@ -13,7 +13,7 @@
         <!--Custom Tab Bar Controller-->
         <scene sceneID="clT-BE-hh5">
             <objects>
-                <tabBarController id="LMd-nJ-tJk" customClass="CustomTabBarController" customModule="Houz" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="CustomTabBarControllerStoryboardID" id="LMd-nJ-tJk" customClass="CustomTabBarController" customModule="Houz" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4pV-75-v8m">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -25,6 +25,9 @@
                             <userDefinedRuntimeAttribute type="string" keyPath="heroModifierString" value="useGlobalCoordinateSpace useNoSnapshot translate(0, 64) zPosition(10)"/>
                         </userDefinedRuntimeAttributes>
                     </tabBar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="PX2-tI-IkE" kind="relationship" relationship="viewControllers" id="8qm-uT-HGm"/>
                         <segue destination="vJg-Gj-Duq" kind="relationship" relationship="viewControllers" id="fgL-dG-NtQ"/>

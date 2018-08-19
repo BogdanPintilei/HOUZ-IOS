@@ -12,25 +12,30 @@ import UIKit
 
 enum AppScreen {
     
+    //Main
+    case main
+    
     // Authentication flow screens
-    case loginNav
     case login
     case resetPassword(emailAddress: String?)
     
     // Create
     case camera
-    
+    case post
+
     /// Storyboard Identifier
     var id: String {
         switch self {
-        case .loginNav:
-            return "LoginScreen"
+        case .main:
+            return "CustomTabBarControllerStoryboardID"
         case .login:
-            return "LoginViewController"
+            return "LoginViewControllerStoryboardID"
         case .resetPassword(_):
             return "ResetPasswordViewController"
         case .camera:
             return "CameraViewControllerStoryboardID"
+        case .post:
+            return "PostViewControolerStoryboardID"
         }
     }
     

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Hero
 
 // Each case describes an action of a screen
 // Should be used when an button has different actions based on the flow context
@@ -31,13 +32,13 @@ extension NavigatorType {
     
     func push(screen: AppScreen, from viewController: UIViewController) {
         guard let newViewController = create(screen: screen) else { return }
-        
         viewController.navigationController?.pushViewController(newViewController, animated: true)
     }
     
     func present(screen: AppScreen, from viewController: UIViewController?) {
         guard let newViewController = create(screen: screen) else { return }
-        
+        viewController?.hero.modalAnimationType = .zoom
+        newViewController.hero.modalAnimationType = .zoom
         viewController?.present(newViewController,
                                 animated: true,
                                 completion: nil)

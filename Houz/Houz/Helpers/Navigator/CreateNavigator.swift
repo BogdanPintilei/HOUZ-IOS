@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import Gallery
-import Hero
 
 class CreateNavigator: NavigatorType {
     
@@ -16,6 +14,9 @@ class CreateNavigator: NavigatorType {
         switch screen {
         case .camera:
             let vc =  AppStoryboard.Create.instance.instantiateViewController(withIdentifier: screen.id) as! CameraViewController
+            return vc
+        case .post:
+            let vc = AppStoryboard.Create.instance.instantiateViewController(withIdentifier: screen.id) as! PostViewController
             return vc
         default:
             return nil
